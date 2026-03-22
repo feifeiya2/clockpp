@@ -3,22 +3,19 @@
 
 #include "main.h"
 
-// --- 用户配置区域 ---
-extern SPI_HandleTypeDef hspi2;   // 你的SPI句柄
-#define ST7789_SPI_HANDLE    hspi2
-
 #define ST7789_WIDTH  240
 #define ST7789_HEIGHT 320
 
-// 引脚定义 (根据你的实际接线修改)
-#define ST7789_RES_GPIO_Port RESET_GPIO_Port
-#define ST7789_RES_Pin       RESET_Pin
-#define ST7789_DC_GPIO_Port  DC_GPIO_Port
-#define ST7789_DC_Pin        DC_Pin
-#define ST7789_CS_GPIO_Port  CS_GPIO_Port
-#define ST7789_CS_Pin        CS_Pin
-#define ST7789_LED_GPIO_Port  LED_GPIO_Port
-#define ST7789_LED_Pin        LED_Pin
+typedef struct {
+    void (*write_spi_poll)(const uint8_t *pData, uint16_t Size);        // 轮询方式写入SPI
+    void (*write_spi_dma) (const uint8_t *pData, uint16_t Size);        // DMA方式写入SPI
+    void (*set_res_pin)(uint8_t state);                               // 设置复位引脚
+    void (*set_dc_pin)   (uint8_t state);                               // 设置数据/命令引脚
+    void (*set_cs_pin)   (uint8_t state);                               // 设置片选引脚
+    void (*set_led_pin)  (uint8_t state);                               // 设置背光引脚
+
+    void (*delay_ms)     (uint32_t ms); 
+} ST7789_Interface_t;
 
 // 控制宏
 #define ST7789_RES_Clr()  HAL_GPIO_WritePin(ST7789_RES_GPIO_Port, ST7789_RES_Pin, GPIO_PIN_RESET)
@@ -28,6 +25,8 @@ extern SPI_HandleTypeDef hspi2;   // 你的SPI句柄
 #define ST7789_CS_Clr()   HAL_GPIO_WritePin(ST7789_CS_GPIO_Port, ST7789_CS_Pin, GPIO_PIN_RESET)
 #define ST7789_CS_Set()   HAL_GPIO_WritePin(ST7789_CS_GPIO_Port, ST7789_CS_Pin, GPIO_PIN_SET)
 #define ST7789_LED_Set()  HAL_GPIO_WritePin(ST7789_LED_GPIO_Port, ST7789_LED_Pin, GPIO_PIN_SET)
+
+extern ST7789_Interface_t st7789_interface;
 
 // 函数声明
 void ST7789_Init(void);

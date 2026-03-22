@@ -1,5 +1,7 @@
 #include "st7789.h"
 
+ST7789_Interface_t st7789_interface;
+
 // ·¢ËÍ8Î»ÃüÁî
 static void ST7789_WriteCommand(uint8_t cmd) {
     ST7789_DC_Clr();
