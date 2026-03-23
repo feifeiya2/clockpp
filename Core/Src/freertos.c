@@ -26,7 +26,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include <stdio.h>
-#include "display_posting.h"
+#include "display_wrapper.h"
 
 /* USER CODE END Includes */
 
@@ -180,12 +180,11 @@ void StartDefaultTask(void *argument)
 }
 
 
-uint16_t x_start = (240 - 10) / 2;
-uint16_t y_start = (320 - 10) / 2;
-Display_Posting();
-  ST7789_Init();
-   ST7789_Fill_Screen(0x0000); // 【关键】全屏刷黑，清除上电乱码
-  ST7789_Fill_Color(x_start, y_start, x_start + 9, y_start + 9, test_color_buf);
+  uint16_t x_start = (240 - 10) / 2;
+  uint16_t y_start = (320 - 10) / 2;
+  Display_Init();
+  Display_Fill_Screen(0x0000); 
+  Display_Fill_Color(x_start, y_start, x_start + 9, y_start + 9, test_color_buf);
   
 	for(;;)
 	{

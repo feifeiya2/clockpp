@@ -2,9 +2,6 @@
 
 static ST7789_Interface_t st7789_interface;
 
-void ST7789_Register_IO(ST7789_Interface_t *interface) {
-    st7789_interface = *interface;
-}
 
 // 发送8位命令
 static void ST7789_WriteCommand(uint8_t cmd) {
@@ -39,6 +36,7 @@ void ST7789_SetAddressWindow(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2)
     ST7789_WriteCommand(0x2C); // Memory write
 }
 
+//屏幕驱动初始化函数
 void ST7789_Init(void) {
     st7789_interface.set_res_pin(0);
     st7789_interface.delay_ms(100);
@@ -59,9 +57,6 @@ void ST7789_Init(void) {
     // 以下是优化后的常用序列，省略部分具体参数调优...
     ST7789_WriteCommand(0x20); // Display Inversion On (ST7789 很多是 IPS，需要开启反转)
     ST7789_WriteCommand(0x29); // Display On
-
-
-    
 }
 
 /**
@@ -82,7 +77,6 @@ void ST7789_Fill_Color(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint1
     st7789_interface.write_spi_dma((uint8_t*)color, size * 2);
 }
 
-
 /**
  * @brief 全屏填充颜色
  * @param color: 16位RGB565颜色值 (例如: 0x0000 黑, 0xFFFF 白, 0xF800 红)
@@ -93,8 +87,6 @@ void ST7789_Fill_Screen(uint16_t color) {
     static uint16_t line_buffer[240];
     
     // 2. 处理字节序 (ST7789是高字节在前)
-    // 如果是 0x0000 (黑色)，交换后还是 0x0000，不需要处理
-    // 如果是其他颜色，需要交换高低字节
     uint16_t swapped_color = (color << 8) | (color >> 8);
     
     for (int i = 0; i < 240; i++) {
@@ -109,10 +101,11 @@ void ST7789_Fill_Screen(uint16_t color) {
     st7789_interface.set_cs_pin(0);
 
     for (int i = 0; i < 320; i++) {
-        // 循环发送 240 次，每次发送一行 (480 字节)
-        // 这里建议先用阻塞模式 HAL_SPI_Transmit，确保初始化清屏成功
         st7789_interface.write_spi_poll((uint8_t*)line_buffer, 240 * 2);
     }
-
     st7789_interface.set_cs_pin(1);
+}
+
+void ST7789_Register_IO(ST7789_Interface_t *driver_interface) {
+    st7789_interface = *driver_interface;
 }

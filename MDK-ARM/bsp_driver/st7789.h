@@ -21,6 +21,6 @@ typedef struct {
 void ST7789_Init(void);
 void ST7789_Fill_Color(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint16_t *color);
 void ST7789_Fill_Screen(uint16_t color);
-void ST7789_Register_IO(ST7789_Interface_t *interface);
+void ST7789_Register_IO(ST7789_Interface_t *driver_interface);
 
 #endif
