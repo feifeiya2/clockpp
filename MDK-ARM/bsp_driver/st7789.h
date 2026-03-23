@@ -17,20 +17,10 @@ typedef struct {
     void (*delay_ms)     (uint32_t ms); 
 } ST7789_Interface_t;
 
-// ¿ØÖÆºê
-#define ST7789_RES_Clr()  HAL_GPIO_WritePin(ST7789_RES_GPIO_Port, ST7789_RES_Pin, GPIO_PIN_RESET)
-#define ST7789_RES_Set()  HAL_GPIO_WritePin(ST7789_RES_GPIO_Port, ST7789_RES_Pin, GPIO_PIN_SET)
-#define ST7789_DC_Clr()   HAL_GPIO_WritePin(ST7789_DC_GPIO_Port, ST7789_DC_Pin, GPIO_PIN_RESET)
-#define ST7789_DC_Set()   HAL_GPIO_WritePin(ST7789_DC_GPIO_Port, ST7789_DC_Pin, GPIO_PIN_SET)
-#define ST7789_CS_Clr()   HAL_GPIO_WritePin(ST7789_CS_GPIO_Port, ST7789_CS_Pin, GPIO_PIN_RESET)
-#define ST7789_CS_Set()   HAL_GPIO_WritePin(ST7789_CS_GPIO_Port, ST7789_CS_Pin, GPIO_PIN_SET)
-#define ST7789_LED_Set()  HAL_GPIO_WritePin(ST7789_LED_GPIO_Port, ST7789_LED_Pin, GPIO_PIN_SET)
-
-extern ST7789_Interface_t st7789_interface;
-
 // º¯ÊýÉùÃ÷
 void ST7789_Init(void);
 void ST7789_Fill_Color(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint16_t *color);
 void ST7789_Fill_Screen(uint16_t color);
+void ST7789_Register_IO(ST7789_Interface_t *interface);
 
 #endif

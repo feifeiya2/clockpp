@@ -44,4 +44,5 @@ clockpp\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 clockpp\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h
 clockpp\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
 clockpp\freertos.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
+clockpp\freertos.o: ./bsp_posting/display_posting.h
 clockpp\freertos.o: ./bsp_driver/st7789.h

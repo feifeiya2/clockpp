@@ -1,21 +1,25 @@
 #include "st7789.h"
 
-ST7789_Interface_t st7789_interface;
+static ST7789_Interface_t st7789_interface;
+
+void ST7789_Register_IO(ST7789_Interface_t *interface) {
+    st7789_interface = *interface;
+}
 
 // 发送8位命令
 static void ST7789_WriteCommand(uint8_t cmd) {
-    ST7789_DC_Clr();
-    ST7789_CS_Clr();
-    HAL_SPI_Transmit(&ST7789_SPI_HANDLE, &cmd, 1, HAL_MAX_DELAY);
-    ST7789_CS_Set();
+    st7789_interface.set_dc_pin(0);
+    st7789_interface.set_cs_pin(0);
+    st7789_interface.write_spi_poll(&cmd, 1);
+    st7789_interface.set_cs_pin(1);
 }
 
 // 发送8位数据
 static void ST7789_WriteData(uint8_t data) {
-    ST7789_DC_Set();
-    ST7789_CS_Clr();
-    HAL_SPI_Transmit(&ST7789_SPI_HANDLE, &data, 1, HAL_MAX_DELAY);
-    ST7789_CS_Set();
+    st7789_interface.set_dc_pin(1);
+    st7789_interface.set_cs_pin(0);
+    st7789_interface.write_spi_poll(&data, 1);
+    st7789_interface.set_cs_pin(1);
 }
 
 // 设置显示窗口
@@ -36,16 +40,15 @@ void ST7789_SetAddressWindow(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2)
 }
 
 void ST7789_Init(void) {
-    ST7789_RES_Clr();
-    HAL_Delay(100);
-    ST7789_RES_Set();
-    HAL_Delay(120);
-
-    ST7789_LED_Set(); // 点亮背光
-    HAL_Delay(100);
+    st7789_interface.set_res_pin(0);
+    st7789_interface.delay_ms(100);
+    st7789_interface.set_res_pin(1);
+    st7789_interface.delay_ms(120);
+    st7789_interface.set_led_pin(1); // 点亮背光
+    st7789_interface.delay_ms(100);
 
     ST7789_WriteCommand(0x11); // Sleep out
-    HAL_Delay(120);
+    st7789_interface.delay_ms(120);
 
     ST7789_WriteCommand(0x36); // MADCTL
     ST7789_WriteData(0x00);    // 方向控制：可以尝试 0x00, 0x70, 0xC0 等
@@ -70,13 +73,13 @@ void ST7789_Fill_Color(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint1
     
     ST7789_SetAddressWindow(x1, y1, x2, y2);
     
-    ST7789_DC_Set();
-    ST7789_CS_Clr();
+    st7789_interface.set_dc_pin(1);
+    st7789_interface.set_cs_pin(0);
     
     // 因为SPI是8位模式，发送的数据长度需要 * 2 (16位颜色)
     // 且 LVGL 默认颜色是小端，ST7789 需要大端。
     // 如果颜色反了，可以在 LVGL 配置里开启 LV_COLOR_16_SWAP，或者在此手动转换。
-    HAL_SPI_Transmit_DMA(&ST7789_SPI_HANDLE, (uint8_t*)color, size * 2);
+    st7789_interface.write_spi_dma((uint8_t*)color, size * 2);
 }
 
 
@@ -102,14 +105,14 @@ void ST7789_Fill_Screen(uint16_t color) {
     ST7789_SetAddressWindow(0, 0, 239, 320 - 1);
 
     // 4. 开始发送数据
-    ST7789_DC_Set();
-    ST7789_CS_Clr();
+    st7789_interface.set_dc_pin(1);
+    st7789_interface.set_cs_pin(0);
 
     for (int i = 0; i < 320; i++) {
         // 循环发送 240 次，每次发送一行 (480 字节)
         // 这里建议先用阻塞模式 HAL_SPI_Transmit，确保初始化清屏成功
-        HAL_SPI_Transmit(&ST7789_SPI_HANDLE, (uint8_t*)line_buffer, 240 * 2, HAL_MAX_DELAY);
+        st7789_interface.write_spi_poll((uint8_t*)line_buffer, 240 * 2);
     }
 
-    ST7789_CS_Set();
+    st7789_interface.set_cs_pin(1);
 }

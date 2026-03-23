@@ -26,5 +26,7 @@ extern ST7789_Interface_t interface;
 #endif
 
 
+void Display_Posting(void);
+
 
 #endif
