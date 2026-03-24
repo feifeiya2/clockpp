@@ -35,6 +35,7 @@ clockpp\display_posting.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim
 clockpp\display_posting.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 clockpp\display_posting.o: ./bsp_driver/st7789.h
 clockpp\display_posting.o: ./bsp_wrapper/display_wrapper.h
+clockpp\display_posting.o: ./bsp_posting/display_posting.h
 clockpp\display_posting.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
 clockpp\display_posting.o: ../Core/Inc/FreeRTOSConfig.h
 clockpp\display_posting.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h

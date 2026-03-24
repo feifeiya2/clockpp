@@ -2,7 +2,7 @@
 #define __DISPLAY_WRAPPER_H
 
 #include "main.h"
-
+#include "display_posting.h"
 typedef struct{
     void (*Display_Init)(void);
     void (*Display_Fill_Color)(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint16_t *color);
