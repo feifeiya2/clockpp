@@ -1,0 +1,17 @@
+clockpp\lv_bidi.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\misc\lv_bidi.c
+clockpp\lv_bidi.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
+clockpp\lv_bidi.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\misc\lv_bidi.h
+clockpp\lv_bidi.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\misc\../lv_conf_internal.h
+clockpp\lv_bidi.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+clockpp\lv_bidi.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\misc\../lv_conf_kconfig.h
+clockpp\lv_bidi.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\misc\../../../lv_conf.h
+clockpp\lv_bidi.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdbool.h
+clockpp\lv_bidi.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\misc\lv_txt.h
+clockpp\lv_bidi.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdarg.h
+clockpp\lv_bidi.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\misc\lv_area.h
+clockpp\lv_bidi.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\misc\../font/lv_font.h
+clockpp\lv_bidi.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\misc\../font/lv_symbol_def.h
+clockpp\lv_bidi.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\misc\lv_printf.h
+clockpp\lv_bidi.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\misc\lv_types.h
+clockpp\lv_bidi.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\misc\../misc/lv_mem.h
+clockpp\lv_bidi.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h

@@ -1,0 +1,16 @@
+clockpp\gifdec.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\extra\libs\gif\gifdec.c
+clockpp\gifdec.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\extra\libs\gif\gifdec.h
+clockpp\gifdec.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+clockpp\gifdec.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\extra\libs\gif\../../../misc/lv_fs.h
+clockpp\gifdec.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\extra\libs\gif\../../../misc/../lv_conf_internal.h
+clockpp\gifdec.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\extra\libs\gif\../../../misc/../lv_conf_kconfig.h
+clockpp\gifdec.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\extra\libs\gif\../../../misc/../../../lv_conf.h
+clockpp\gifdec.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdbool.h
+clockpp\gifdec.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\extra\libs\gif\../../../misc/lv_log.h
+clockpp\gifdec.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\extra\libs\gif\../../../misc/lv_types.h
+clockpp\gifdec.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\extra\libs\gif\../../../misc/lv_mem.h
+clockpp\gifdec.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
+clockpp\gifdec.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
+clockpp\gifdec.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\extra\libs\gif\../../../misc/lv_color.h
+clockpp\gifdec.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\extra\libs\gif\../../../misc/lv_assert.h
+clockpp\gifdec.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\extra\libs\gif\../../../misc/lv_math.h

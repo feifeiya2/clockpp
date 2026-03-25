@@ -1,0 +1,13 @@
+clockpp\lv_tlsf.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\misc\lv_tlsf.c
+clockpp\lv_tlsf.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\misc\../lv_conf_internal.h
+clockpp\lv_tlsf.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+clockpp\lv_tlsf.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\misc\../lv_conf_kconfig.h
+clockpp\lv_tlsf.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\misc\../../../lv_conf.h
+clockpp\lv_tlsf.o: D:\keil5\ARM\ARMCC\Bin\..\include\limits.h
+clockpp\lv_tlsf.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\misc\lv_tlsf.h
+clockpp\lv_tlsf.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
+clockpp\lv_tlsf.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\misc\lv_mem.h
+clockpp\lv_tlsf.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
+clockpp\lv_tlsf.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\misc\lv_types.h
+clockpp\lv_tlsf.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\misc\lv_log.h
+clockpp\lv_tlsf.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\misc\lv_assert.h

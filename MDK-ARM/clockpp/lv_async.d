@@ -1,0 +1,13 @@
+clockpp\lv_async.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\misc\lv_async.c
+clockpp\lv_async.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\misc\lv_async.h
+clockpp\lv_async.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\misc\lv_types.h
+clockpp\lv_async.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+clockpp\lv_async.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\misc\lv_mem.h
+clockpp\lv_async.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\misc\../lv_conf_internal.h
+clockpp\lv_async.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\misc\../lv_conf_kconfig.h
+clockpp\lv_async.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\misc\../../../lv_conf.h
+clockpp\lv_async.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
+clockpp\lv_async.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
+clockpp\lv_async.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\misc\lv_timer.h
+clockpp\lv_async.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\misc\../hal/lv_hal_tick.h
+clockpp\lv_async.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdbool.h

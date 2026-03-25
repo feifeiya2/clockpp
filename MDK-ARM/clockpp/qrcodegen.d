@@ -1,0 +1,15 @@
+clockpp\qrcodegen.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\extra\libs\qrcode\qrcodegen.c
+clockpp\qrcodegen.o: D:\keil5\ARM\ARMCC\Bin\..\include\limits.h
+clockpp\qrcodegen.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+clockpp\qrcodegen.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
+clockpp\qrcodegen.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\extra\libs\qrcode\qrcodegen.h
+clockpp\qrcodegen.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdbool.h
+clockpp\qrcodegen.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
+clockpp\qrcodegen.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+clockpp\qrcodegen.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\extra\libs\qrcode\../../../misc/lv_assert.h
+clockpp\qrcodegen.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\extra\libs\qrcode\../../../misc/../lv_conf_internal.h
+clockpp\qrcodegen.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\extra\libs\qrcode\../../../misc/../lv_conf_kconfig.h
+clockpp\qrcodegen.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\extra\libs\qrcode\../../../misc/../../../lv_conf.h
+clockpp\qrcodegen.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\extra\libs\qrcode\../../../misc/lv_log.h
+clockpp\qrcodegen.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\extra\libs\qrcode\../../../misc/lv_types.h
+clockpp\qrcodegen.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\extra\libs\qrcode\../../../misc/lv_mem.h

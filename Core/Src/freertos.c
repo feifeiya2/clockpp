@@ -60,7 +60,20 @@ const osThreadAttr_t defaultTask_attributes = {
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
+void lvgl_test_task(void *argument) {
+    lv_init();              // 1. LVGL 初始化
+    lv_port_disp_init();    // 2. 显示接口初始化 (这内部会调 Display_Init)
 
+    // 3. 简单测试：画一个标签
+    lv_obj_t * label = lv_label_create(lv_scr_act());
+    lv_label_set_text(label, "Hello LVGL!");
+    lv_obj_center(label);
+
+    for(;;) {
+        lv_timer_handler(); // 4. LVGL 引擎运行
+        vTaskDelay(5);         // 5. 稍微延时，给其他任务留时间
+    }
+}
 /* USER CODE END FunctionPrototypes */
 
 void StartDefaultTask(void *argument);
@@ -154,6 +167,11 @@ void MX_FREERTOS_Init(void) {
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
+
+
+  
+  xTaskCreate(lvgl_test_task, "lvgl_test_task", 2048, NULL, 1, NULL);
+
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_EVENTS */
@@ -174,18 +192,7 @@ void StartDefaultTask(void *argument)
   /* USER CODE BEGIN StartDefaultTask */
   /* Infinite loop */
 	HAL_UART_Receive_IT(&huart1, g_data, 1);
-  uint16_t test_color_buf[10 * 10];
-  for(int i = 0; i < 10 * 10; i++) {
-    test_color_buf[i] = 0xE007; 
-}
 
-
-  uint16_t x_start = (240 - 10) / 2;
-  uint16_t y_start = (320 - 10) / 2;
-  Display_Init();
-  Display_Fill_Screen(0x0000); 
-  Display_Fill_Color(x_start, y_start, x_start + 9, y_start + 9, test_color_buf);
-  
 	for(;;)
 	{
 		HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);

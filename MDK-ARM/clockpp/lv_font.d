@@ -1,0 +1,16 @@
+clockpp\lv_font.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\font\lv_font.c
+clockpp\lv_font.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\font\lv_font.h
+clockpp\lv_font.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\font\../lv_conf_internal.h
+clockpp\lv_font.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+clockpp\lv_font.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\font\../lv_conf_kconfig.h
+clockpp\lv_font.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\font\../../../lv_conf.h
+clockpp\lv_font.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
+clockpp\lv_font.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdbool.h
+clockpp\lv_font.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\font\lv_symbol_def.h
+clockpp\lv_font.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\font\../misc/lv_area.h
+clockpp\lv_font.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\font\../misc/lv_utils.h
+clockpp\lv_font.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\font\../misc/lv_log.h
+clockpp\lv_font.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\font\../misc/lv_types.h
+clockpp\lv_font.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\font\../misc/lv_assert.h
+clockpp\lv_font.o: ..\Middlewares\Third_Party\Lvgl\lvgl\src\font\../misc/lv_mem.h
+clockpp\lv_font.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h

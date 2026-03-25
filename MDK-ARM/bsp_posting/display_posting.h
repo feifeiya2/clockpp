@@ -7,6 +7,7 @@
 #include "FreeRTOS.h"
 #include "task.h"
 #include "cmsis_os.h"
+#include "lv_port_disp.h"
 
 extern SPI_HandleTypeDef hspi2;
 extern ST7789_Interface_t interface;
