@@ -26,8 +26,11 @@ clockpp\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
 clockpp\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
 clockpp\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
 clockpp\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
+clockpp\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
+clockpp\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
 clockpp\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 clockpp\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+clockpp\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
 clockpp\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 clockpp\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 clockpp\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
@@ -42,6 +45,9 @@ clockpp\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.
 clockpp\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
 clockpp\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
 clockpp\main.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
+clockpp\main.o: ../Core/Inc/dma.h
+clockpp\main.o: ../Core/Inc/i2c.h
+clockpp\main.o: ../Core/Inc/spi.h
 clockpp\main.o: ../Core/Inc/usart.h
 clockpp\main.o: ../Core/Inc/gpio.h
 clockpp\main.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
