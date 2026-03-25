@@ -4,6 +4,7 @@
 "clockpp\gpio.o"
 "clockpp\freertos.o"
 "clockpp\dma.o"
+"clockpp\i2c.o"
 "clockpp\spi.o"
 "clockpp\usart.o"
 "clockpp\stm32f4xx_it.o"
@@ -22,6 +23,8 @@
 "clockpp\stm32f4xx_hal_cortex.o"
 "clockpp\stm32f4xx_hal.o"
 "clockpp\stm32f4xx_hal_exti.o"
+"clockpp\stm32f4xx_hal_i2c.o"
+"clockpp\stm32f4xx_hal_i2c_ex.o"
 "clockpp\stm32f4xx_hal_spi.o"
 "clockpp\stm32f4xx_hal_tim.o"
 "clockpp\stm32f4xx_hal_tim_ex.o"
@@ -222,8 +225,11 @@
 "clockpp\lv_table.o"
 "clockpp\lv_textarea.o"
 "clockpp\display_wrapper.o"
+"clockpp\touch_wrapper.o"
 "clockpp\display_posting.o"
+"clockpp\touch_posting.o"
 "clockpp\st7789.o"
+"clockpp\ft6336.o"
 --library_type=microlib --strict --scatter "clockpp\clockpp.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

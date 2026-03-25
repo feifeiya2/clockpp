@@ -67,6 +67,10 @@ void Error_Handler(void);
 #define DC_GPIO_Port GPIOB
 #define RESET_Pin GPIO_PIN_12
 #define RESET_GPIO_Port GPIOB
+#define T_INT_Pin GPIO_PIN_7
+#define T_INT_GPIO_Port GPIOD
+#define T_RST_Pin GPIO_PIN_3
+#define T_RST_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

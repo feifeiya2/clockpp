@@ -27,7 +27,7 @@
 /* USER CODE BEGIN Includes */
 #include <stdio.h>
 #include "display_wrapper.h"
-
+#include "ft6336.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -66,8 +66,9 @@ void lvgl_test_task(void *argument) {
 
     // 3. 简单测试：画一个标签
     lv_obj_t * label = lv_label_create(lv_scr_act());
-    lv_label_set_text(label, "Hello LVGL!");
+    lv_label_set_text(label, "Hello feifeiya1, let's go!");
     lv_obj_center(label);
+
 
     for(;;) {
         lv_timer_handler(); // 4. LVGL 引擎运行
@@ -170,7 +171,7 @@ void MX_FREERTOS_Init(void) {
 
 
   
-  xTaskCreate(lvgl_test_task, "lvgl_test_task", 2048, NULL, 1, NULL);
+  //xTaskCreate(lvgl_test_task, "lvgl_test_task", 2048, NULL, 1, NULL);
 
   /* USER CODE END RTOS_THREADS */
 
@@ -179,7 +180,7 @@ void MX_FREERTOS_Init(void) {
   /* USER CODE END RTOS_EVENTS */
 
 }
-
+extern I2C_HandleTypeDef hi2c1;
 /* USER CODE BEGIN Header_StartDefaultTask */
 /**
   * @brief  Function implementing the defaultTask thread.
@@ -191,14 +192,21 @@ void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
   /* Infinite loop */
+  FT6336_State_t ft_state;
 	HAL_UART_Receive_IT(&huart1, g_data, 1);
+  FT6336_Init(&hi2c1);
 
 	for(;;)
 	{
-		HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
-		vTaskDelay(500);
-		HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_SET);
-		vTaskDelay(500);
+    FT6336_Read_Touch(&hi2c1, &ft_state);
+    if(ft_state.touched) {
+      printf("x: %d, y: %d\n", ft_state.x, ft_state.y);
+    }
+
+		// HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
+		// vTaskDelay(500);
+		// HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_SET);
+		// vTaskDelay(500);
 	}	
   /* USER CODE END StartDefaultTask */
 }

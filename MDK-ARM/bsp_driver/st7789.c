@@ -49,7 +49,7 @@ void ST7789_Init(void) {
     st7789_interface.delay_ms(120);
 
     ST7789_WriteCommand(0x36); // MADCTL
-    ST7789_WriteData(0x00);    // 方向控制：可以尝试 0x00, 0x70, 0xC0 等
+    ST7789_WriteData(0xC0);    // 方向控制：可以尝试 0x00, 0x70, 0xC0 等
 
     ST7789_WriteCommand(0x3A); // COLMOD
     ST7789_WriteData(0x05);    // 16bit RGB565
