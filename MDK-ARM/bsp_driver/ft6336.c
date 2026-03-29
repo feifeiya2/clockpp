@@ -1,17 +1,27 @@
 #include "ft6336.h"
 
+static FT6336_Interface_t ft6336_interface;
+
+/**
+ * @brief 注册触摸芯片操作接口
+ * @param interface 指向 FT6336_Interface_t 结构体的指针
+ */
+void FT6336_register_interface(FT6336_Interface_t *interface) {
+    ft6336_interface = *interface;
+}
+
 /**
  * @brief 复位并初始化 FT6336
  */
-uint8_t FT6336_Init(I2C_HandleTypeDef *hi2c) {
-    FT6336_RST_Clr();
-    HAL_Delay(10);
-    FT6336_RST_Set();
-    HAL_Delay(100);
+uint8_t FT6336_Init(void) {
+    ft6336_interface.set_res_pin(0);
+    ft6336_interface.delay_ms(10);
+    ft6336_interface.set_res_pin(1);
+    ft6336_interface.delay_ms(100);
 
     uint8_t id = 0;
     // 尝试读取 ID 或 模式寄存器，检查通信是否正常
-    if (HAL_I2C_Mem_Read(hi2c, FT6336_ADDR, FT_REG_MODE, I2C_MEMADD_SIZE_8BIT, &id, 1, 100) != HAL_OK) {
+    if (ft6336_interface.i2c_mem_read(FT6336_ADDR, FT_REG_MODE, &id, 1, 100) != HAL_OK) {
         return 0; // 初始化失败
     }
     return 1; // 初始化成功
@@ -21,11 +31,11 @@ uint8_t FT6336_Init(I2C_HandleTypeDef *hi2c) {
  * @brief 读取当前触摸坐标
  * @return 1: 有触摸, 0: 无触摸
  */
-uint8_t FT6336_Read_Touch(I2C_HandleTypeDef *hi2c, FT6336_State_t *state) {
+uint8_t FT6336_Read_Touch(FT6336_State_t *state) {
     uint8_t data[6]; // 用于存放读取的 0x02~0x07 寄存器数据
     
     // 连续读取从 0x02 开始的 6 个字节
-    if (HAL_I2C_Mem_Read(hi2c, FT6336_ADDR, FT_REG_NUM_TOUCHES, I2C_MEMADD_SIZE_8BIT, data, 6, 100) != HAL_OK) {
+    if (ft6336_interface.i2c_mem_read(FT6336_ADDR, FT_REG_NUM_TOUCHES, data, 6, 100) != HAL_OK) {
         state->touched = 0;
         return 0;
     }

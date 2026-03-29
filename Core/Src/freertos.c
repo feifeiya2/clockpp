@@ -27,7 +27,7 @@
 /* USER CODE BEGIN Includes */
 #include <stdio.h>
 #include "display_wrapper.h"
-#include "ft6336.h"
+#include "touch_posting.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -194,11 +194,12 @@ void StartDefaultTask(void *argument)
   /* Infinite loop */
   FT6336_State_t ft_state;
 	HAL_UART_Receive_IT(&huart1, g_data, 1);
-  FT6336_Init(&hi2c1);
+  Touch_Posting_Init();
+  FT6336_Init();
 
 	for(;;)
 	{
-    FT6336_Read_Touch(&hi2c1, &ft_state);
+    FT6336_Read_Touch(&ft_state);
     if(ft_state.touched) {
       printf("x: %d, y: %d\n", ft_state.x, ft_state.y);
     }
