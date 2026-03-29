@@ -36,6 +36,8 @@ clockpp\touch_posting.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 clockpp\touch_posting.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
 clockpp\touch_posting.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 clockpp\touch_posting.o: ./bsp_driver/ft6336.h
+clockpp\touch_posting.o: ./bsp_wrapper/touch_wrapper.h
+clockpp\touch_posting.o: ./bsp_posting/touch_posting.h
 clockpp\touch_posting.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
 clockpp\touch_posting.o: ../Core/Inc/FreeRTOSConfig.h
 clockpp\touch_posting.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h

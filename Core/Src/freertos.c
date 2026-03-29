@@ -27,7 +27,7 @@
 /* USER CODE BEGIN Includes */
 #include <stdio.h>
 #include "display_wrapper.h"
-#include "touch_posting.h"
+#include "touch_wrapper.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -192,16 +192,15 @@ void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
   /* Infinite loop */
-  FT6336_State_t ft_state;
+  Touch_Data_t touch_state;
 	HAL_UART_Receive_IT(&huart1, g_data, 1);
-  Touch_Posting_Init();
-  FT6336_Init();
+  Touch_Init();
 
 	for(;;)
 	{
-    FT6336_Read_Touch(&ft_state);
-    if(ft_state.touched) {
-      printf("x: %d, y: %d\n", ft_state.x, ft_state.y);
+    Touch_Read(&touch_state);
+    if(touch_state.is_pressed) {
+      printf("x: %d, y: %d\n", touch_state.x, touch_state.y);
     }
 
 		// HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);

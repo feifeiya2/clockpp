@@ -28,16 +28,16 @@ typedef struct {
 #define FT_REG_Y1_H         0x05    // 第一个坐标 Y 高位
 #define FT_REG_Y1_L         0x06    // 第一个坐标 Y 低位
 
-// 触摸状态结构体
+// 触摸数据结构体
 typedef struct {
     uint8_t  touched; // 0-未按下，1-按下
     uint16_t x;
     uint16_t y;
-} FT6336_State_t;
+} FT6336_Data_t;
 
 // 函数声明
-uint8_t FT6336_Init(void);
-uint8_t FT6336_Read_Touch(FT6336_State_t *state);
+void FT6336_Init(void);
+uint8_t FT6336_Read_Touch(FT6336_Data_t *state);
 void FT6336_register_interface(FT6336_Interface_t *interface);
 
 #endif /* __FT6336_H */

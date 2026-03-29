@@ -3,6 +3,7 @@
 
 #include "main.h"
 #include "ft6336.h"
+#include "touch_wrapper.h"
 #include "FreeRTOS.h"
 #include "task.h"
 #include "cmsis_os.h"
