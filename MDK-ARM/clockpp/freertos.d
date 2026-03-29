@@ -179,4 +179,8 @@ clockpp\freertos.o: ../Middlewares/Third_Party/Lvgl/lvgl/src/extra/widgets/color
 clockpp\freertos.o: ../Middlewares/Third_Party/Lvgl/lvgl/src/extra/widgets/led/lv_led.h
 clockpp\freertos.o: ../Middlewares/Third_Party/Lvgl/lvgl/src/extra/widgets/imgbtn/lv_imgbtn.h
 clockpp\freertos.o: ../Middlewares/Third_Party/Lvgl/lvgl/src/extra/widgets/span/lv_span.h
+clockpp\freertos.o: ./bsp_wrapper/touch_wrapper.h
+clockpp\freertos.o: ./bsp_posting/touch_posting.h
 clockpp\freertos.o: ./bsp_driver/ft6336.h
+clockpp\freertos.o: ./bsp_wrapper/touch_wrapper.h
+clockpp\freertos.o: ../Middlewares/Third_Party/Lvgl/lv_porting/lv_port_indev.h
