@@ -28,6 +28,7 @@
 #include <stdio.h>
 #include "display_wrapper.h"
 #include "touch_wrapper.h"
+#include "lv_port_indev.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -63,7 +64,7 @@ const osThreadAttr_t defaultTask_attributes = {
 void lvgl_test_task(void *argument) {
     lv_init();              // 1. LVGL 初始化
     lv_port_disp_init();    // 2. 显示接口初始化 (这内部会调 Display_Init)
-
+    lv_port_indev_init();   // 触摸注册
     // 3. 简单测试：画一个标签
     lv_obj_t * label = lv_label_create(lv_scr_act());
     lv_label_set_text(label, "Hello feifeiya1, let's go!");
@@ -171,7 +172,7 @@ void MX_FREERTOS_Init(void) {
 
 
   
-  //xTaskCreate(lvgl_test_task, "lvgl_test_task", 2048, NULL, 1, NULL);
+  xTaskCreate(lvgl_test_task, "lvgl_test_task", 2048, NULL, 1, NULL);
 
   /* USER CODE END RTOS_THREADS */
 
@@ -192,21 +193,15 @@ void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
   /* Infinite loop */
-  Touch_Data_t touch_state;
 	HAL_UART_Receive_IT(&huart1, g_data, 1);
-  Touch_Init();
+
 
 	for(;;)
 	{
-    Touch_Read(&touch_state);
-    if(touch_state.is_pressed) {
-      printf("x: %d, y: %d\n", touch_state.x, touch_state.y);
-    }
-
-		// HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
-		// vTaskDelay(500);
-		// HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_SET);
-		// vTaskDelay(500);
+		HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
+		vTaskDelay(500);
+		HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_SET);
+		vTaskDelay(500);
 	}	
   /* USER CODE END StartDefaultTask */
 }
