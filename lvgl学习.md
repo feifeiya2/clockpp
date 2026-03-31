@@ -129,3 +129,17 @@ void HAL_SPI_TxCpltCallback(SPI_HandleTypeDef *hspi) {
         }
     }
     ```
+
+# 模拟环境搭建
+
+![image-20260331221343862](C:/Users/陈嘉飞/AppData/Roaming/Typora/typora-user-images/image-20260331221343862.png)
+
+github 地址
+
+```
+https://github.com/feifeiya2/lvgl_simulator.git
+```
+
+选择工具包
+
+![image-20260331223225729](C:/Users/陈嘉飞/AppData/Roaming/Typora/typora-user-images/image-20260331223225729.png)
