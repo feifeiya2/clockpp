@@ -1,0 +1,12 @@
+clockpp\lv_draw_nanovg.o: ../Middlewares/Third_Party/Lvgl/src/draw/nanovg/lv_draw_nanovg.c
+clockpp\lv_draw_nanovg.o: ../Middlewares/Third_Party/Lvgl/src/draw/nanovg/lv_draw_nanovg.h
+clockpp\lv_draw_nanovg.o: ../Middlewares/Third_Party/Lvgl/src/draw/nanovg/../../misc/lv_types.h
+clockpp\lv_draw_nanovg.o: ../Middlewares/Third_Party/Lvgl/src/draw/nanovg/../../misc/../lv_conf_internal.h
+clockpp\lv_draw_nanovg.o: ../Middlewares/Third_Party/Lvgl/src/draw/nanovg/../../misc/../lv_conf_kconfig.h
+clockpp\lv_draw_nanovg.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_draw_nanovg.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+clockpp\lv_draw_nanovg.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
+clockpp\lv_draw_nanovg.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdbool.h
+clockpp\lv_draw_nanovg.o: D:\keil5\ARM\ARMCC\Bin\..\include\inttypes.h
+clockpp\lv_draw_nanovg.o: D:\keil5\ARM\ARMCC\Bin\..\include\limits.h
+clockpp\lv_draw_nanovg.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdarg.h

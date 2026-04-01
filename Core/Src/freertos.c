@@ -61,19 +61,66 @@ const osThreadAttr_t defaultTask_attributes = {
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
-void lvgl_test_task(void *argument) {
-    lv_init();              // 1. LVGL 初始化
-    lv_port_disp_init();    // 2. 显示接口初始化 (这内部会调 Display_Init)
-    lv_port_indev_init();   // 触摸注册
-    // 3. 简单测试：画一个标签
-    lv_obj_t * label = lv_label_create(lv_scr_act());
-    lv_label_set_text(label, "Hello feifeiya1, let's go!");
+#include "lvgl.h"
+#include "lv_port_disp.h"
+
+/**
+ * @brief 简单的按钮事件回调，用于测试触摸是否正常
+ */
+static void btn_event_cb(lv_event_t * e)
+{
+    lv_event_code_t code = lv_event_get_code(e);
+    if(code == LV_EVENT_CLICKED) {
+        printf("Button clicked\r\n"); // 如果开了日志，串口会打印
+        
+        // 点击后改变按钮文字
+        lv_obj_t * label = lv_obj_get_child(lv_event_get_target(e), 0);
+        lv_label_set_text(label, "Clicked!");
+    }
+}
+
+/**
+ * @brief LVGL v9.5 测试任务
+ */
+void lvgl_test_task(void *argument) 
+{
+    /* 1. LVGL 核心库初始化 */
+    lv_init();
+
+    /* 2. 注册显示驱动 (内部会调用 Display_Init) */
+    lv_port_disp_init();
+
+    /* 3. 注册输入驱动 (触摸屏) */
+    lv_port_indev_init();
+
+    /* 4. 创建 UI 测试界面 */
+    // v9 中建议使用 lv_screen_active() 替代 lv_scr_act()
+    lv_obj_t * screen = lv_screen_active(); 
+
+    // 创建一个按钮测试触摸 (v9 中 lv_btn_create 改为 lv_button_create)
+    lv_obj_t * btn = lv_button_create(screen);
+    lv_obj_set_size(btn, 150, 60);
+    lv_obj_center(btn);
+    lv_obj_add_event_cb(btn, btn_event_cb, LV_EVENT_ALL, NULL);
+
+    // 在按钮里放个标签
+    lv_obj_t * label = lv_label_create(btn);
+    lv_label_set_text(label, "LVGL v9.5 Go!");
     lv_obj_center(label);
 
-
+    /* 5. 任务主循环 */
     for(;;) {
-        lv_timer_handler(); // 4. LVGL 引擎运行
-        vTaskDelay(5);         // 5. 稍微延时，给其他任务留时间
+        /* 
+         * lv_timer_handler() 在 v9 中会返回下一次任务执行需要的毫秒数。
+         * 这是一个优化点，你可以根据返回值来动态调整 vTaskDelay。
+         * 为了简单稳定，这里依然使用固定的 5-10ms 延时。
+         */
+        uint32_t sleep_ms = lv_timer_handler();
+        
+        if(sleep_ms < 5) sleep_ms = 5;   // 至少延时 5ms
+        if(sleep_ms > 50) sleep_ms = 50; // 最多延时 50ms，防止任务长时间不响应
+        
+        vTaskDelay(pdMS_TO_TICKS(sleep_ms));
     }
 }
 /* USER CODE END FunctionPrototypes */

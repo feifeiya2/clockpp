@@ -1,0 +1,17 @@
+clockpp\decomp_raw.o: ../Middlewares/Third_Party/Lvgl/src/libs/frogfs/src/decomp_raw.c
+clockpp\decomp_raw.o: ../Middlewares/Third_Party/Lvgl/src/libs/frogfs/src/../../../lv_conf_internal.h
+clockpp\decomp_raw.o: ../Middlewares/Third_Party/Lvgl/src/libs/frogfs/src/../../../lv_conf_kconfig.h
+clockpp\decomp_raw.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\decomp_raw.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
+clockpp\decomp_raw.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+clockpp\decomp_raw.o: ../Middlewares/Third_Party/Lvgl/src/libs/frogfs/src/../../../stdlib/lv_string.h
+clockpp\decomp_raw.o: ../Middlewares/Third_Party/Lvgl/src/libs/frogfs/src/../../../stdlib/../misc/lv_types.h
+clockpp\decomp_raw.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdbool.h
+clockpp\decomp_raw.o: D:\keil5\ARM\ARMCC\Bin\..\include\inttypes.h
+clockpp\decomp_raw.o: D:\keil5\ARM\ARMCC\Bin\..\include\limits.h
+clockpp\decomp_raw.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdarg.h
+clockpp\decomp_raw.o: ../Middlewares/Third_Party/Lvgl/src/libs/frogfs/src/../../../misc/lv_fs.h
+clockpp\decomp_raw.o: ../Middlewares/Third_Party/Lvgl/src/libs/frogfs/src/frogfs_priv.h
+clockpp\decomp_raw.o: ../Middlewares/Third_Party/Lvgl/src/libs/frogfs/src/../include/frogfs/frogfs_types.h
+clockpp\decomp_raw.o: ../Middlewares/Third_Party/Lvgl/src/libs/frogfs/src/../include/frogfs/frogfs.h
+clockpp\decomp_raw.o: ../Middlewares/Third_Party/Lvgl/src/libs/frogfs/src/frogfs_format.h

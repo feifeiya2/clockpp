@@ -58,12 +58,23 @@ void Display_Posting_Init(void) {
 // 这是一个全局变量，在 lv_port_disp.c 里定义一个 extern 指针指向 disp_drv 也可以
 // 或者直接用 lv_disp_flush_ready(disp_drv)
 
+
 void HAL_SPI_TxCpltCallback(SPI_HandleTypeDef *hspi) {
-    if (hspi->Instance == SPI2) {
-        Port_Set_CS_Pin(1); // 拉高片选
-        
-        // 关键：告诉 LVGL，这一块数据 DMA 发完了
-        lv_disp_t * disp = _lv_refr_get_disp_refreshing();
-        lv_disp_flush_ready(disp->driver);
+    if (hspi->Instance == SPI2) { // 根据你的 SPI 修改
+        Port_Set_DC_Pin(1); // 拉高片选
+
+        /* 【关键】LVGL v9.x 的写法 */
+        lv_display_t * disp = lv_display_get_default(); // 获取默认显示器
+        lv_display_flush_ready(disp); // 通知刷新完成
     }
 }
+
+// void HAL_SPI_TxCpltCallback(SPI_HandleTypeDef *hspi) {
+//     if (hspi->Instance == SPI2) {
+//         Port_Set_CS_Pin(1); // 拉高片选
+        
+//         // 关键：告诉 LVGL，这一块数据 DMA 发完了
+//         //lv_disp_t * disp = _lv_refr_get_disp_refreshing();
+//        // lv_disp_flush_ready(disp->driver);
+//     }
+// }

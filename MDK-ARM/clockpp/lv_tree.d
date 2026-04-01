@@ -1,0 +1,16 @@
+clockpp\lv_tree.o: ../Middlewares/Third_Party/Lvgl/src/misc/lv_tree.c
+clockpp\lv_tree.o: ../Middlewares/Third_Party/Lvgl/src/misc/lv_tree.h
+clockpp\lv_tree.o: ../Middlewares/Third_Party/Lvgl/src/misc/lv_types.h
+clockpp\lv_tree.o: ../Middlewares/Third_Party/Lvgl/src/misc/../lv_conf_internal.h
+clockpp\lv_tree.o: ../Middlewares/Third_Party/Lvgl/src/misc/../lv_conf_kconfig.h
+clockpp\lv_tree.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_tree.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+clockpp\lv_tree.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
+clockpp\lv_tree.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdbool.h
+clockpp\lv_tree.o: D:\keil5\ARM\ARMCC\Bin\..\include\inttypes.h
+clockpp\lv_tree.o: D:\keil5\ARM\ARMCC\Bin\..\include\limits.h
+clockpp\lv_tree.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdarg.h
+clockpp\lv_tree.o: ../Middlewares/Third_Party/Lvgl/src/misc/../stdlib/lv_mem.h
+clockpp\lv_tree.o: ../Middlewares/Third_Party/Lvgl/src/misc/../stdlib/lv_string.h
+clockpp\lv_tree.o: ../Middlewares/Third_Party/Lvgl/src/misc/lv_assert.h
+clockpp\lv_tree.o: ../Middlewares/Third_Party/Lvgl/src/misc/lv_log.h
