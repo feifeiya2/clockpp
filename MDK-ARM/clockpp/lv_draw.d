@@ -90,9 +90,10 @@ clockpp\lv_draw.o: ../Middlewares/Third_Party/Lvgl/src/draw/../display/../core/l
 clockpp\lv_draw.o: ../Middlewares/Third_Party/Lvgl/src/draw/../display/../core/lv_obj_event.h
 clockpp\lv_draw.o: ../Middlewares/Third_Party/Lvgl/src/draw/../display/../core/../indev/lv_indev.h
 clockpp\lv_draw.o: ../Middlewares/Third_Party/Lvgl/src/draw/../display/../core/../indev/../core/lv_group.h
+clockpp\lv_draw.o: ../Middlewares/Third_Party/Lvgl/src/draw/../display/../debugging/sysmon/lv_sysmon_private.h
+clockpp\lv_draw.o: ../Middlewares/Third_Party/Lvgl/src/draw/../display/../debugging/sysmon/lv_sysmon.h
+clockpp\lv_draw.o: ../Middlewares/Third_Party/Lvgl/src/draw/../display/../debugging/sysmon/../../core/lv_observer.h
 clockpp\lv_draw.o: ../Middlewares/Third_Party/Lvgl/src/draw/../core/lv_global.h
-clockpp\lv_draw.o: ../Middlewares/Third_Party/Lvgl/src/draw/../core/../debugging/sysmon/lv_sysmon.h
-clockpp\lv_draw.o: ../Middlewares/Third_Party/Lvgl/src/draw/../core/../debugging/sysmon/../../core/lv_observer.h
 clockpp\lv_draw.o: ../Middlewares/Third_Party/Lvgl/src/draw/../core/../stdlib/builtin/lv_tlsf.h
 clockpp\lv_draw.o: ../Middlewares/Third_Party/Lvgl/src/draw/../core/../misc/lv_timer_private.h
 clockpp\lv_draw.o: ../Middlewares/Third_Party/Lvgl/src/draw/../core/../misc/lv_anim_private.h
@@ -102,7 +103,6 @@ clockpp\lv_draw.o: ../Middlewares/Third_Party/Lvgl/src/draw/../core/../draw/sw/l
 clockpp\lv_draw.o: ../Middlewares/Third_Party/Lvgl/src/draw/../core/../draw/sw/lv_draw_sw_mask_private.h
 clockpp\lv_draw.o: ../Middlewares/Third_Party/Lvgl/src/draw/../core/../stdlib/builtin/lv_tlsf_private.h
 clockpp\lv_draw.o: ../Middlewares/Third_Party/Lvgl/src/draw/../core/../stdlib/builtin/lv_tlsf.h
-clockpp\lv_draw.o: ../Middlewares/Third_Party/Lvgl/src/draw/../core/../debugging/sysmon/lv_sysmon_private.h
 clockpp\lv_draw.o: ../Middlewares/Third_Party/Lvgl/src/draw/../core/../debugging/test/lv_test_private.h
 clockpp\lv_draw.o: ../Middlewares/Third_Party/Lvgl/src/draw/../core/../layouts/lv_layout_private.h
 clockpp\lv_draw.o: ../Middlewares/Third_Party/Lvgl/src/draw/../core/lv_refr_private.h

@@ -75,6 +75,9 @@ clockpp\lv_refr.o: ../Middlewares/Third_Party/Lvgl/src/core/../draw/lv_draw_mask
 clockpp\lv_refr.o: ../Middlewares/Third_Party/Lvgl/src/core/lv_obj_private.h
 clockpp\lv_refr.o: ../Middlewares/Third_Party/Lvgl/src/core/lv_obj_event_private.h
 clockpp\lv_refr.o: ../Middlewares/Third_Party/Lvgl/src/core/../display/lv_display_private.h
+clockpp\lv_refr.o: ../Middlewares/Third_Party/Lvgl/src/core/../display/../debugging/sysmon/lv_sysmon_private.h
+clockpp\lv_refr.o: ../Middlewares/Third_Party/Lvgl/src/core/../display/../debugging/sysmon/lv_sysmon.h
+clockpp\lv_refr.o: ../Middlewares/Third_Party/Lvgl/src/core/../display/../debugging/sysmon/../../core/lv_observer.h
 clockpp\lv_refr.o: ../Middlewares/Third_Party/Lvgl/src/core/../misc/lv_timer_private.h
 clockpp\lv_refr.o: ../Middlewares/Third_Party/Lvgl/src/core/../draw/lv_draw_private.h
 clockpp\lv_refr.o: ../Middlewares/Third_Party/Lvgl/src/core/../draw/../osal/lv_os_private.h
@@ -95,8 +98,6 @@ clockpp\lv_refr.o: ../Middlewares/Third_Party/Lvgl/src/core/../draw/sw/lv_draw_s
 clockpp\lv_refr.o: ../Middlewares/Third_Party/Lvgl/src/core/../draw/sw/../lv_draw_vector.h
 clockpp\lv_refr.o: ../Middlewares/Third_Party/Lvgl/src/core/../draw/sw/lv_draw_sw_utils.h
 clockpp\lv_refr.o: ../Middlewares/Third_Party/Lvgl/src/core/../draw/sw/blend/lv_draw_sw_blend.h
-clockpp\lv_refr.o: ../Middlewares/Third_Party/Lvgl/src/core/../debugging/sysmon/lv_sysmon.h
-clockpp\lv_refr.o: ../Middlewares/Third_Party/Lvgl/src/core/../debugging/sysmon/../../core/lv_observer.h
 clockpp\lv_refr.o: ../Middlewares/Third_Party/Lvgl/src/core/../stdlib/builtin/lv_tlsf.h
 clockpp\lv_refr.o: ../Middlewares/Third_Party/Lvgl/src/core/../misc/lv_anim_private.h
 clockpp\lv_refr.o: ../Middlewares/Third_Party/Lvgl/src/core/../tick/lv_tick_private.h
@@ -104,6 +105,5 @@ clockpp\lv_refr.o: ../Middlewares/Third_Party/Lvgl/src/core/../draw/lv_draw_buf_
 clockpp\lv_refr.o: ../Middlewares/Third_Party/Lvgl/src/core/../draw/sw/lv_draw_sw_private.h
 clockpp\lv_refr.o: ../Middlewares/Third_Party/Lvgl/src/core/../stdlib/builtin/lv_tlsf_private.h
 clockpp\lv_refr.o: ../Middlewares/Third_Party/Lvgl/src/core/../stdlib/builtin/lv_tlsf.h
-clockpp\lv_refr.o: ../Middlewares/Third_Party/Lvgl/src/core/../debugging/sysmon/lv_sysmon_private.h
 clockpp\lv_refr.o: ../Middlewares/Third_Party/Lvgl/src/core/../debugging/test/lv_test_private.h
 clockpp\lv_refr.o: ../Middlewares/Third_Party/Lvgl/src/core/../layouts/lv_layout_private.h

@@ -76,6 +76,9 @@ clockpp\lv_obj.o: ../Middlewares/Third_Party/Lvgl/src/core/../indev/lv_indev_scr
 clockpp\lv_obj.o: ../Middlewares/Third_Party/Lvgl/src/core/../indev/lv_indev_gesture.h
 clockpp\lv_obj.o: ../Middlewares/Third_Party/Lvgl/src/core/lv_refr.h
 clockpp\lv_obj.o: ../Middlewares/Third_Party/Lvgl/src/core/../display/lv_display_private.h
+clockpp\lv_obj.o: ../Middlewares/Third_Party/Lvgl/src/core/../display/../debugging/sysmon/lv_sysmon_private.h
+clockpp\lv_obj.o: ../Middlewares/Third_Party/Lvgl/src/core/../display/../debugging/sysmon/lv_sysmon.h
+clockpp\lv_obj.o: ../Middlewares/Third_Party/Lvgl/src/core/../display/../debugging/sysmon/../../core/lv_observer.h
 clockpp\lv_obj.o: ../Middlewares/Third_Party/Lvgl/src/core/../themes/lv_theme.h
 clockpp\lv_obj.o: ../Middlewares/Third_Party/Lvgl/src/core/../themes/default/lv_theme_default.h
 clockpp\lv_obj.o: ../Middlewares/Third_Party/Lvgl/src/core/../themes/default/../lv_theme.h

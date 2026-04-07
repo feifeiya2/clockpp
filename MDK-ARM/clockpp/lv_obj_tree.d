@@ -71,6 +71,9 @@ clockpp\lv_obj_tree.o: ../Middlewares/Third_Party/Lvgl/src/core/../indev/lv_inde
 clockpp\lv_obj_tree.o: ../Middlewares/Third_Party/Lvgl/src/core/../indev/lv_indev_scroll.h
 clockpp\lv_obj_tree.o: ../Middlewares/Third_Party/Lvgl/src/core/../indev/lv_indev_gesture.h
 clockpp\lv_obj_tree.o: ../Middlewares/Third_Party/Lvgl/src/core/../display/lv_display_private.h
+clockpp\lv_obj_tree.o: ../Middlewares/Third_Party/Lvgl/src/core/../display/../debugging/sysmon/lv_sysmon_private.h
+clockpp\lv_obj_tree.o: ../Middlewares/Third_Party/Lvgl/src/core/../display/../debugging/sysmon/lv_sysmon.h
+clockpp\lv_obj_tree.o: ../Middlewares/Third_Party/Lvgl/src/core/../display/../debugging/sysmon/../../core/lv_observer.h
 clockpp\lv_obj_tree.o: ../Middlewares/Third_Party/Lvgl/src/core/../misc/lv_anim_private.h
 clockpp\lv_obj_tree.o: ../Middlewares/Third_Party/Lvgl/src/core/../misc/lv_async.h
 clockpp\lv_obj_tree.o: ../Middlewares/Third_Party/Lvgl/src/core/../core/lv_global.h
@@ -83,8 +86,6 @@ clockpp\lv_obj_tree.o: ../Middlewares/Third_Party/Lvgl/src/core/../core/../draw/
 clockpp\lv_obj_tree.o: ../Middlewares/Third_Party/Lvgl/src/core/../core/../osal/lv_os_private.h
 clockpp\lv_obj_tree.o: ../Middlewares/Third_Party/Lvgl/src/core/../core/../osal/lv_os.h
 clockpp\lv_obj_tree.o: ../Middlewares/Third_Party/Lvgl/src/core/../core/../osal/lv_os_none.h
-clockpp\lv_obj_tree.o: ../Middlewares/Third_Party/Lvgl/src/core/../core/../debugging/sysmon/lv_sysmon.h
-clockpp\lv_obj_tree.o: ../Middlewares/Third_Party/Lvgl/src/core/../core/../debugging/sysmon/../../core/lv_observer.h
 clockpp\lv_obj_tree.o: ../Middlewares/Third_Party/Lvgl/src/core/../core/../stdlib/builtin/lv_tlsf.h
 clockpp\lv_obj_tree.o: ../Middlewares/Third_Party/Lvgl/src/core/../core/../misc/lv_timer_private.h
 clockpp\lv_obj_tree.o: ../Middlewares/Third_Party/Lvgl/src/core/../core/../tick/lv_tick_private.h
@@ -104,6 +105,5 @@ clockpp\lv_obj_tree.o: ../Middlewares/Third_Party/Lvgl/src/core/../core/../draw/
 clockpp\lv_obj_tree.o: ../Middlewares/Third_Party/Lvgl/src/core/../core/../draw/sw/lv_draw_sw_mask_private.h
 clockpp\lv_obj_tree.o: ../Middlewares/Third_Party/Lvgl/src/core/../core/../stdlib/builtin/lv_tlsf_private.h
 clockpp\lv_obj_tree.o: ../Middlewares/Third_Party/Lvgl/src/core/../core/../stdlib/builtin/lv_tlsf.h
-clockpp\lv_obj_tree.o: ../Middlewares/Third_Party/Lvgl/src/core/../core/../debugging/sysmon/lv_sysmon_private.h
 clockpp\lv_obj_tree.o: ../Middlewares/Third_Party/Lvgl/src/core/../core/../debugging/test/lv_test_private.h
 clockpp\lv_obj_tree.o: ../Middlewares/Third_Party/Lvgl/src/core/../core/../layouts/lv_layout_private.h

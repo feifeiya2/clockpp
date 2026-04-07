@@ -63,7 +63,6 @@ void lv_port_disp_init(void)
      * -----------------------------------*/
     lv_display_t * disp = lv_display_create(MY_DISP_HOR_RES, MY_DISP_VER_RES);
     lv_display_set_flush_cb(disp, disp_flush);
-
     // /* Example 1
     //  * One buffer for partial rendering*/
     // LV_ATTRIBUTE_MEM_ALIGN

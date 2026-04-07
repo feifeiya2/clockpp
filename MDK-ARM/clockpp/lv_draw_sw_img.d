@@ -90,11 +90,12 @@ clockpp\lv_draw_sw_img.o: ../Middlewares/Third_Party/Lvgl/src/draw/sw/../../disp
 clockpp\lv_draw_sw_img.o: ../Middlewares/Third_Party/Lvgl/src/draw/sw/../../display/../core/lv_obj_event.h
 clockpp\lv_draw_sw_img.o: ../Middlewares/Third_Party/Lvgl/src/draw/sw/../../display/../core/../indev/lv_indev.h
 clockpp\lv_draw_sw_img.o: ../Middlewares/Third_Party/Lvgl/src/draw/sw/../../display/../core/../indev/../core/lv_group.h
+clockpp\lv_draw_sw_img.o: ../Middlewares/Third_Party/Lvgl/src/draw/sw/../../display/../debugging/sysmon/lv_sysmon_private.h
+clockpp\lv_draw_sw_img.o: ../Middlewares/Third_Party/Lvgl/src/draw/sw/../../display/../debugging/sysmon/lv_sysmon.h
+clockpp\lv_draw_sw_img.o: ../Middlewares/Third_Party/Lvgl/src/draw/sw/../../display/../debugging/sysmon/../../core/lv_observer.h
 clockpp\lv_draw_sw_img.o: ../Middlewares/Third_Party/Lvgl/src/draw/sw/../../core/lv_refr_private.h
 clockpp\lv_draw_sw_img.o: ../Middlewares/Third_Party/Lvgl/src/draw/sw/../../core/lv_refr.h
 clockpp\lv_draw_sw_img.o: ../Middlewares/Third_Party/Lvgl/src/draw/sw/../../core/lv_global.h
-clockpp\lv_draw_sw_img.o: ../Middlewares/Third_Party/Lvgl/src/draw/sw/../../core/../debugging/sysmon/lv_sysmon.h
-clockpp\lv_draw_sw_img.o: ../Middlewares/Third_Party/Lvgl/src/draw/sw/../../core/../debugging/sysmon/../../core/lv_observer.h
 clockpp\lv_draw_sw_img.o: ../Middlewares/Third_Party/Lvgl/src/draw/sw/../../core/../stdlib/builtin/lv_tlsf.h
 clockpp\lv_draw_sw_img.o: ../Middlewares/Third_Party/Lvgl/src/draw/sw/../../core/../misc/lv_timer_private.h
 clockpp\lv_draw_sw_img.o: ../Middlewares/Third_Party/Lvgl/src/draw/sw/../../core/../misc/lv_anim_private.h
@@ -104,6 +105,5 @@ clockpp\lv_draw_sw_img.o: ../Middlewares/Third_Party/Lvgl/src/draw/sw/../../core
 clockpp\lv_draw_sw_img.o: ../Middlewares/Third_Party/Lvgl/src/draw/sw/../../core/../draw/sw/lv_draw_sw_mask_private.h
 clockpp\lv_draw_sw_img.o: ../Middlewares/Third_Party/Lvgl/src/draw/sw/../../core/../stdlib/builtin/lv_tlsf_private.h
 clockpp\lv_draw_sw_img.o: ../Middlewares/Third_Party/Lvgl/src/draw/sw/../../core/../stdlib/builtin/lv_tlsf.h
-clockpp\lv_draw_sw_img.o: ../Middlewares/Third_Party/Lvgl/src/draw/sw/../../core/../debugging/sysmon/lv_sysmon_private.h
 clockpp\lv_draw_sw_img.o: ../Middlewares/Third_Party/Lvgl/src/draw/sw/../../core/../debugging/test/lv_test_private.h
 clockpp\lv_draw_sw_img.o: ../Middlewares/Third_Party/Lvgl/src/draw/sw/../../core/../layouts/lv_layout_private.h

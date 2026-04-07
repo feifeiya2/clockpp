@@ -72,6 +72,9 @@ clockpp\lv_obj_pos.o: ../Middlewares/Third_Party/Lvgl/src/core/lv_obj_scroll.h
 clockpp\lv_obj_pos.o: ../Middlewares/Third_Party/Lvgl/src/core/lv_obj_class.h
 clockpp\lv_obj_pos.o: ../Middlewares/Third_Party/Lvgl/src/core/lv_obj_property.h
 clockpp\lv_obj_pos.o: ../Middlewares/Third_Party/Lvgl/src/core/../display/lv_display_private.h
+clockpp\lv_obj_pos.o: ../Middlewares/Third_Party/Lvgl/src/core/../display/../debugging/sysmon/lv_sysmon_private.h
+clockpp\lv_obj_pos.o: ../Middlewares/Third_Party/Lvgl/src/core/../display/../debugging/sysmon/lv_sysmon.h
+clockpp\lv_obj_pos.o: ../Middlewares/Third_Party/Lvgl/src/core/../display/../debugging/sysmon/../../core/lv_observer.h
 clockpp\lv_obj_pos.o: ../Middlewares/Third_Party/Lvgl/src/core/lv_refr_private.h
 clockpp\lv_obj_pos.o: ../Middlewares/Third_Party/Lvgl/src/core/lv_refr.h
 clockpp\lv_obj_pos.o: ../Middlewares/Third_Party/Lvgl/src/core/../core/lv_global.h
@@ -84,8 +87,6 @@ clockpp\lv_obj_pos.o: ../Middlewares/Third_Party/Lvgl/src/core/../core/../draw/s
 clockpp\lv_obj_pos.o: ../Middlewares/Third_Party/Lvgl/src/core/../core/../osal/lv_os_private.h
 clockpp\lv_obj_pos.o: ../Middlewares/Third_Party/Lvgl/src/core/../core/../osal/lv_os.h
 clockpp\lv_obj_pos.o: ../Middlewares/Third_Party/Lvgl/src/core/../core/../osal/lv_os_none.h
-clockpp\lv_obj_pos.o: ../Middlewares/Third_Party/Lvgl/src/core/../core/../debugging/sysmon/lv_sysmon.h
-clockpp\lv_obj_pos.o: ../Middlewares/Third_Party/Lvgl/src/core/../core/../debugging/sysmon/../../core/lv_observer.h
 clockpp\lv_obj_pos.o: ../Middlewares/Third_Party/Lvgl/src/core/../core/../stdlib/builtin/lv_tlsf.h
 clockpp\lv_obj_pos.o: ../Middlewares/Third_Party/Lvgl/src/core/../core/../misc/lv_timer_private.h
 clockpp\lv_obj_pos.o: ../Middlewares/Third_Party/Lvgl/src/core/../core/../misc/lv_anim_private.h
@@ -106,5 +107,4 @@ clockpp\lv_obj_pos.o: ../Middlewares/Third_Party/Lvgl/src/core/../core/../draw/s
 clockpp\lv_obj_pos.o: ../Middlewares/Third_Party/Lvgl/src/core/../core/../draw/sw/lv_draw_sw_mask_private.h
 clockpp\lv_obj_pos.o: ../Middlewares/Third_Party/Lvgl/src/core/../core/../stdlib/builtin/lv_tlsf_private.h
 clockpp\lv_obj_pos.o: ../Middlewares/Third_Party/Lvgl/src/core/../core/../stdlib/builtin/lv_tlsf.h
-clockpp\lv_obj_pos.o: ../Middlewares/Third_Party/Lvgl/src/core/../core/../debugging/sysmon/lv_sysmon_private.h
 clockpp\lv_obj_pos.o: ../Middlewares/Third_Party/Lvgl/src/core/../core/../debugging/test/lv_test_private.h

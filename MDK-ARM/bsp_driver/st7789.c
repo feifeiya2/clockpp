@@ -63,19 +63,44 @@ void ST7789_Init(void) {
  * 核心函数：使用DMA填充颜色
  * 用于对接 LVGL 的 flush_cb
  */
+
+#include "main.h" // 确保能调用 CMSIS 指令 __REV16
+
 void ST7789_Fill_Color(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint16_t *color) {
     uint32_t size = (x2 - x1 + 1) * (y2 - y1 + 1);
     
+    // --- 关键：手动字节交换 ---
+    // __REV16 是 Cortex-M4 的汇编指令：1个时钟周期完成高低字节翻转
+    // 它能把 0x00F8 变成 0xF800
+    for(uint32_t i = 0; i < size; i++) {
+        color[i] = __REV16(color[i]);
+    }
+    
+    // 设置窗口
     ST7789_SetAddressWindow(x1, y1, x2, y2);
     
+    // 准备发送数据
     st7789_interface.set_dc_pin(1);
     st7789_interface.set_cs_pin(0);
     
-    // 因为SPI是8位模式，发送的数据长度需要 * 2 (16位颜色)
-    // 且 LVGL 默认颜色是小端，ST7789 需要大端。
-    // 如果颜色反了，可以在 LVGL 配置里开启 LV_COLOR_16_SWAP，或者在此手动转换。
+    // 启动 DMA 发送
+    // 此时数据已经是大端格式了，ST7789 收到后文字会非常清晰
     st7789_interface.write_spi_dma((uint8_t*)color, size * 2);
 }
+ 
+// void ST7789_Fill_Color(uint16_t x1, uint16_t y1, uint16_t x2, uint16_t y2, uint16_t *color) {
+//     uint32_t size = (x2 - x1 + 1) * (y2 - y1 + 1);
+    
+//     ST7789_SetAddressWindow(x1, y1, x2, y2);
+    
+//     st7789_interface.set_dc_pin(1);
+//     st7789_interface.set_cs_pin(0);
+    
+//     // 因为SPI是8位模式，发送的数据长度需要 * 2 (16位颜色)
+//     // 且 LVGL 默认颜色是小端，ST7789 需要大端。
+//     // 如果颜色反了，可以在 LVGL 配置里开启 LV_COLOR_16_SWAP，或者在此手动转换。
+//     st7789_interface.write_spi_dma((uint8_t*)color, size * 2);
+// }
 
 /**
  * @brief 全屏填充颜色

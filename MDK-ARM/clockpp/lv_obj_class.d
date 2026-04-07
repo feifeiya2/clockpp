@@ -73,3 +73,6 @@ clockpp\lv_obj_class.o: ../Middlewares/Third_Party/Lvgl/src/core/../themes/defau
 clockpp\lv_obj_class.o: ../Middlewares/Third_Party/Lvgl/src/core/../themes/mono/lv_theme_mono.h
 clockpp\lv_obj_class.o: ../Middlewares/Third_Party/Lvgl/src/core/../themes/simple/lv_theme_simple.h
 clockpp\lv_obj_class.o: ../Middlewares/Third_Party/Lvgl/src/core/../display/lv_display_private.h
+clockpp\lv_obj_class.o: ../Middlewares/Third_Party/Lvgl/src/core/../display/../debugging/sysmon/lv_sysmon_private.h
+clockpp\lv_obj_class.o: ../Middlewares/Third_Party/Lvgl/src/core/../display/../debugging/sysmon/lv_sysmon.h
+clockpp\lv_obj_class.o: ../Middlewares/Third_Party/Lvgl/src/core/../display/../debugging/sysmon/../../core/lv_observer.h
