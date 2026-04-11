@@ -2,7 +2,7 @@ clockpp\lv_mem_core_micropython.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/mi
 clockpp\lv_mem_core_micropython.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/micropython/../lv_mem.h
 clockpp\lv_mem_core_micropython.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/micropython/../../lv_conf_internal.h
 clockpp\lv_mem_core_micropython.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/micropython/../../lv_conf_kconfig.h
-clockpp\lv_mem_core_micropython.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_mem_core_micropython.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_mem_core_micropython.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/micropython/../lv_string.h
 clockpp\lv_mem_core_micropython.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/micropython/../../misc/lv_types.h
 clockpp\lv_mem_core_micropython.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h

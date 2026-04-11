@@ -6,7 +6,7 @@ clockpp\img_lv_demo_music_logo.o: ../Middlewares/Third_Party/Lvgl/demos/music/as
 clockpp\img_lv_demo_music_logo.o: ../Middlewares/Third_Party/Lvgl/demos/music/assets/../../../src/lv_init.h
 clockpp\img_lv_demo_music_logo.o: ../Middlewares/Third_Party/Lvgl/demos/music/assets/../../../src/lv_conf_internal.h
 clockpp\img_lv_demo_music_logo.o: ../Middlewares/Third_Party/Lvgl/demos/music/assets/../../../src/lv_conf_kconfig.h
-clockpp\img_lv_demo_music_logo.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\img_lv_demo_music_logo.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\img_lv_demo_music_logo.o: ../Middlewares/Third_Party/Lvgl/demos/music/assets/../../../src/misc/lv_types.h
 clockpp\img_lv_demo_music_logo.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\img_lv_demo_music_logo.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h

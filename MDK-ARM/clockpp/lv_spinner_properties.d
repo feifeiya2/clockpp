@@ -2,7 +2,7 @@ clockpp\lv_spinner_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/pro
 clockpp\lv_spinner_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../spinner/lv_spinner.h
 clockpp\lv_spinner_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../spinner/../../lv_conf_internal.h
 clockpp\lv_spinner_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../spinner/../../lv_conf_kconfig.h
-clockpp\lv_spinner_properties.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_spinner_properties.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_spinner_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../spinner/../../misc/lv_types.h
 clockpp\lv_spinner_properties.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\lv_spinner_properties.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h

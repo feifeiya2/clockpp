@@ -4,7 +4,7 @@ clockpp\lv_tft_espi.o: ../Middlewares/Third_Party/Lvgl/src/drivers/display/tft_e
 clockpp\lv_tft_espi.o: ../Middlewares/Third_Party/Lvgl/src/drivers/display/tft_espi/../../../display/../misc/lv_types.h
 clockpp\lv_tft_espi.o: ../Middlewares/Third_Party/Lvgl/src/drivers/display/tft_espi/../../../display/../misc/../lv_conf_internal.h
 clockpp\lv_tft_espi.o: ../Middlewares/Third_Party/Lvgl/src/drivers/display/tft_espi/../../../display/../misc/../lv_conf_kconfig.h
-clockpp\lv_tft_espi.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_tft_espi.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_tft_espi.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\lv_tft_espi.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
 clockpp\lv_tft_espi.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdbool.h

@@ -3,7 +3,7 @@ clockpp\lv_font_manager.o: ../Middlewares/Third_Party/Lvgl/src/font/font_manager
 clockpp\lv_font_manager.o: ../Middlewares/Third_Party/Lvgl/src/font/font_manager/../../font/lv_font.h
 clockpp\lv_font_manager.o: ../Middlewares/Third_Party/Lvgl/src/font/font_manager/../../font/../lv_conf_internal.h
 clockpp\lv_font_manager.o: ../Middlewares/Third_Party/Lvgl/src/font/font_manager/../../font/../lv_conf_kconfig.h
-clockpp\lv_font_manager.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_font_manager.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_font_manager.o: ../Middlewares/Third_Party/Lvgl/src/font/font_manager/../../font/../misc/lv_types.h
 clockpp\lv_font_manager.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\lv_font_manager.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h

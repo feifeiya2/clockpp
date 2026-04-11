@@ -6,7 +6,7 @@ clockpp\lv_demo_vector_graphic.o: ../Middlewares/Third_Party/Lvgl/demos/vector_g
 clockpp\lv_demo_vector_graphic.o: ../Middlewares/Third_Party/Lvgl/demos/vector_graphic/../../src/lv_init.h
 clockpp\lv_demo_vector_graphic.o: ../Middlewares/Third_Party/Lvgl/demos/vector_graphic/../../src/lv_conf_internal.h
 clockpp\lv_demo_vector_graphic.o: ../Middlewares/Third_Party/Lvgl/demos/vector_graphic/../../src/lv_conf_kconfig.h
-clockpp\lv_demo_vector_graphic.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_demo_vector_graphic.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_demo_vector_graphic.o: ../Middlewares/Third_Party/Lvgl/demos/vector_graphic/../../src/misc/lv_types.h
 clockpp\lv_demo_vector_graphic.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\lv_demo_vector_graphic.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h

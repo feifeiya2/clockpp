@@ -3,7 +3,7 @@ clockpp\lv_animimage_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/p
 clockpp\lv_animimage_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../animimage/../image/lv_image.h
 clockpp\lv_animimage_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../animimage/../image/../../lv_conf_internal.h
 clockpp\lv_animimage_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../animimage/../image/../../lv_conf_kconfig.h
-clockpp\lv_animimage_properties.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_animimage_properties.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_animimage_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../animimage/../image/../../core/lv_obj.h
 clockpp\lv_animimage_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../animimage/../image/../../core/../misc/lv_types.h
 clockpp\lv_animimage_properties.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h

@@ -3,7 +3,7 @@ clockpp\lv_libinput.o: ../Middlewares/Third_Party/Lvgl/src/drivers/libinput/../.
 clockpp\lv_libinput.o: ../Middlewares/Third_Party/Lvgl/src/drivers/libinput/../../indev/../misc/lv_ext_data.h
 clockpp\lv_libinput.o: ../Middlewares/Third_Party/Lvgl/src/drivers/libinput/../../indev/../misc/../lv_conf_internal.h
 clockpp\lv_libinput.o: ../Middlewares/Third_Party/Lvgl/src/drivers/libinput/../../indev/../misc/../lv_conf_kconfig.h
-clockpp\lv_libinput.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_libinput.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_libinput.o: ../Middlewares/Third_Party/Lvgl/src/drivers/libinput/../../indev/lv_indev.h
 clockpp\lv_libinput.o: ../Middlewares/Third_Party/Lvgl/src/drivers/libinput/../../indev/../core/lv_group.h
 clockpp\lv_libinput.o: ../Middlewares/Third_Party/Lvgl/src/drivers/libinput/../../indev/../core/../misc/lv_types.h

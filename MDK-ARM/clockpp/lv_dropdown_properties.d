@@ -2,7 +2,7 @@ clockpp\lv_dropdown_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/pr
 clockpp\lv_dropdown_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../dropdown/lv_dropdown.h
 clockpp\lv_dropdown_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../dropdown/../../lv_conf_internal.h
 clockpp\lv_dropdown_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../dropdown/../../lv_conf_kconfig.h
-clockpp\lv_dropdown_properties.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_dropdown_properties.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_dropdown_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../dropdown/../label/lv_label.h
 clockpp\lv_dropdown_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../dropdown/../label/../../misc/lv_types.h
 clockpp\lv_dropdown_properties.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h

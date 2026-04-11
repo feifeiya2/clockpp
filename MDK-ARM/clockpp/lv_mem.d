@@ -3,7 +3,7 @@ clockpp\lv_mem.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/lv_mem_private.h
 clockpp\lv_mem.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/lv_mem.h
 clockpp\lv_mem.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/../lv_conf_internal.h
 clockpp\lv_mem.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/../lv_conf_kconfig.h
-clockpp\lv_mem.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_mem.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_mem.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/lv_string.h
 clockpp\lv_mem.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/../misc/lv_types.h
 clockpp\lv_mem.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h

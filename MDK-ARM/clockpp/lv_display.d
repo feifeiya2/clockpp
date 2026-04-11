@@ -3,7 +3,7 @@ clockpp\lv_display.o: ../Middlewares/Third_Party/Lvgl/src/display/../display/lv_
 clockpp\lv_display.o: ../Middlewares/Third_Party/Lvgl/src/display/../display/../misc/lv_ext_data.h
 clockpp\lv_display.o: ../Middlewares/Third_Party/Lvgl/src/display/../display/../misc/../lv_conf_internal.h
 clockpp\lv_display.o: ../Middlewares/Third_Party/Lvgl/src/display/../display/../misc/../lv_conf_kconfig.h
-clockpp\lv_display.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_display.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_display.o: ../Middlewares/Third_Party/Lvgl/src/display/../display/../misc/lv_types.h
 clockpp\lv_display.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\lv_display.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h

@@ -3,4 +3,4 @@ clockpp\lv_ffmpeg.o: ../Middlewares/Third_Party/Lvgl/src/libs/ffmpeg/lv_ffmpeg_p
 clockpp\lv_ffmpeg.o: ../Middlewares/Third_Party/Lvgl/src/libs/ffmpeg/lv_ffmpeg.h
 clockpp\lv_ffmpeg.o: ../Middlewares/Third_Party/Lvgl/src/libs/ffmpeg/../../lv_conf_internal.h
 clockpp\lv_ffmpeg.o: ../Middlewares/Third_Party/Lvgl/src/libs/ffmpeg/../../lv_conf_kconfig.h
-clockpp\lv_ffmpeg.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_ffmpeg.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h

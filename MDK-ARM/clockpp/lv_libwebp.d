@@ -3,7 +3,7 @@ clockpp\lv_libwebp.o: ../Middlewares/Third_Party/Lvgl/src/libs/libwebp/../../dra
 clockpp\lv_libwebp.o: ../Middlewares/Third_Party/Lvgl/src/libs/libwebp/../../draw/lv_image_decoder.h
 clockpp\lv_libwebp.o: ../Middlewares/Third_Party/Lvgl/src/libs/libwebp/../../draw/../lv_conf_internal.h
 clockpp\lv_libwebp.o: ../Middlewares/Third_Party/Lvgl/src/libs/libwebp/../../draw/../lv_conf_kconfig.h
-clockpp\lv_libwebp.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_libwebp.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_libwebp.o: ../Middlewares/Third_Party/Lvgl/src/libs/libwebp/../../draw/lv_draw_buf.h
 clockpp\lv_libwebp.o: ../Middlewares/Third_Party/Lvgl/src/libs/libwebp/../../draw/../misc/lv_types.h
 clockpp\lv_libwebp.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h

@@ -2,7 +2,7 @@ clockpp\lv_rle.o: ../Middlewares/Third_Party/Lvgl/src/libs/rle/lv_rle.c
 clockpp\lv_rle.o: ../Middlewares/Third_Party/Lvgl/src/libs/rle/../../stdlib/lv_string.h
 clockpp\lv_rle.o: ../Middlewares/Third_Party/Lvgl/src/libs/rle/../../stdlib/../lv_conf_internal.h
 clockpp\lv_rle.o: ../Middlewares/Third_Party/Lvgl/src/libs/rle/../../stdlib/../lv_conf_kconfig.h
-clockpp\lv_rle.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_rle.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_rle.o: ../Middlewares/Third_Party/Lvgl/src/libs/rle/../../stdlib/../misc/lv_types.h
 clockpp\lv_rle.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\lv_rle.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h

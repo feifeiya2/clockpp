@@ -2,7 +2,7 @@ clockpp\lv_pthread.o: ../Middlewares/Third_Party/Lvgl/src/osal/lv_pthread.c
 clockpp\lv_pthread.o: ../Middlewares/Third_Party/Lvgl/src/osal/lv_os_private.h
 clockpp\lv_pthread.o: ../Middlewares/Third_Party/Lvgl/src/osal/../lv_conf_internal.h
 clockpp\lv_pthread.o: ../Middlewares/Third_Party/Lvgl/src/osal/../lv_conf_kconfig.h
-clockpp\lv_pthread.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_pthread.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_pthread.o: ../Middlewares/Third_Party/Lvgl/src/osal/lv_os.h
 clockpp\lv_pthread.o: ../Middlewares/Third_Party/Lvgl/src/osal/../misc/lv_types.h
 clockpp\lv_pthread.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h

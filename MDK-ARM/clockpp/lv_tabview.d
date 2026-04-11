@@ -4,7 +4,7 @@ clockpp\lv_tabview.o: ../Middlewares/Third_Party/Lvgl/src/widgets/tabview/../../
 clockpp\lv_tabview.o: ../Middlewares/Third_Party/Lvgl/src/widgets/tabview/../../core/../misc/lv_ext_data.h
 clockpp\lv_tabview.o: ../Middlewares/Third_Party/Lvgl/src/widgets/tabview/../../core/../misc/../lv_conf_internal.h
 clockpp\lv_tabview.o: ../Middlewares/Third_Party/Lvgl/src/widgets/tabview/../../core/../misc/../lv_conf_kconfig.h
-clockpp\lv_tabview.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_tabview.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_tabview.o: ../Middlewares/Third_Party/Lvgl/src/widgets/tabview/../../core/lv_obj.h
 clockpp\lv_tabview.o: ../Middlewares/Third_Party/Lvgl/src/widgets/tabview/../../core/../misc/lv_types.h
 clockpp\lv_tabview.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h

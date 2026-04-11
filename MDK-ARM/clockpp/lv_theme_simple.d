@@ -3,7 +3,7 @@ clockpp\lv_theme_simple.o: ../Middlewares/Third_Party/Lvgl/src/themes/simple/../
 clockpp\lv_theme_simple.o: ../Middlewares/Third_Party/Lvgl/src/themes/simple/../../misc/lv_ext_data.h
 clockpp\lv_theme_simple.o: ../Middlewares/Third_Party/Lvgl/src/themes/simple/../../misc/../lv_conf_internal.h
 clockpp\lv_theme_simple.o: ../Middlewares/Third_Party/Lvgl/src/themes/simple/../../misc/../lv_conf_kconfig.h
-clockpp\lv_theme_simple.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_theme_simple.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_theme_simple.o: ../Middlewares/Third_Party/Lvgl/src/themes/simple/../lv_theme.h
 clockpp\lv_theme_simple.o: ../Middlewares/Third_Party/Lvgl/src/themes/simple/../../core/lv_obj.h
 clockpp\lv_theme_simple.o: ../Middlewares/Third_Party/Lvgl/src/themes/simple/../../core/../misc/lv_types.h

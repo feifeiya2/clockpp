@@ -3,7 +3,7 @@ clockpp\lv_profiler_builtin.o: ../Middlewares/Third_Party/Lvgl/src/misc/lv_profi
 clockpp\lv_profiler_builtin.o: ../Middlewares/Third_Party/Lvgl/src/misc/lv_profiler_builtin.h
 clockpp\lv_profiler_builtin.o: ../Middlewares/Third_Party/Lvgl/src/misc/../lv_conf_internal.h
 clockpp\lv_profiler_builtin.o: ../Middlewares/Third_Party/Lvgl/src/misc/../lv_conf_kconfig.h
-clockpp\lv_profiler_builtin.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_profiler_builtin.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_profiler_builtin.o: ../Middlewares/Third_Party/Lvgl/src/misc/../lvgl.h
 clockpp\lv_profiler_builtin.o: ../Middlewares/Third_Party/Lvgl/src/misc/../../lvgl.h
 clockpp\lv_profiler_builtin.o: ../Middlewares/Third_Party/Lvgl/src/misc/../../lv_version.h

@@ -5,7 +5,7 @@ clockpp\qrcodegen.o: ../Middlewares/Third_Party/Lvgl/src/libs/qrcode/../../../lv
 clockpp\qrcodegen.o: ../Middlewares/Third_Party/Lvgl/src/libs/qrcode/../../../src/lv_init.h
 clockpp\qrcodegen.o: ../Middlewares/Third_Party/Lvgl/src/libs/qrcode/../../../src/lv_conf_internal.h
 clockpp\qrcodegen.o: ../Middlewares/Third_Party/Lvgl/src/libs/qrcode/../../../src/lv_conf_kconfig.h
-clockpp\qrcodegen.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\qrcodegen.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\qrcodegen.o: ../Middlewares/Third_Party/Lvgl/src/libs/qrcode/../../../src/misc/lv_types.h
 clockpp\qrcodegen.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\qrcodegen.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h

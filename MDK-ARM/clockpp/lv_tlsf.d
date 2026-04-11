@@ -1,7 +1,7 @@
 clockpp\lv_tlsf.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/builtin/lv_tlsf.c
 clockpp\lv_tlsf.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/builtin/../../lv_conf_internal.h
 clockpp\lv_tlsf.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/builtin/../../lv_conf_kconfig.h
-clockpp\lv_tlsf.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_tlsf.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_tlsf.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/builtin/lv_tlsf_private.h
 clockpp\lv_tlsf.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/builtin/lv_tlsf.h
 clockpp\lv_tlsf.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/builtin/../../misc/lv_ll.h

@@ -2,7 +2,7 @@ clockpp\lv_nuttx_entry.o: ../Middlewares/Third_Party/Lvgl/src/drivers/nuttx/lv_n
 clockpp\lv_nuttx_entry.o: ../Middlewares/Third_Party/Lvgl/src/drivers/nuttx/lv_nuttx_entry.h
 clockpp\lv_nuttx_entry.o: ../Middlewares/Third_Party/Lvgl/src/drivers/nuttx/../../lv_conf_internal.h
 clockpp\lv_nuttx_entry.o: ../Middlewares/Third_Party/Lvgl/src/drivers/nuttx/../../lv_conf_kconfig.h
-clockpp\lv_nuttx_entry.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_nuttx_entry.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_nuttx_entry.o: ../Middlewares/Third_Party/Lvgl/src/drivers/nuttx/../../display/lv_display.h
 clockpp\lv_nuttx_entry.o: ../Middlewares/Third_Party/Lvgl/src/drivers/nuttx/../../display/../misc/lv_types.h
 clockpp\lv_nuttx_entry.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h

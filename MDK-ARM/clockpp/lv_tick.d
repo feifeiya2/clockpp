@@ -3,7 +3,7 @@ clockpp\lv_tick.o: ../Middlewares/Third_Party/Lvgl/src/tick/lv_tick_private.h
 clockpp\lv_tick.o: ../Middlewares/Third_Party/Lvgl/src/tick/lv_tick.h
 clockpp\lv_tick.o: ../Middlewares/Third_Party/Lvgl/src/tick/../lv_conf_internal.h
 clockpp\lv_tick.o: ../Middlewares/Third_Party/Lvgl/src/tick/../lv_conf_kconfig.h
-clockpp\lv_tick.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_tick.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_tick.o: ../Middlewares/Third_Party/Lvgl/src/tick/../misc/lv_types.h
 clockpp\lv_tick.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\lv_tick.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h

@@ -5,7 +5,7 @@ clockpp\lodepng.o: ../Middlewares/Third_Party/Lvgl/src/libs/lodepng/../../../lv_
 clockpp\lodepng.o: ../Middlewares/Third_Party/Lvgl/src/libs/lodepng/../../../src/lv_init.h
 clockpp\lodepng.o: ../Middlewares/Third_Party/Lvgl/src/libs/lodepng/../../../src/lv_conf_internal.h
 clockpp\lodepng.o: ../Middlewares/Third_Party/Lvgl/src/libs/lodepng/../../../src/lv_conf_kconfig.h
-clockpp\lodepng.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lodepng.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lodepng.o: ../Middlewares/Third_Party/Lvgl/src/libs/lodepng/../../../src/misc/lv_types.h
 clockpp\lodepng.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\lodepng.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h

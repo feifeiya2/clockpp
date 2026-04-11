@@ -3,7 +3,7 @@ clockpp\lv_tjpgd.o: ../Middlewares/Third_Party/Lvgl/src/libs/tjpgd/../../draw/lv
 clockpp\lv_tjpgd.o: ../Middlewares/Third_Party/Lvgl/src/libs/tjpgd/../../draw/lv_image_decoder.h
 clockpp\lv_tjpgd.o: ../Middlewares/Third_Party/Lvgl/src/libs/tjpgd/../../draw/../lv_conf_internal.h
 clockpp\lv_tjpgd.o: ../Middlewares/Third_Party/Lvgl/src/libs/tjpgd/../../draw/../lv_conf_kconfig.h
-clockpp\lv_tjpgd.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_tjpgd.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_tjpgd.o: ../Middlewares/Third_Party/Lvgl/src/libs/tjpgd/../../draw/lv_draw_buf.h
 clockpp\lv_tjpgd.o: ../Middlewares/Third_Party/Lvgl/src/libs/tjpgd/../../draw/../misc/lv_types.h
 clockpp\lv_tjpgd.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h

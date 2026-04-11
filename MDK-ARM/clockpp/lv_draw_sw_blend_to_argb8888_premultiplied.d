@@ -4,7 +4,7 @@ clockpp\lv_draw_sw_blend_to_argb8888_premultiplied.o: ../Middlewares/Third_Party
 clockpp\lv_draw_sw_blend_to_argb8888_premultiplied.o: ../Middlewares/Third_Party/Lvgl/src/draw/sw/blend/../../lv_draw.h
 clockpp\lv_draw_sw_blend_to_argb8888_premultiplied.o: ../Middlewares/Third_Party/Lvgl/src/draw/sw/blend/../../../lv_conf_internal.h
 clockpp\lv_draw_sw_blend_to_argb8888_premultiplied.o: ../Middlewares/Third_Party/Lvgl/src/draw/sw/blend/../../../lv_conf_kconfig.h
-clockpp\lv_draw_sw_blend_to_argb8888_premultiplied.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_draw_sw_blend_to_argb8888_premultiplied.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_draw_sw_blend_to_argb8888_premultiplied.o: ../Middlewares/Third_Party/Lvgl/src/draw/sw/blend/../../../misc/lv_types.h
 clockpp\lv_draw_sw_blend_to_argb8888_premultiplied.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\lv_draw_sw_blend_to_argb8888_premultiplied.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h

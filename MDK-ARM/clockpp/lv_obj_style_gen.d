@@ -2,7 +2,7 @@ clockpp\lv_obj_style_gen.o: ../Middlewares/Third_Party/Lvgl/src/core/lv_obj_styl
 clockpp\lv_obj_style_gen.o: ../Middlewares/Third_Party/Lvgl/src/core/lv_obj.h
 clockpp\lv_obj_style_gen.o: ../Middlewares/Third_Party/Lvgl/src/core/../lv_conf_internal.h
 clockpp\lv_obj_style_gen.o: ../Middlewares/Third_Party/Lvgl/src/core/../lv_conf_kconfig.h
-clockpp\lv_obj_style_gen.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_obj_style_gen.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_obj_style_gen.o: ../Middlewares/Third_Party/Lvgl/src/core/../misc/lv_types.h
 clockpp\lv_obj_style_gen.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\lv_obj_style_gen.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h

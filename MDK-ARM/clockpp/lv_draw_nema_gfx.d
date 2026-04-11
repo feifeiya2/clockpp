@@ -3,7 +3,7 @@ clockpp\lv_draw_nema_gfx.o: ../Middlewares/Third_Party/Lvgl/src/draw/nema_gfx/..
 clockpp\lv_draw_nema_gfx.o: ../Middlewares/Third_Party/Lvgl/src/draw/nema_gfx/../../core/lv_obj.h
 clockpp\lv_draw_nema_gfx.o: ../Middlewares/Third_Party/Lvgl/src/draw/nema_gfx/../../core/../lv_conf_internal.h
 clockpp\lv_draw_nema_gfx.o: ../Middlewares/Third_Party/Lvgl/src/draw/nema_gfx/../../core/../lv_conf_kconfig.h
-clockpp\lv_draw_nema_gfx.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_draw_nema_gfx.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_draw_nema_gfx.o: ../Middlewares/Third_Party/Lvgl/src/draw/nema_gfx/../../core/../misc/lv_types.h
 clockpp\lv_draw_nema_gfx.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\lv_draw_nema_gfx.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h

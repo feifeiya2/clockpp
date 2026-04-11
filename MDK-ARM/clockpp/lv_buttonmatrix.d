@@ -4,7 +4,7 @@ clockpp\lv_buttonmatrix.o: ../Middlewares/Third_Party/Lvgl/src/widgets/buttonmat
 clockpp\lv_buttonmatrix.o: ../Middlewares/Third_Party/Lvgl/src/widgets/buttonmatrix/../../core/../misc/lv_ext_data.h
 clockpp\lv_buttonmatrix.o: ../Middlewares/Third_Party/Lvgl/src/widgets/buttonmatrix/../../core/../misc/../lv_conf_internal.h
 clockpp\lv_buttonmatrix.o: ../Middlewares/Third_Party/Lvgl/src/widgets/buttonmatrix/../../core/../misc/../lv_conf_kconfig.h
-clockpp\lv_buttonmatrix.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_buttonmatrix.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_buttonmatrix.o: ../Middlewares/Third_Party/Lvgl/src/widgets/buttonmatrix/../../core/lv_obj.h
 clockpp\lv_buttonmatrix.o: ../Middlewares/Third_Party/Lvgl/src/widgets/buttonmatrix/../../core/../misc/lv_types.h
 clockpp\lv_buttonmatrix.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h

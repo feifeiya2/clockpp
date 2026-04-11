@@ -2,7 +2,7 @@ clockpp\lv_nuttx_image_cache.o: ../Middlewares/Third_Party/Lvgl/src/drivers/nutt
 clockpp\lv_nuttx_image_cache.o: ../Middlewares/Third_Party/Lvgl/src/drivers/nuttx/lv_nuttx_image_cache.h
 clockpp\lv_nuttx_image_cache.o: ../Middlewares/Third_Party/Lvgl/src/drivers/nuttx/../../lv_conf_internal.h
 clockpp\lv_nuttx_image_cache.o: ../Middlewares/Third_Party/Lvgl/src/drivers/nuttx/../../lv_conf_kconfig.h
-clockpp\lv_nuttx_image_cache.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_nuttx_image_cache.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_nuttx_image_cache.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdbool.h
 clockpp\lv_nuttx_image_cache.o: ../Middlewares/Third_Party/Lvgl/src/drivers/nuttx/../../core/lv_global.h
 clockpp\lv_nuttx_image_cache.o: ../Middlewares/Third_Party/Lvgl/src/drivers/nuttx/../../core/../misc/lv_types.h

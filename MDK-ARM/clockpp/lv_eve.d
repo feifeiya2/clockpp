@@ -2,4 +2,4 @@ clockpp\lv_eve.o: ../Middlewares/Third_Party/Lvgl/src/draw/eve/lv_eve.c
 clockpp\lv_eve.o: ../Middlewares/Third_Party/Lvgl/src/draw/eve/lv_draw_eve.h
 clockpp\lv_eve.o: ../Middlewares/Third_Party/Lvgl/src/draw/eve/../../lv_conf_internal.h
 clockpp\lv_eve.o: ../Middlewares/Third_Party/Lvgl/src/draw/eve/../../lv_conf_kconfig.h
-clockpp\lv_eve.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_eve.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h

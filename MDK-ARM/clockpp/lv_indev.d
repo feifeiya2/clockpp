@@ -3,7 +3,7 @@ clockpp\lv_indev.o: ../Middlewares/Third_Party/Lvgl/src/indev/lv_indev_private.h
 clockpp\lv_indev.o: ../Middlewares/Third_Party/Lvgl/src/indev/../misc/lv_ext_data.h
 clockpp\lv_indev.o: ../Middlewares/Third_Party/Lvgl/src/indev/../misc/../lv_conf_internal.h
 clockpp\lv_indev.o: ../Middlewares/Third_Party/Lvgl/src/indev/../misc/../lv_conf_kconfig.h
-clockpp\lv_indev.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_indev.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_indev.o: ../Middlewares/Third_Party/Lvgl/src/indev/lv_indev.h
 clockpp\lv_indev.o: ../Middlewares/Third_Party/Lvgl/src/indev/../core/lv_group.h
 clockpp\lv_indev.o: ../Middlewares/Third_Party/Lvgl/src/indev/../core/../misc/lv_types.h

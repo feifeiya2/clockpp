@@ -4,7 +4,7 @@ clockpp\lv_cache_lru_rb.o: ../Middlewares/Third_Party/Lvgl/src/misc/cache/class/
 clockpp\lv_cache_lru_rb.o: ../Middlewares/Third_Party/Lvgl/src/misc/cache/class/../../lv_types.h
 clockpp\lv_cache_lru_rb.o: ../Middlewares/Third_Party/Lvgl/src/misc/cache/class/../../../lv_conf_internal.h
 clockpp\lv_cache_lru_rb.o: ../Middlewares/Third_Party/Lvgl/src/misc/cache/class/../../../lv_conf_kconfig.h
-clockpp\lv_cache_lru_rb.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_cache_lru_rb.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_cache_lru_rb.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\lv_cache_lru_rb.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
 clockpp\lv_cache_lru_rb.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdbool.h

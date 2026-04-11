@@ -6,7 +6,7 @@ clockpp\lv_demo_gltf.o: ../Middlewares/Third_Party/Lvgl/demos/gltf/../../lv_vers
 clockpp\lv_demo_gltf.o: ../Middlewares/Third_Party/Lvgl/demos/gltf/../../src/lv_init.h
 clockpp\lv_demo_gltf.o: ../Middlewares/Third_Party/Lvgl/demos/gltf/../../src/lv_conf_internal.h
 clockpp\lv_demo_gltf.o: ../Middlewares/Third_Party/Lvgl/demos/gltf/../../src/lv_conf_kconfig.h
-clockpp\lv_demo_gltf.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_demo_gltf.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_demo_gltf.o: ../Middlewares/Third_Party/Lvgl/demos/gltf/../../src/misc/lv_types.h
 clockpp\lv_demo_gltf.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\lv_demo_gltf.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h

@@ -4,7 +4,7 @@ clockpp\lv_arclabel.o: ../Middlewares/Third_Party/Lvgl/src/widgets/arclabel/../.
 clockpp\lv_arclabel.o: ../Middlewares/Third_Party/Lvgl/src/widgets/arclabel/../../core/../misc/lv_ext_data.h
 clockpp\lv_arclabel.o: ../Middlewares/Third_Party/Lvgl/src/widgets/arclabel/../../core/../misc/../lv_conf_internal.h
 clockpp\lv_arclabel.o: ../Middlewares/Third_Party/Lvgl/src/widgets/arclabel/../../core/../misc/../lv_conf_kconfig.h
-clockpp\lv_arclabel.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_arclabel.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_arclabel.o: ../Middlewares/Third_Party/Lvgl/src/widgets/arclabel/../../core/lv_obj.h
 clockpp\lv_arclabel.o: ../Middlewares/Third_Party/Lvgl/src/widgets/arclabel/../../core/../misc/lv_types.h
 clockpp\lv_arclabel.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h

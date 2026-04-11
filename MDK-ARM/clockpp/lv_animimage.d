@@ -5,7 +5,7 @@ clockpp\lv_animimage.o: ../Middlewares/Third_Party/Lvgl/src/widgets/animimage/..
 clockpp\lv_animimage.o: ../Middlewares/Third_Party/Lvgl/src/widgets/animimage/../image/../../core/../misc/lv_ext_data.h
 clockpp\lv_animimage.o: ../Middlewares/Third_Party/Lvgl/src/widgets/animimage/../image/../../core/../misc/../lv_conf_internal.h
 clockpp\lv_animimage.o: ../Middlewares/Third_Party/Lvgl/src/widgets/animimage/../image/../../core/../misc/../lv_conf_kconfig.h
-clockpp\lv_animimage.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_animimage.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_animimage.o: ../Middlewares/Third_Party/Lvgl/src/widgets/animimage/../image/../../core/lv_obj.h
 clockpp\lv_animimage.o: ../Middlewares/Third_Party/Lvgl/src/widgets/animimage/../image/../../core/../misc/lv_types.h
 clockpp\lv_animimage.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h

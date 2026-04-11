@@ -28,7 +28,8 @@
 #include <stdio.h>
 #include "display_wrapper.h"
 #include "touch_wrapper.h"
-#include "lv_port_indev.h"
+#include "uart_driver.h"
+//#include "lv_port_indev.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -61,8 +62,8 @@ const osThreadAttr_t defaultTask_attributes = {
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
-#include "lvgl.h"
-#include "lv_port_disp.h"
+// #include "lvgl.h"
+// #include "lv_port_disp.h"
 
 /**
  * @brief 简单的按钮事件回调，用于测试触摸是否正常
@@ -219,7 +220,7 @@ void MX_FREERTOS_Init(void) {
 
 
   
-  xTaskCreate(lvgl_test_task, "lvgl_test_task", 2048, NULL, 1, NULL);
+  //xTaskCreate(lvgl_test_task, "lvgl_test_task", 2048, NULL, 1, NULL);
 
   /* USER CODE END RTOS_THREADS */
 
@@ -228,7 +229,7 @@ void MX_FREERTOS_Init(void) {
   /* USER CODE END RTOS_EVENTS */
 
 }
-extern I2C_HandleTypeDef hi2c1;
+
 /* USER CODE BEGIN Header_StartDefaultTask */
 /**
   * @brief  Function implementing the defaultTask thread.
@@ -241,7 +242,9 @@ void StartDefaultTask(void *argument)
   /* USER CODE BEGIN StartDefaultTask */
   /* Infinite loop */
 	HAL_UART_Receive_IT(&huart1, g_data, 1);
-
+  HAL_UARTEx_ReceiveToIdle_DMA(&huart2, data, 100);
+  uart_init();
+  
 
 	for(;;)
 	{
@@ -257,9 +260,10 @@ void StartDefaultTask(void *argument)
 /* USER CODE BEGIN Application */
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
-	printf("%d", g_data[0]);
-	HAL_UART_Receive_IT(&huart1, g_data, 1);
-
+  if(huart->Instance == USART1){
+    printf("%d", g_data[0]);
+    HAL_UART_Receive_IT(&huart1, g_data, 1);
+  }
 }
 /* USER CODE END Application */
 

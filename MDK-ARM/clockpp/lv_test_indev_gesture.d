@@ -2,4 +2,4 @@ clockpp\lv_test_indev_gesture.o: ../Middlewares/Third_Party/Lvgl/src/debugging/t
 clockpp\lv_test_indev_gesture.o: ../Middlewares/Third_Party/Lvgl/src/debugging/test/lv_test.h
 clockpp\lv_test_indev_gesture.o: ../Middlewares/Third_Party/Lvgl/src/debugging/test/../../lv_conf_internal.h
 clockpp\lv_test_indev_gesture.o: ../Middlewares/Third_Party/Lvgl/src/debugging/test/../../lv_conf_kconfig.h
-clockpp\lv_test_indev_gesture.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_test_indev_gesture.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h

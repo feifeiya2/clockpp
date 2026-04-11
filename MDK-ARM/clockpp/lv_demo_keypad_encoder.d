@@ -6,7 +6,7 @@ clockpp\lv_demo_keypad_encoder.o: ../Middlewares/Third_Party/Lvgl/demos/keypad_e
 clockpp\lv_demo_keypad_encoder.o: ../Middlewares/Third_Party/Lvgl/demos/keypad_encoder/../../src/lv_init.h
 clockpp\lv_demo_keypad_encoder.o: ../Middlewares/Third_Party/Lvgl/demos/keypad_encoder/../../src/lv_conf_internal.h
 clockpp\lv_demo_keypad_encoder.o: ../Middlewares/Third_Party/Lvgl/demos/keypad_encoder/../../src/lv_conf_kconfig.h
-clockpp\lv_demo_keypad_encoder.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_demo_keypad_encoder.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_demo_keypad_encoder.o: ../Middlewares/Third_Party/Lvgl/demos/keypad_encoder/../../src/misc/lv_types.h
 clockpp\lv_demo_keypad_encoder.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\lv_demo_keypad_encoder.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h

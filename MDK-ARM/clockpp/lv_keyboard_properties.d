@@ -3,7 +3,7 @@ clockpp\lv_keyboard_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/pr
 clockpp\lv_keyboard_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../keyboard/../buttonmatrix/lv_buttonmatrix.h
 clockpp\lv_keyboard_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../keyboard/../buttonmatrix/../../lv_conf_internal.h
 clockpp\lv_keyboard_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../keyboard/../buttonmatrix/../../lv_conf_kconfig.h
-clockpp\lv_keyboard_properties.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_keyboard_properties.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_keyboard_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../keyboard/../buttonmatrix/../../core/lv_obj.h
 clockpp\lv_keyboard_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../keyboard/../buttonmatrix/../../core/../misc/lv_types.h
 clockpp\lv_keyboard_properties.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h

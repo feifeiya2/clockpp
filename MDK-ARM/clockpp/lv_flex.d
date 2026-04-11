@@ -2,7 +2,7 @@ clockpp\lv_flex.o: ../Middlewares/Third_Party/Lvgl/src/layouts/flex/lv_flex.c
 clockpp\lv_flex.o: ../Middlewares/Third_Party/Lvgl/src/layouts/flex/lv_flex.h
 clockpp\lv_flex.o: ../Middlewares/Third_Party/Lvgl/src/layouts/flex/../../lv_conf_internal.h
 clockpp\lv_flex.o: ../Middlewares/Third_Party/Lvgl/src/layouts/flex/../../lv_conf_kconfig.h
-clockpp\lv_flex.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_flex.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_flex.o: ../Middlewares/Third_Party/Lvgl/src/layouts/flex/../../misc/lv_area.h
 clockpp\lv_flex.o: ../Middlewares/Third_Party/Lvgl/src/layouts/flex/../../misc/lv_types.h
 clockpp\lv_flex.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h

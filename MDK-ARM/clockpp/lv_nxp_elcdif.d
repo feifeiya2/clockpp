@@ -6,7 +6,7 @@ clockpp\lv_nxp_elcdif.o: ../Middlewares/Third_Party/Lvgl/src/drivers/display/nxp
 clockpp\lv_nxp_elcdif.o: ../Middlewares/Third_Party/Lvgl/src/drivers/display/nxp_elcdif/../../../../src/lv_init.h
 clockpp\lv_nxp_elcdif.o: ../Middlewares/Third_Party/Lvgl/src/drivers/display/nxp_elcdif/../../../../src/lv_conf_internal.h
 clockpp\lv_nxp_elcdif.o: ../Middlewares/Third_Party/Lvgl/src/drivers/display/nxp_elcdif/../../../../src/lv_conf_kconfig.h
-clockpp\lv_nxp_elcdif.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_nxp_elcdif.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_nxp_elcdif.o: ../Middlewares/Third_Party/Lvgl/src/drivers/display/nxp_elcdif/../../../../src/misc/lv_types.h
 clockpp\lv_nxp_elcdif.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\lv_nxp_elcdif.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h

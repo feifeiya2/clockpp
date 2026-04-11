@@ -2,7 +2,7 @@ clockpp\lv_tabview_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/pro
 clockpp\lv_tabview_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../tabview/lv_tabview.h
 clockpp\lv_tabview_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../tabview/../../lv_conf_internal.h
 clockpp\lv_tabview_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../tabview/../../lv_conf_kconfig.h
-clockpp\lv_tabview_properties.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_tabview_properties.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_tabview_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../tabview/../../core/lv_obj.h
 clockpp\lv_tabview_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../tabview/../../core/../misc/lv_types.h
 clockpp\lv_tabview_properties.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h

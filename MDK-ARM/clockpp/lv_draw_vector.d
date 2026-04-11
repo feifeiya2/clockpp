@@ -5,7 +5,7 @@ clockpp\lv_draw_vector.o: ../Middlewares/Third_Party/Lvgl/src/draw/../misc/lv_ar
 clockpp\lv_draw_vector.o: ../Middlewares/Third_Party/Lvgl/src/draw/../misc/lv_types.h
 clockpp\lv_draw_vector.o: ../Middlewares/Third_Party/Lvgl/src/draw/../misc/../lv_conf_internal.h
 clockpp\lv_draw_vector.o: ../Middlewares/Third_Party/Lvgl/src/draw/../misc/../lv_conf_kconfig.h
-clockpp\lv_draw_vector.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_draw_vector.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_draw_vector.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\lv_draw_vector.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
 clockpp\lv_draw_vector.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdbool.h

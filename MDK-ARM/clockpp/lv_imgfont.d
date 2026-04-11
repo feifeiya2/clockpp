@@ -5,7 +5,7 @@ clockpp\lv_imgfont.o: ../Middlewares/Third_Party/Lvgl/src/font/imgfont/../../../
 clockpp\lv_imgfont.o: ../Middlewares/Third_Party/Lvgl/src/font/imgfont/../../../src/lv_init.h
 clockpp\lv_imgfont.o: ../Middlewares/Third_Party/Lvgl/src/font/imgfont/../../../src/lv_conf_internal.h
 clockpp\lv_imgfont.o: ../Middlewares/Third_Party/Lvgl/src/font/imgfont/../../../src/lv_conf_kconfig.h
-clockpp\lv_imgfont.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_imgfont.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_imgfont.o: ../Middlewares/Third_Party/Lvgl/src/font/imgfont/../../../src/misc/lv_types.h
 clockpp\lv_imgfont.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\lv_imgfont.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h

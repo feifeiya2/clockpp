@@ -2,4 +2,4 @@ clockpp\lv_draw_vg_lite_triangle.o: ../Middlewares/Third_Party/Lvgl/src/draw/vg_
 clockpp\lv_draw_vg_lite_triangle.o: ../Middlewares/Third_Party/Lvgl/src/draw/vg_lite/lv_draw_vg_lite.h
 clockpp\lv_draw_vg_lite_triangle.o: ../Middlewares/Third_Party/Lvgl/src/draw/vg_lite/../../lv_conf_internal.h
 clockpp\lv_draw_vg_lite_triangle.o: ../Middlewares/Third_Party/Lvgl/src/draw/vg_lite/../../lv_conf_kconfig.h
-clockpp\lv_draw_vg_lite_triangle.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_draw_vg_lite_triangle.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h

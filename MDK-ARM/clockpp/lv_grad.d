@@ -2,7 +2,7 @@ clockpp\lv_grad.o: ../Middlewares/Third_Party/Lvgl/src/misc/lv_grad.c
 clockpp\lv_grad.o: ../Middlewares/Third_Party/Lvgl/src/misc/lv_grad.h
 clockpp\lv_grad.o: ../Middlewares/Third_Party/Lvgl/src/misc/../lv_conf_internal.h
 clockpp\lv_grad.o: ../Middlewares/Third_Party/Lvgl/src/misc/../lv_conf_kconfig.h
-clockpp\lv_grad.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_grad.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_grad.o: ../Middlewares/Third_Party/Lvgl/src/misc/lv_color.h
 clockpp\lv_grad.o: ../Middlewares/Third_Party/Lvgl/src/misc/lv_assert.h
 clockpp\lv_grad.o: ../Middlewares/Third_Party/Lvgl/src/misc/lv_log.h

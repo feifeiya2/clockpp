@@ -4,7 +4,7 @@ clockpp\lv_sysmon.o: ../Middlewares/Third_Party/Lvgl/src/debugging/sysmon/lv_sys
 clockpp\lv_sysmon.o: ../Middlewares/Third_Party/Lvgl/src/debugging/sysmon/../../misc/lv_timer.h
 clockpp\lv_sysmon.o: ../Middlewares/Third_Party/Lvgl/src/debugging/sysmon/../../misc/../lv_conf_internal.h
 clockpp\lv_sysmon.o: ../Middlewares/Third_Party/Lvgl/src/debugging/sysmon/../../misc/../lv_conf_kconfig.h
-clockpp\lv_sysmon.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_sysmon.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_sysmon.o: ../Middlewares/Third_Party/Lvgl/src/debugging/sysmon/../../misc/../tick/lv_tick.h
 clockpp\lv_sysmon.o: ../Middlewares/Third_Party/Lvgl/src/debugging/sysmon/../../misc/../tick/../misc/lv_types.h
 clockpp\lv_sysmon.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h

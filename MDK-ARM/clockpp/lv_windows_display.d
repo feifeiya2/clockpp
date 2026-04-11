@@ -4,7 +4,7 @@ clockpp\lv_windows_display.o: ../Middlewares/Third_Party/Lvgl/src/drivers/window
 clockpp\lv_windows_display.o: ../Middlewares/Third_Party/Lvgl/src/drivers/windows/../../display/../misc/lv_types.h
 clockpp\lv_windows_display.o: ../Middlewares/Third_Party/Lvgl/src/drivers/windows/../../display/../misc/../lv_conf_internal.h
 clockpp\lv_windows_display.o: ../Middlewares/Third_Party/Lvgl/src/drivers/windows/../../display/../misc/../lv_conf_kconfig.h
-clockpp\lv_windows_display.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_windows_display.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_windows_display.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\lv_windows_display.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
 clockpp\lv_windows_display.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdbool.h

@@ -2,7 +2,7 @@ clockpp\lv_span_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/proper
 clockpp\lv_span_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../span/lv_span.h
 clockpp\lv_span_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../span/../../lv_conf_internal.h
 clockpp\lv_span_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../span/../../lv_conf_kconfig.h
-clockpp\lv_span_properties.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_span_properties.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_span_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../span/../../core/lv_obj.h
 clockpp\lv_span_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../span/../../core/../misc/lv_types.h
 clockpp\lv_span_properties.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h

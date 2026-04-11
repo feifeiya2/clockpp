@@ -4,7 +4,7 @@ clockpp\lv_file_explorer.o: ../Middlewares/Third_Party/Lvgl/src/others/file_expl
 clockpp\lv_file_explorer.o: ../Middlewares/Third_Party/Lvgl/src/others/file_explorer/../../core/../misc/lv_ext_data.h
 clockpp\lv_file_explorer.o: ../Middlewares/Third_Party/Lvgl/src/others/file_explorer/../../core/../misc/../lv_conf_internal.h
 clockpp\lv_file_explorer.o: ../Middlewares/Third_Party/Lvgl/src/others/file_explorer/../../core/../misc/../lv_conf_kconfig.h
-clockpp\lv_file_explorer.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_file_explorer.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_file_explorer.o: ../Middlewares/Third_Party/Lvgl/src/others/file_explorer/../../core/lv_obj.h
 clockpp\lv_file_explorer.o: ../Middlewares/Third_Party/Lvgl/src/others/file_explorer/../../core/../misc/lv_types.h
 clockpp\lv_file_explorer.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h

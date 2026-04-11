@@ -2,7 +2,7 @@ clockpp\lv_mem_core_rtthread.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/rtthr
 clockpp\lv_mem_core_rtthread.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/rtthread/../lv_mem.h
 clockpp\lv_mem_core_rtthread.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/rtthread/../../lv_conf_internal.h
 clockpp\lv_mem_core_rtthread.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/rtthread/../../lv_conf_kconfig.h
-clockpp\lv_mem_core_rtthread.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_mem_core_rtthread.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_mem_core_rtthread.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/rtthread/../lv_string.h
 clockpp\lv_mem_core_rtthread.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/rtthread/../../misc/lv_types.h
 clockpp\lv_mem_core_rtthread.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h

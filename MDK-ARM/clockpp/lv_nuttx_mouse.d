@@ -4,7 +4,7 @@ clockpp\lv_nuttx_mouse.o: ../Middlewares/Third_Party/Lvgl/src/drivers/nuttx/../.
 clockpp\lv_nuttx_mouse.o: ../Middlewares/Third_Party/Lvgl/src/drivers/nuttx/../../indev/../core/lv_group.h
 clockpp\lv_nuttx_mouse.o: ../Middlewares/Third_Party/Lvgl/src/drivers/nuttx/../../indev/../core/../lv_conf_internal.h
 clockpp\lv_nuttx_mouse.o: ../Middlewares/Third_Party/Lvgl/src/drivers/nuttx/../../indev/../core/../lv_conf_kconfig.h
-clockpp\lv_nuttx_mouse.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_nuttx_mouse.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_nuttx_mouse.o: ../Middlewares/Third_Party/Lvgl/src/drivers/nuttx/../../indev/../core/../misc/lv_types.h
 clockpp\lv_nuttx_mouse.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\lv_nuttx_mouse.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h

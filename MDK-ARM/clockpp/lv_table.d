@@ -4,7 +4,7 @@ clockpp\lv_table.o: ../Middlewares/Third_Party/Lvgl/src/widgets/table/lv_table.h
 clockpp\lv_table.o: ../Middlewares/Third_Party/Lvgl/src/widgets/table/../label/lv_label.h
 clockpp\lv_table.o: ../Middlewares/Third_Party/Lvgl/src/widgets/table/../label/../../lv_conf_internal.h
 clockpp\lv_table.o: ../Middlewares/Third_Party/Lvgl/src/widgets/table/../label/../../lv_conf_kconfig.h
-clockpp\lv_table.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_table.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_table.o: ../Middlewares/Third_Party/Lvgl/src/widgets/table/../label/../../misc/lv_types.h
 clockpp\lv_table.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\lv_table.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h

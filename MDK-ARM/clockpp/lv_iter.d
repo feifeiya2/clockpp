@@ -2,7 +2,7 @@ clockpp\lv_iter.o: ../Middlewares/Third_Party/Lvgl/src/misc/lv_iter.c
 clockpp\lv_iter.o: ../Middlewares/Third_Party/Lvgl/src/misc/lv_assert.h
 clockpp\lv_iter.o: ../Middlewares/Third_Party/Lvgl/src/misc/../lv_conf_internal.h
 clockpp\lv_iter.o: ../Middlewares/Third_Party/Lvgl/src/misc/../lv_conf_kconfig.h
-clockpp\lv_iter.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_iter.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_iter.o: ../Middlewares/Third_Party/Lvgl/src/misc/lv_log.h
 clockpp\lv_iter.o: ../Middlewares/Third_Party/Lvgl/src/misc/lv_types.h
 clockpp\lv_iter.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h

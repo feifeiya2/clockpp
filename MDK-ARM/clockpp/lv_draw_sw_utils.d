@@ -2,7 +2,7 @@ clockpp\lv_draw_sw_utils.o: ../Middlewares/Third_Party/Lvgl/src/draw/sw/lv_draw_
 clockpp\lv_draw_sw_utils.o: ../Middlewares/Third_Party/Lvgl/src/draw/sw/lv_draw_sw_utils.h
 clockpp\lv_draw_sw_utils.o: ../Middlewares/Third_Party/Lvgl/src/draw/sw/../../lv_conf_internal.h
 clockpp\lv_draw_sw_utils.o: ../Middlewares/Third_Party/Lvgl/src/draw/sw/../../lv_conf_kconfig.h
-clockpp\lv_draw_sw_utils.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_draw_sw_utils.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_draw_sw_utils.o: ../Middlewares/Third_Party/Lvgl/src/draw/sw/../../misc/lv_area.h
 clockpp\lv_draw_sw_utils.o: ../Middlewares/Third_Party/Lvgl/src/draw/sw/../../misc/lv_types.h
 clockpp\lv_draw_sw_utils.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h

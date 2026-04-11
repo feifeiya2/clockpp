@@ -3,7 +3,7 @@ clockpp\lv_snapshot.o: ../Middlewares/Third_Party/Lvgl/src/draw/snapshot/../../d
 clockpp\lv_snapshot.o: ../Middlewares/Third_Party/Lvgl/src/draw/snapshot/../../draw/lv_draw.h
 clockpp\lv_snapshot.o: ../Middlewares/Third_Party/Lvgl/src/draw/snapshot/../../draw/../lv_conf_internal.h
 clockpp\lv_snapshot.o: ../Middlewares/Third_Party/Lvgl/src/draw/snapshot/../../draw/../lv_conf_kconfig.h
-clockpp\lv_snapshot.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_snapshot.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_snapshot.o: ../Middlewares/Third_Party/Lvgl/src/draw/snapshot/../../draw/../misc/lv_types.h
 clockpp\lv_snapshot.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\lv_snapshot.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h

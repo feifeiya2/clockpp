@@ -4,7 +4,7 @@ clockpp\code128.o: ../Middlewares/Third_Party/Lvgl/src/libs/barcode/../../../lv_
 clockpp\code128.o: ../Middlewares/Third_Party/Lvgl/src/libs/barcode/../../../src/lv_init.h
 clockpp\code128.o: ../Middlewares/Third_Party/Lvgl/src/libs/barcode/../../../src/lv_conf_internal.h
 clockpp\code128.o: ../Middlewares/Third_Party/Lvgl/src/libs/barcode/../../../src/lv_conf_kconfig.h
-clockpp\code128.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\code128.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\code128.o: ../Middlewares/Third_Party/Lvgl/src/libs/barcode/../../../src/misc/lv_types.h
 clockpp\code128.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\code128.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h

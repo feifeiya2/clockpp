@@ -3,7 +3,7 @@ clockpp\lv_checkbox.o: ../Middlewares/Third_Party/Lvgl/src/widgets/checkbox/lv_c
 clockpp\lv_checkbox.o: ../Middlewares/Third_Party/Lvgl/src/widgets/checkbox/lv_checkbox.h
 clockpp\lv_checkbox.o: ../Middlewares/Third_Party/Lvgl/src/widgets/checkbox/../../lv_conf_internal.h
 clockpp\lv_checkbox.o: ../Middlewares/Third_Party/Lvgl/src/widgets/checkbox/../../lv_conf_kconfig.h
-clockpp\lv_checkbox.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_checkbox.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_checkbox.o: ../Middlewares/Third_Party/Lvgl/src/widgets/checkbox/../../core/lv_obj.h
 clockpp\lv_checkbox.o: ../Middlewares/Third_Party/Lvgl/src/widgets/checkbox/../../core/../misc/lv_types.h
 clockpp\lv_checkbox.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h

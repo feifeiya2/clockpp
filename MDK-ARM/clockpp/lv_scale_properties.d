@@ -2,7 +2,7 @@ clockpp\lv_scale_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/prope
 clockpp\lv_scale_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../scale/lv_scale.h
 clockpp\lv_scale_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../scale/../../lv_conf_internal.h
 clockpp\lv_scale_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../scale/../../lv_conf_kconfig.h
-clockpp\lv_scale_properties.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_scale_properties.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_scale_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../scale/../../core/lv_obj.h
 clockpp\lv_scale_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../scale/../../core/../misc/lv_types.h
 clockpp\lv_scale_properties.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h

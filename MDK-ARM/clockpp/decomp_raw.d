@@ -1,7 +1,7 @@
 clockpp\decomp_raw.o: ../Middlewares/Third_Party/Lvgl/src/libs/frogfs/src/decomp_raw.c
 clockpp\decomp_raw.o: ../Middlewares/Third_Party/Lvgl/src/libs/frogfs/src/../../../lv_conf_internal.h
 clockpp\decomp_raw.o: ../Middlewares/Third_Party/Lvgl/src/libs/frogfs/src/../../../lv_conf_kconfig.h
-clockpp\decomp_raw.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\decomp_raw.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\decomp_raw.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
 clockpp\decomp_raw.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\decomp_raw.o: ../Middlewares/Third_Party/Lvgl/src/libs/frogfs/src/../../../stdlib/lv_string.h

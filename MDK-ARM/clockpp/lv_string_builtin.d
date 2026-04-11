@@ -1,7 +1,7 @@
 clockpp\lv_string_builtin.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/builtin/lv_string_builtin.c
 clockpp\lv_string_builtin.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/builtin/../../lv_conf_internal.h
 clockpp\lv_string_builtin.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/builtin/../../lv_conf_kconfig.h
-clockpp\lv_string_builtin.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_string_builtin.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_string_builtin.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/builtin/../../misc/lv_assert.h
 clockpp\lv_string_builtin.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/builtin/../../misc/lv_log.h
 clockpp\lv_string_builtin.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/builtin/../../misc/lv_types.h

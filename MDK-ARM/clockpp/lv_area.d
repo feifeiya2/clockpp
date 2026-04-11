@@ -1,7 +1,7 @@
 clockpp\lv_area.o: ../Middlewares/Third_Party/Lvgl/src/misc/lv_area.c
 clockpp\lv_area.o: ../Middlewares/Third_Party/Lvgl/src/misc/../lv_conf_internal.h
 clockpp\lv_area.o: ../Middlewares/Third_Party/Lvgl/src/misc/../lv_conf_kconfig.h
-clockpp\lv_area.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_area.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_area.o: ../Middlewares/Third_Party/Lvgl/src/misc/../core/lv_global.h
 clockpp\lv_area.o: ../Middlewares/Third_Party/Lvgl/src/misc/../core/../misc/lv_types.h
 clockpp\lv_area.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h

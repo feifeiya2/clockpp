@@ -4,7 +4,7 @@ clockpp\lv_led.o: ../Middlewares/Third_Party/Lvgl/src/widgets/led/lv_led.h
 clockpp\lv_led.o: ../Middlewares/Third_Party/Lvgl/src/widgets/led/../../core/lv_obj.h
 clockpp\lv_led.o: ../Middlewares/Third_Party/Lvgl/src/widgets/led/../../core/../lv_conf_internal.h
 clockpp\lv_led.o: ../Middlewares/Third_Party/Lvgl/src/widgets/led/../../core/../lv_conf_kconfig.h
-clockpp\lv_led.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_led.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_led.o: ../Middlewares/Third_Party/Lvgl/src/widgets/led/../../core/../misc/lv_types.h
 clockpp\lv_led.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\lv_led.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h

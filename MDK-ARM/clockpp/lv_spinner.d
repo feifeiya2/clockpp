@@ -3,7 +3,7 @@ clockpp\lv_spinner.o: ../Middlewares/Third_Party/Lvgl/src/widgets/spinner/lv_spi
 clockpp\lv_spinner.o: ../Middlewares/Third_Party/Lvgl/src/widgets/spinner/lv_spinner.h
 clockpp\lv_spinner.o: ../Middlewares/Third_Party/Lvgl/src/widgets/spinner/../../lv_conf_internal.h
 clockpp\lv_spinner.o: ../Middlewares/Third_Party/Lvgl/src/widgets/spinner/../../lv_conf_kconfig.h
-clockpp\lv_spinner.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_spinner.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_spinner.o: ../Middlewares/Third_Party/Lvgl/src/widgets/spinner/../../misc/lv_types.h
 clockpp\lv_spinner.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\lv_spinner.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h

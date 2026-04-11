@@ -3,7 +3,7 @@ clockpp\lv_monkey.o: ../Middlewares/Third_Party/Lvgl/src/debugging/monkey/lv_mon
 clockpp\lv_monkey.o: ../Middlewares/Third_Party/Lvgl/src/debugging/monkey/lv_monkey.h
 clockpp\lv_monkey.o: ../Middlewares/Third_Party/Lvgl/src/debugging/monkey/../../lv_conf_internal.h
 clockpp\lv_monkey.o: ../Middlewares/Third_Party/Lvgl/src/debugging/monkey/../../lv_conf_kconfig.h
-clockpp\lv_monkey.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_monkey.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_monkey.o: ../Middlewares/Third_Party/Lvgl/src/debugging/monkey/../../indev/lv_indev.h
 clockpp\lv_monkey.o: ../Middlewares/Third_Party/Lvgl/src/debugging/monkey/../../indev/../core/lv_group.h
 clockpp\lv_monkey.o: ../Middlewares/Third_Party/Lvgl/src/debugging/monkey/../../indev/../core/../misc/lv_types.h

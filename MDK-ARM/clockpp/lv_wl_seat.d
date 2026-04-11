@@ -2,4 +2,4 @@ clockpp\lv_wl_seat.o: ../Middlewares/Third_Party/Lvgl/src/drivers/wayland/lv_wl_
 clockpp\lv_wl_seat.o: ../Middlewares/Third_Party/Lvgl/src/drivers/wayland/lv_wayland.h
 clockpp\lv_wl_seat.o: ../Middlewares/Third_Party/Lvgl/src/drivers/wayland/../../lv_conf_internal.h
 clockpp\lv_wl_seat.o: ../Middlewares/Third_Party/Lvgl/src/drivers/wayland/../../lv_conf_kconfig.h
-clockpp\lv_wl_seat.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_wl_seat.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h

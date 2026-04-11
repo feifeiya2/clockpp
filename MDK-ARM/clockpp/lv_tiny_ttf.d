@@ -5,7 +5,7 @@ clockpp\lv_tiny_ttf.o: ../Middlewares/Third_Party/Lvgl/src/libs/tiny_ttf/../../.
 clockpp\lv_tiny_ttf.o: ../Middlewares/Third_Party/Lvgl/src/libs/tiny_ttf/../../../src/lv_init.h
 clockpp\lv_tiny_ttf.o: ../Middlewares/Third_Party/Lvgl/src/libs/tiny_ttf/../../../src/lv_conf_internal.h
 clockpp\lv_tiny_ttf.o: ../Middlewares/Third_Party/Lvgl/src/libs/tiny_ttf/../../../src/lv_conf_kconfig.h
-clockpp\lv_tiny_ttf.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_tiny_ttf.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_tiny_ttf.o: ../Middlewares/Third_Party/Lvgl/src/libs/tiny_ttf/../../../src/misc/lv_types.h
 clockpp\lv_tiny_ttf.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\lv_tiny_ttf.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h

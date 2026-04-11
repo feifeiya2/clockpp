@@ -5,7 +5,7 @@ clockpp\lv_demos.o: ../Middlewares/Third_Party/Lvgl/demos/../lv_version.h
 clockpp\lv_demos.o: ../Middlewares/Third_Party/Lvgl/demos/../src/lv_init.h
 clockpp\lv_demos.o: ../Middlewares/Third_Party/Lvgl/demos/../src/lv_conf_internal.h
 clockpp\lv_demos.o: ../Middlewares/Third_Party/Lvgl/demos/../src/lv_conf_kconfig.h
-clockpp\lv_demos.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_demos.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_demos.o: ../Middlewares/Third_Party/Lvgl/demos/../src/misc/lv_types.h
 clockpp\lv_demos.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\lv_demos.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h

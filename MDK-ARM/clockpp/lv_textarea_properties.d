@@ -3,7 +3,7 @@ clockpp\lv_textarea_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/pr
 clockpp\lv_textarea_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../textarea/../label/lv_label.h
 clockpp\lv_textarea_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../textarea/../label/../../lv_conf_internal.h
 clockpp\lv_textarea_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../textarea/../label/../../lv_conf_kconfig.h
-clockpp\lv_textarea_properties.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_textarea_properties.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_textarea_properties.o: ../Middlewares/Third_Party/Lvgl/src/widgets/property/../textarea/../label/../../misc/lv_types.h
 clockpp\lv_textarea_properties.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\lv_textarea_properties.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h

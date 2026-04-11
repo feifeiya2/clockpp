@@ -3,7 +3,7 @@ clockpp\lv_switch.o: ../Middlewares/Third_Party/Lvgl/src/widgets/switch/lv_switc
 clockpp\lv_switch.o: ../Middlewares/Third_Party/Lvgl/src/widgets/switch/lv_switch.h
 clockpp\lv_switch.o: ../Middlewares/Third_Party/Lvgl/src/widgets/switch/../../lv_conf_internal.h
 clockpp\lv_switch.o: ../Middlewares/Third_Party/Lvgl/src/widgets/switch/../../lv_conf_kconfig.h
-clockpp\lv_switch.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_switch.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_switch.o: ../Middlewares/Third_Party/Lvgl/src/widgets/switch/../../core/lv_obj.h
 clockpp\lv_switch.o: ../Middlewares/Third_Party/Lvgl/src/widgets/switch/../../core/../misc/lv_types.h
 clockpp\lv_switch.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h

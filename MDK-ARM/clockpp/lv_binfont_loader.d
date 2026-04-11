@@ -5,7 +5,7 @@ clockpp\lv_binfont_loader.o: ../Middlewares/Third_Party/Lvgl/src/font/binfont_lo
 clockpp\lv_binfont_loader.o: ../Middlewares/Third_Party/Lvgl/src/font/binfont_loader/../../../src/lv_init.h
 clockpp\lv_binfont_loader.o: ../Middlewares/Third_Party/Lvgl/src/font/binfont_loader/../../../src/lv_conf_internal.h
 clockpp\lv_binfont_loader.o: ../Middlewares/Third_Party/Lvgl/src/font/binfont_loader/../../../src/lv_conf_kconfig.h
-clockpp\lv_binfont_loader.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_binfont_loader.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_binfont_loader.o: ../Middlewares/Third_Party/Lvgl/src/font/binfont_loader/../../../src/misc/lv_types.h
 clockpp\lv_binfont_loader.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\lv_binfont_loader.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h

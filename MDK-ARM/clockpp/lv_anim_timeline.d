@@ -3,7 +3,7 @@ clockpp\lv_anim_timeline.o: ../Middlewares/Third_Party/Lvgl/src/misc/lv_anim_pri
 clockpp\lv_anim_timeline.o: ../Middlewares/Third_Party/Lvgl/src/misc/lv_anim.h
 clockpp\lv_anim_timeline.o: ../Middlewares/Third_Party/Lvgl/src/misc/../lv_conf_internal.h
 clockpp\lv_anim_timeline.o: ../Middlewares/Third_Party/Lvgl/src/misc/../lv_conf_kconfig.h
-clockpp\lv_anim_timeline.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_anim_timeline.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_anim_timeline.o: ../Middlewares/Third_Party/Lvgl/src/misc/lv_ext_data.h
 clockpp\lv_anim_timeline.o: ../Middlewares/Third_Party/Lvgl/src/misc/lv_types.h
 clockpp\lv_anim_timeline.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h

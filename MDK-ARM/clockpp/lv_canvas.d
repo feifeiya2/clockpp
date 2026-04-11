@@ -5,7 +5,7 @@ clockpp\lv_canvas.o: ../Middlewares/Third_Party/Lvgl/src/widgets/canvas/../image
 clockpp\lv_canvas.o: ../Middlewares/Third_Party/Lvgl/src/widgets/canvas/../image/../../core/../misc/lv_ext_data.h
 clockpp\lv_canvas.o: ../Middlewares/Third_Party/Lvgl/src/widgets/canvas/../image/../../core/../misc/../lv_conf_internal.h
 clockpp\lv_canvas.o: ../Middlewares/Third_Party/Lvgl/src/widgets/canvas/../image/../../core/../misc/../lv_conf_kconfig.h
-clockpp\lv_canvas.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_canvas.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_canvas.o: ../Middlewares/Third_Party/Lvgl/src/widgets/canvas/../image/../../core/lv_obj.h
 clockpp\lv_canvas.o: ../Middlewares/Third_Party/Lvgl/src/widgets/canvas/../image/../../core/../misc/lv_types.h
 clockpp\lv_canvas.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h

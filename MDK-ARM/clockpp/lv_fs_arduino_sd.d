@@ -4,7 +4,7 @@ clockpp\lv_fs_arduino_sd.o: ../Middlewares/Third_Party/Lvgl/src/libs/fsdrv/../..
 clockpp\lv_fs_arduino_sd.o: ../Middlewares/Third_Party/Lvgl/src/libs/fsdrv/../../../src/lv_init.h
 clockpp\lv_fs_arduino_sd.o: ../Middlewares/Third_Party/Lvgl/src/libs/fsdrv/../../../src/lv_conf_internal.h
 clockpp\lv_fs_arduino_sd.o: ../Middlewares/Third_Party/Lvgl/src/libs/fsdrv/../../../src/lv_conf_kconfig.h
-clockpp\lv_fs_arduino_sd.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_fs_arduino_sd.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_fs_arduino_sd.o: ../Middlewares/Third_Party/Lvgl/src/libs/fsdrv/../../../src/misc/lv_types.h
 clockpp\lv_fs_arduino_sd.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\lv_fs_arduino_sd.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h

@@ -3,7 +3,7 @@ clockpp\lv_fs_memfs.o: ../Middlewares/Third_Party/Lvgl/src/libs/fsdrv/../../misc
 clockpp\lv_fs_memfs.o: ../Middlewares/Third_Party/Lvgl/src/libs/fsdrv/../../misc/lv_fs.h
 clockpp\lv_fs_memfs.o: ../Middlewares/Third_Party/Lvgl/src/libs/fsdrv/../../misc/../lv_conf_internal.h
 clockpp\lv_fs_memfs.o: ../Middlewares/Third_Party/Lvgl/src/libs/fsdrv/../../misc/../lv_conf_kconfig.h
-clockpp\lv_fs_memfs.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_fs_memfs.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_fs_memfs.o: ../Middlewares/Third_Party/Lvgl/src/libs/fsdrv/../../misc/lv_types.h
 clockpp\lv_fs_memfs.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\lv_fs_memfs.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h

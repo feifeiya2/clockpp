@@ -2,7 +2,7 @@ clockpp\lv_mem_core_uefi.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/uefi/lv_m
 clockpp\lv_mem_core_uefi.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/uefi/../lv_mem.h
 clockpp\lv_mem_core_uefi.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/uefi/../../lv_conf_internal.h
 clockpp\lv_mem_core_uefi.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/uefi/../../lv_conf_kconfig.h
-clockpp\lv_mem_core_uefi.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_mem_core_uefi.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_mem_core_uefi.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/uefi/../lv_string.h
 clockpp\lv_mem_core_uefi.o: ../Middlewares/Third_Party/Lvgl/src/stdlib/uefi/../../misc/lv_types.h
 clockpp\lv_mem_core_uefi.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h

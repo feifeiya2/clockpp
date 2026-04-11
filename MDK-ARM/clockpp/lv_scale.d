@@ -3,7 +3,7 @@ clockpp\lv_scale.o: ../Middlewares/Third_Party/Lvgl/src/widgets/scale/lv_scale_p
 clockpp\lv_scale.o: ../Middlewares/Third_Party/Lvgl/src/widgets/scale/lv_scale.h
 clockpp\lv_scale.o: ../Middlewares/Third_Party/Lvgl/src/widgets/scale/../../lv_conf_internal.h
 clockpp\lv_scale.o: ../Middlewares/Third_Party/Lvgl/src/widgets/scale/../../lv_conf_kconfig.h
-clockpp\lv_scale.o: ..\Middlewares\Third_Party\Lvgl\lv_conf.h
+clockpp\lv_scale.o: ../Middlewares/Third_Party/Lvgl/lv_conf.h
 clockpp\lv_scale.o: ../Middlewares/Third_Party/Lvgl/src/widgets/scale/../../core/lv_obj.h
 clockpp\lv_scale.o: ../Middlewares/Third_Party/Lvgl/src/widgets/scale/../../core/../misc/lv_types.h
 clockpp\lv_scale.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
