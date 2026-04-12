@@ -30,6 +30,7 @@
 #include "touch_wrapper.h"
 #include "lv_port_indev.h"
 #include "network_uart_wrapper.h"
+#include "shell_uart_wrapper.h"
 
 /* USER CODE END Includes */
 
@@ -50,8 +51,6 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN Variables */
-extern UART_HandleTypeDef huart1;
-uint8_t g_data[1];
 /* USER CODE END Variables */
 /* Definitions for defaultTask */
 osThreadId_t defaultTaskHandle;
@@ -242,33 +241,22 @@ void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
   /* Infinite loop */
-	HAL_UART_Receive_IT(&huart1, g_data, 1);
-  Wrapper_Network_Uart_Init();
-  uint8_t buffer[128];
+  Wrapper_Shell_Uart_Init();
 
+  uint8_t data;
 	for(;;){
-    uint16_t len = Wrapper_Network_Uart_Get_Response_Data(buffer, sizeof(buffer));
-    if(len > 0) {
-        buffer[len] = '\0'; // È·±£×Ö·û´®½áÊø
-        printf("Received from ESP32: %s\r\n", buffer);
-    }
-
-		HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
-		vTaskDelay(500);
-		HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_SET);
-		vTaskDelay(500);
+    Wrapper_Shell_Uart_Recv(&data);
+    Wrapper_Shell_Uart_Send(&data, 1);
+		// HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
+		// vTaskDelay(500);
+		// HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_SET);
+		// vTaskDelay(500);
 	}	
   /* USER CODE END StartDefaultTask */
 }
 
 /* Private application code --------------------------------------------------*/
 /* USER CODE BEGIN Application */
-void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
-{
-  if(huart->Instance == USART1){
-    printf("%d", g_data[0]);
-    HAL_UART_Receive_IT(&huart1, g_data, 1);
-  }
-}
+
 /* USER CODE END Application */
 

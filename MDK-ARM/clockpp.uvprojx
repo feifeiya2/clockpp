@@ -336,7 +336,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F407xx  LV_CONF_INCLUDE_SIMPLE  LV_LVGL_H_INCLUDE_SIMPLE,STM32F407xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;./bsp_posting;./bsp_wrapper;./bsp_driver;../Middlewares/Third_Party/Lvgl;../Middlewares/Third_Party/Lvgl/demos;../Middlewares/Third_Party/Lvgl/posting;../Middlewares/Third_Party/Lvgl/src</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;./bsp_posting;./bsp_wrapper;./bsp_driver;../Middlewares/Third_Party/Lvgl;../Middlewares/Third_Party/Lvgl/demos;../Middlewares/Third_Party/Lvgl/posting;../Middlewares/Third_Party/Lvgl/src;..\Middlewares\Third_Party\LetterShell</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -958,6 +958,36 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>Middlewares/LetterShell</GroupName>
+          <Files>
+            <File>
+              <FileName>shell.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\Third_Party\LetterShell\shell.c</FilePath>
+            </File>
+            <File>
+              <FileName>shell_cmd_list.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\Third_Party\LetterShell\shell_cmd_list.c</FilePath>
+            </File>
+            <File>
+              <FileName>shell_companion.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\Third_Party\LetterShell\shell_companion.c</FilePath>
+            </File>
+            <File>
+              <FileName>shell_ext.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\Third_Party\LetterShell\shell_ext.c</FilePath>
+            </File>
+            <File>
+              <FileName>shell_port.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\Third_Party\LetterShell\shell_port.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>bsp/wrapper</GroupName>
           <Files>
             <File>
@@ -974,6 +1004,11 @@
               <FileName>network_uart_wrapper.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\bsp_wrapper\network_uart_wrapper.c</FilePath>
+            </File>
+            <File>
+              <FileName>shell_uart_wrapper.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\bsp_wrapper\shell_uart_wrapper.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -994,6 +1029,11 @@
               <FileName>esp32_uart_posting.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\bsp_posting\esp32_uart_posting.c</FilePath>
+            </File>
+            <File>
+              <FileName>shell_uart_posting.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\bsp_posting\shell_uart_posting.c</FilePath>
             </File>
           </Files>
         </Group>
