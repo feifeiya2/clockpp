@@ -1,16 +1,7 @@
 #ifndef __DISPLAY_POSTING_H
 #define __DISPLAY_POSTING_H
 
-#include "main.h"
-#include "st7789.h"
-#include "display_wrapper.h"
-#include "FreeRTOS.h"
-#include "task.h"
-#include "cmsis_os.h"
-#include "lv_port_disp.h"
-
-extern SPI_HandleTypeDef hspi2;
-extern ST7789_Interface_t interface;
+#include "stdint.h"
 
 #define ST7789_USE  // 定义使用ST7789显示屏
 

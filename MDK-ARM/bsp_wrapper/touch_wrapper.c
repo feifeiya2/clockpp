@@ -1,4 +1,6 @@
 #include "touch_wrapper.h"
+#include "touch_posting.h"
+#include "stdio.h"
 
 static Touch_Wrapper_t touch_wrapper;
 

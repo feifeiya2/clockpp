@@ -1,4 +1,6 @@
 #include "display_wrapper.h"
+#include "display_posting.h"
+#include "stdio.h"
 
 static Display_Wrapper_t display_wrapper;
 

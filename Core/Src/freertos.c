@@ -28,8 +28,9 @@
 #include <stdio.h>
 #include "display_wrapper.h"
 #include "touch_wrapper.h"
-#include "uart_driver.h"
-//#include "lv_port_indev.h"
+#include "lv_port_indev.h"
+#include "network_uart_wrapper.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -242,12 +243,16 @@ void StartDefaultTask(void *argument)
   /* USER CODE BEGIN StartDefaultTask */
   /* Infinite loop */
 	HAL_UART_Receive_IT(&huart1, g_data, 1);
-  HAL_UARTEx_ReceiveToIdle_DMA(&huart2, data, 100);
-  uart_init();
-  
+  Wrapper_Network_Uart_Init();
+  uint8_t buffer[128];
 
-	for(;;)
-	{
+	for(;;){
+    uint16_t len = Wrapper_Network_Uart_Get_Response_Data(buffer, sizeof(buffer));
+    if(len > 0) {
+        buffer[len] = '\0'; // È·±£×Ö·û´®½áÊø
+        printf("Received from ESP32: %s\r\n", buffer);
+    }
+
 		HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
 		vTaskDelay(500);
 		HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_SET);

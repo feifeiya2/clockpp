@@ -21,7 +21,7 @@ void FT6336_Init(void) {
 
     uint8_t id = 0;
     // 尝试读取 ID 或 模式寄存器，检查通信是否正常
-    if (ft6336_interface.i2c_mem_read(FT6336_ADDR, FT_REG_MODE, &id, 1, 100) != HAL_OK) {
+    if (ft6336_interface.i2c_mem_read(FT6336_ADDR, FT_REG_MODE, &id, 1, 100) != FT6336_OK) {
         return; // 初始化失败
     }
     return; // 初始化成功
@@ -35,7 +35,7 @@ uint8_t FT6336_Read_Touch(FT6336_Data_t *state) {
     uint8_t data[6]; // 用于存放读取的 0x02~0x07 寄存器数据
     
     // 连续读取从 0x02 开始的 6 个字节
-    if (ft6336_interface.i2c_mem_read(FT6336_ADDR, FT_REG_NUM_TOUCHES, data, 6, 100) != HAL_OK) {
+    if (ft6336_interface.i2c_mem_read(FT6336_ADDR, FT_REG_NUM_TOUCHES, data, 6, 100) != FT6336_OK) {
         state->touched = 0;
         return 0;
     }

@@ -1,5 +1,6 @@
 clockpp\st7789.o: bsp_driver\st7789.c
 clockpp\st7789.o: bsp_driver\st7789.h
+clockpp\st7789.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\st7789.o: ../Core/Inc/main.h
 clockpp\st7789.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 clockpp\st7789.o: ../Core/Inc/stm32f4xx_hal_conf.h
@@ -8,7 +9,6 @@ clockpp\st7789.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
 clockpp\st7789.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 clockpp\st7789.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h
 clockpp\st7789.o: ../Drivers/CMSIS/Include/core_cm4.h
-clockpp\st7789.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\st7789.o: ../Drivers/CMSIS/Include/cmsis_version.h
 clockpp\st7789.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
 clockpp\st7789.o: ../Drivers/CMSIS/Include/cmsis_armcc.h

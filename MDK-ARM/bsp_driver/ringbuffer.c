@@ -1,0 +1,78 @@
+#include "ringbuffer.h"
+#include "stdio.h"
+#include <stdbool.h>
+#include <string.h>
+
+void RingBuffer_Init(RingBuffer *rb, uint8_t *pool, uint16_t size) {
+    rb->buffer = pool;
+    rb->size = size;
+    rb->head = 0;
+    rb->tail = 0;
+}
+
+void RingBuffer_Clear(RingBuffer *rb) {
+    rb->head = 0;
+    rb->tail = 0;
+}
+
+uint16_t RingBuffer_GetCount(RingBuffer *rb) {
+    uint16_t h = rb->head;
+    uint16_t t = rb->tail;
+    if (h >= t) {
+        return (h - t);
+    } else {
+        return (rb->size - t + h);
+    }
+}
+
+uint16_t RingBuffer_GetFree(RingBuffer *rb) {
+    // 留一个位置不写，用于区分空和满
+    return (rb->size - RingBuffer_GetCount(rb) - 1);
+}
+
+uint16_t RingBuffer_Write(RingBuffer *rb, const uint8_t *data, uint16_t len) {
+    uint16_t free_space = RingBuffer_GetFree(rb);
+    if (len > free_space) {
+        printf("RingBuffer_Write: no enough space\n");
+        return 0; // 没有足够空间写入
+    }
+
+    if (len == 0) return 0;
+
+    uint16_t first_part = rb->size - rb->head;
+
+    if (len <= first_part) {
+        // 不需要回绕，直接拷贝
+        memcpy(&rb->buffer[rb->head], data, len);
+    } else {
+        // 需要回绕，分两段拷贝
+        memcpy(&rb->buffer[rb->head], data, first_part);
+        memcpy(&rb->buffer[0], &data[first_part], len - first_part);
+    }
+
+    rb->head = (rb->head + len) % rb->size;
+    return len;
+}
+
+uint16_t RingBuffer_Read(RingBuffer *rb, uint8_t *dest, uint16_t len) {
+    uint16_t count = RingBuffer_GetCount(rb);
+    if (len > count) {
+        len = count; // 没那么多数据
+    }
+
+    if (len == 0) return 0;
+
+    uint16_t first_part = rb->size - rb->tail;
+
+    if (len <= first_part) {
+        // 数据连续，直接读取
+        memcpy(dest, &rb->buffer[rb->tail], len);
+    } else {
+        // 数据回绕，分两段读取
+        memcpy(dest, &rb->buffer[rb->tail], first_part);
+        memcpy(&dest[first_part], &rb->buffer[0], len - first_part);
+    }
+
+    rb->tail = (rb->tail + len) % rb->size;
+    return len;
+}

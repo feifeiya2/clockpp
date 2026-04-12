@@ -1,8 +1,7 @@
 #ifndef __TOUCH_WRAPPER_H
 #define __TOUCH_WRAPPER_H
 
-#include "main.h"
-#include "touch_posting.h"
+#include "stdint.h"
 
 typedef struct {
     uint8_t  is_pressed; // 0-Ì§Æð£¬1-°´ÏÂ

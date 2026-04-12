@@ -1,0 +1,6 @@
+clockpp\network_uart_wrapper.o: bsp_wrapper\network_uart_wrapper.c
+clockpp\network_uart_wrapper.o: bsp_wrapper\network_uart_wrapper.h
+clockpp\network_uart_wrapper.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+clockpp\network_uart_wrapper.o: ./bsp_posting/esp32_uart_posting.h
+clockpp\network_uart_wrapper.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
+clockpp\network_uart_wrapper.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h

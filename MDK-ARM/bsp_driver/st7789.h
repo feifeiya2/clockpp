@@ -1,7 +1,7 @@
 #ifndef __ST7789_H
 #define __ST7789_H
 
-#include "main.h"
+#include "stdint.h"
 
 #define ST7789_WIDTH  240
 #define ST7789_HEIGHT 320

@@ -1,7 +1,7 @@
 #ifndef __FT6336_H
 #define __FT6336_H
 
-#include "main.h"
+#include "stdint.h"
 
 typedef enum 
 {

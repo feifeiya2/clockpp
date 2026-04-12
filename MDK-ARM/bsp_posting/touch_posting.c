@@ -1,4 +1,12 @@
 #include "touch_posting.h"
+#include "ft6336.h"
+#include "touch_wrapper.h"
+#include "FreeRTOS.h"
+#include "task.h"
+#include "cmsis_os.h"
+#include "main.h"
+
+extern I2C_HandleTypeDef hi2c1;
 
 /*  <Driver层>  的IO函数的实现 start*/
 

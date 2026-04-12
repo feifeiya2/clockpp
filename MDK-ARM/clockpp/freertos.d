@@ -47,10 +47,8 @@ clockpp\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cms
 clockpp\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h
 clockpp\freertos.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
 clockpp\freertos.o: ./bsp_wrapper/display_wrapper.h
-clockpp\freertos.o: ./bsp_posting/display_posting.h
-clockpp\freertos.o: ./bsp_driver/st7789.h
-clockpp\freertos.o: ./bsp_wrapper/display_wrapper.h
-clockpp\freertos.o: ../Middlewares/Third_Party/Lvgl/lv_port_disp.h
+clockpp\freertos.o: ./bsp_wrapper/touch_wrapper.h
+clockpp\freertos.o: ../Middlewares/Third_Party/Lvgl/lv_port_indev.h
 clockpp\freertos.o: ../Middlewares/Third_Party/Lvgl/lvgl.h
 clockpp\freertos.o: ../Middlewares/Third_Party/Lvgl/lv_version.h
 clockpp\freertos.o: ../Middlewares/Third_Party/Lvgl/src/lv_init.h
@@ -256,8 +254,4 @@ clockpp\freertos.o: ../Middlewares/Third_Party/Lvgl/src/lv_api_map_v9_1.h
 clockpp\freertos.o: ../Middlewares/Third_Party/Lvgl/src/lv_api_map_v9_2.h
 clockpp\freertos.o: ../Middlewares/Third_Party/Lvgl/src/lv_api_map_v9_3.h
 clockpp\freertos.o: ../Middlewares/Third_Party/Lvgl/src/lv_api_map_v9_4.h
-clockpp\freertos.o: ./bsp_wrapper/touch_wrapper.h
-clockpp\freertos.o: ./bsp_posting/touch_posting.h
-clockpp\freertos.o: ./bsp_driver/ft6336.h
-clockpp\freertos.o: ./bsp_wrapper/touch_wrapper.h
-clockpp\freertos.o: ./bsp_driver/uart_driver.h
+clockpp\freertos.o: ./bsp_wrapper/network_uart_wrapper.h

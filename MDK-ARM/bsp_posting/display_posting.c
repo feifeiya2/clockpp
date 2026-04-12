@@ -1,4 +1,14 @@
 #include "display_posting.h"
+#include "st7789.h"
+#include "display_wrapper.h"
+#include "FreeRTOS.h"
+#include "task.h"
+#include "cmsis_os.h"
+#include "lv_port_disp.h"
+#include "main.h"
+
+extern SPI_HandleTypeDef hspi2;
+extern ST7789_Interface_t interface;
 
 /*  <Driver层>  的IO函数的实现 start*/
 
