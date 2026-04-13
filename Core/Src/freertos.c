@@ -29,8 +29,7 @@
 #include "display_wrapper.h"
 #include "touch_wrapper.h"
 #include "lv_port_indev.h"
-#include "network_uart_wrapper.h"
-#include "shell_uart_wrapper.h"
+#include "service_lettershell.h"
 
 /* USER CODE END Includes */
 
@@ -221,7 +220,7 @@ void MX_FREERTOS_Init(void) {
 
   
   //xTaskCreate(lvgl_test_task, "lvgl_test_task", 2048, NULL, 1, NULL);
-
+  xTaskCreate(task_shell, "task_shell", 120, NULL, osPriorityNormal, NULL);
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_EVENTS */
@@ -241,16 +240,12 @@ void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
   /* Infinite loop */
-  Wrapper_Shell_Uart_Init();
 
-  uint8_t data;
 	for(;;){
-    Wrapper_Shell_Uart_Recv(&data);
-    Wrapper_Shell_Uart_Send(&data, 1);
-		// HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
-		// vTaskDelay(500);
-		// HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_SET);
-		// vTaskDelay(500);
+		HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
+		vTaskDelay(500);
+		HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_SET);
+		vTaskDelay(500);
 	}	
   /* USER CODE END StartDefaultTask */
 }

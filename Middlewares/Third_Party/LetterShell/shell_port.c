@@ -1,38 +1,29 @@
 #include "shell_port.h"
+#include "shell_uart_wrapper.h"
+#include <stdio.h>
 
 Shell shell;
-char shellBuffer[512];
-
+static char shellBuffer[512];
 static SemaphoreHandle_t shellMutex;
 
-short ShellWrite(char* data, unsigned short len){
-    HAL_UART_Transmit(&huart1, (uint8_t*)data, len, 0x1FF);
-    return len;
-}
 
-short ShellRead(char* data, unsigned short len){
-    if(HAL_UART_Receive(&huart1, (uint8_t*)data, len, 0x1FF) != HAL_OK){
-        return 0;
-    }else{
-        return 1;
-    }
-}
-
-int ShellLock(Shell* shell){
+static int ShellLock(Shell* shell){
     xSemaphoreTake(shellMutex, portMAX_DELAY);
     return 0;
 }
 
-int ShellUnlock(Shell* shell){
+static int ShellUnlock(Shell* shell){
     xSemaphoreGive(shellMutex);
     return 0;
 }
 
 void ShellInit(void){
     shellMutex = xSemaphoreCreateMutex();
-
-    shell.write = ShellWrite;
-    shell.read = ShellRead;
+    if(shellMutex == NULL) {
+        printf("Error: Failed to create shell mutex.\n");
+        return;
+    }
+    shell.write = Wrapper_Shell_Uart_Send;
     shell.lock = ShellLock;
     shell.unlock = ShellUnlock;
     shellInit(&shell, shellBuffer, 512);
