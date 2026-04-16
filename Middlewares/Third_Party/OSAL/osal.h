@@ -23,9 +23,11 @@ osal_status_t osal_sem_take(osal_sem_hdl_t xSem, uint32_t timeout_ms);
 osal_status_t osal_sem_give(osal_sem_hdl_t xSem);
 void osal_sem_delete(osal_sem_hdl_t xSem);
 
+
 /* --- 内存管理 --- */
 void* osal_malloc(size_t size);
 void  osal_free(void *ptr);
+
 
 /* --- 队列 --- */
 // queue_len: 队列深度, item_size: 每个单元的大小(Byte)
