@@ -48,3 +48,5 @@ clockpp\shell_port.o: ..\Middlewares\Third_Party\LetterShell\shell.h
 clockpp\shell_port.o: ..\Middlewares\Third_Party\LetterShell\shell_cfg.h
 clockpp\shell_port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 clockpp\shell_port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
+clockpp\shell_port.o: ./bsp_wrapper/shell_uart_wrapper.h
+clockpp\shell_port.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
