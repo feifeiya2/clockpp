@@ -10,6 +10,8 @@ osal_status_t osal_task_create(osal_task_hdl_t *pxTask, const char *name,
                                uint32_t stack_size, uint8_t priority);
 void osal_task_delete(osal_task_hdl_t xTask);
 void osal_task_delay(uint32_t ms);
+uint32_t osal_ms_to_tick(uint32_t timeout_ms);
+uint32_t osal_get_tick_count(void);
 
 /* --- »¥³âËø --- */
 osal_status_t osal_mutex_create(osal_mutex_hdl_t *pxMutex);

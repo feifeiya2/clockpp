@@ -28,7 +28,8 @@ typedef void* osal_queue_hdl_t; // 队列句柄
 typedef void* osal_strm_hdl_t;  // StreamBuffer 句柄
 
 /* 常量定义 */
-#define OSAL_WAIT_FOREVER  0xFFFFFFFF
-#define OSAL_NO_WAIT       0
+#define OSAL_WAIT_FOREVER       0xFFFFFFFF
+#define OSAL_NO_WAIT            0
+#define OSAL_TICK_PERIOD_MS     portTICK_PERIOD_MS
 
 #endif /* __OSAL_TYPES_H__ */
