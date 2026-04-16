@@ -2,6 +2,8 @@
 #include "FreeRTOS.h"
 #include "task.h"
 #include "semphr.h"
+#include "queue.h"
+#include "stream_buffer.h"
 
 /* 任务实现 */
 osal_status_t osal_task_create(osal_task_hdl_t *pxTask, const char *name, 
@@ -49,4 +51,83 @@ void osal_free(void *ptr) {
     vPortFree(ptr);
 }
 
-/* 信号量实现参考互斥锁，篇幅原因略去... */
+/* --- Queue 实现 --- */
+
+osal_status_t osal_queue_create(osal_queue_hdl_t *pxQueue, uint32_t queue_len, uint32_t item_size) {
+    *pxQueue = (osal_queue_hdl_t)xQueueCreate(queue_len, item_size);
+    return (*pxQueue != NULL) ? OSAL_OK : OSAL_NOMEM;
+}
+
+osal_status_t osal_queue_send(osal_queue_hdl_t xQueue, const void *item, uint32_t timeout_ms) {
+    TickType_t ticks = (timeout_ms == OSAL_WAIT_FOREVER) ? portMAX_DELAY : pdMS_TO_TICKS(timeout_ms);
+    if (xQueueSend((QueueHandle_t)xQueue, item, ticks) == pdPASS) {
+        return OSAL_OK;
+    }
+    return OSAL_TIMEOUT;
+}
+
+osal_status_t osal_queue_receive(osal_queue_hdl_t xQueue, void *item, uint32_t timeout_ms) {
+    TickType_t ticks = (timeout_ms == OSAL_WAIT_FOREVER) ? portMAX_DELAY : pdMS_TO_TICKS(timeout_ms);
+    if (xQueueReceive((QueueHandle_t)xQueue, item, ticks) == pdPASS) {
+        return OSAL_OK;
+    }
+    return OSAL_TIMEOUT;
+}
+
+void osal_queue_delete(osal_queue_hdl_t xQueue) {
+    vQueueDelete((QueueHandle_t)xQueue);
+}
+
+/* --- StreamBuffer 实现 --- */
+
+osal_status_t osal_strm_create(osal_strm_hdl_t *pxStrm, uint32_t buffer_size, uint32_t trigger_level) {
+    *pxStrm = (osal_strm_hdl_t)xStreamBufferCreate(buffer_size, trigger_level);
+    return (*pxStrm != NULL) ? OSAL_OK : OSAL_NOMEM;
+}
+
+size_t osal_strm_send(osal_strm_hdl_t xStrm, const void *data, size_t len, uint32_t timeout_ms) {
+    TickType_t ticks = (timeout_ms == OSAL_WAIT_FOREVER) ? portMAX_DELAY : pdMS_TO_TICKS(timeout_ms);
+    return xStreamBufferSend((StreamBufferHandle_t)xStrm, data, len, ticks);
+}
+
+size_t osal_strm_receive(osal_strm_hdl_t xStrm, void *data, size_t len, uint32_t timeout_ms) {
+    TickType_t ticks = (timeout_ms == OSAL_WAIT_FOREVER) ? portMAX_DELAY : pdMS_TO_TICKS(timeout_ms);
+    return xStreamBufferReceive((StreamBufferHandle_t)xStrm, data, len, ticks);
+}
+
+void osal_strm_delete(osal_strm_hdl_t xStrm) {
+    vStreamBufferDelete((StreamBufferHandle_t)xStrm);
+}
+
+/* 信号量中断释放 */
+osal_status_t osal_sem_give_isr(osal_sem_hdl_t xSem, osal_yield_t *pxYield) {
+    BaseType_t xHigherPriorityTaskWoken = pdFALSE;
+    if (xSemaphoreGiveFromISR((SemaphoreHandle_t)xSem, &xHigherPriorityTaskWoken) == pdPASS) {
+        if (pxYield && xHigherPriorityTaskWoken) *pxYield = OSAL_TRUE;
+        return OSAL_OK;
+    }
+    return OSAL_ERROR;
+}
+
+/* 队列中断发送 */
+osal_status_t osal_queue_send_isr(osal_queue_hdl_t xQueue, const void *item, osal_yield_t *pxYield) {
+    BaseType_t xHigherPriorityTaskWoken = pdFALSE;
+    if (xQueueSendFromISR((QueueHandle_t)xQueue, item, &xHigherPriorityTaskWoken) == pdPASS) {
+        if (pxYield && xHigherPriorityTaskWoken) *pxYield = OSAL_TRUE;
+        return OSAL_OK;
+    }
+    return OSAL_ERROR;
+}
+
+/* 流缓冲中断发送 */
+size_t osal_strm_send_isr(osal_strm_hdl_t xStrm, const void *data, size_t len, osal_yield_t *pxYield) {
+    BaseType_t xHigherPriorityTaskWoken = pdFALSE;
+    size_t sent = xStreamBufferSendFromISR((StreamBufferHandle_t)xStrm, data, len, &xHigherPriorityTaskWoken);
+    if (pxYield && xHigherPriorityTaskWoken) *pxYield = OSAL_TRUE;
+    return sent;
+}
+
+/* 强制上下文切换 */
+void osal_yield_from_isr(osal_yield_t xYield) {
+    portYIELD_FROM_ISR((BaseType_t)xYield);
+}
