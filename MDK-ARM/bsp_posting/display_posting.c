@@ -1,9 +1,7 @@
 #include "display_posting.h"
 #include "st7789.h"
 #include "display_wrapper.h"
-#include "FreeRTOS.h"
-#include "task.h"
-#include "cmsis_os.h"
+#include "osal.h"
 #include "lv_port_disp.h"
 #include "main.h"
 
@@ -46,7 +44,7 @@ static ST7789_Interface_t st7789_interface = {
         .set_dc_pin     = Port_Set_DC_Pin,
         .set_cs_pin     = Port_Set_CS_Pin,
         .set_led_pin    = Port_Set_LED_Pin,
-        .delay_ms = vTaskDelay,
+        .delay_ms = osal_task_delay,
 }; 
 
 /*注册显示屏Wrapper层的接口工具*/

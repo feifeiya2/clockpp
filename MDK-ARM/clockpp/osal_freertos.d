@@ -1,0 +1,17 @@
+clockpp\osal_freertos.o: ..\Middlewares\Third_Party\OSAL\osal_freertos.c
+clockpp\osal_freertos.o: ..\Middlewares\Third_Party\OSAL\osal.h
+clockpp\osal_freertos.o: ..\Middlewares\Third_Party\OSAL\osal_types.h
+clockpp\osal_freertos.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+clockpp\osal_freertos.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
+clockpp\osal_freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+clockpp\osal_freertos.o: ../Core/Inc/FreeRTOSConfig.h
+clockpp\osal_freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+clockpp\osal_freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+clockpp\osal_freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+clockpp\osal_freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+clockpp\osal_freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+clockpp\osal_freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+clockpp\osal_freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+clockpp\osal_freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
+clockpp\osal_freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
+clockpp\osal_freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/stream_buffer.h
