@@ -336,7 +336,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F407xx  LV_CONF_INCLUDE_SIMPLE  LV_LVGL_H_INCLUDE_SIMPLE,STM32F407xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;./bsp_posting;./bsp_wrapper;./bsp_driver;../Middlewares/Third_Party/Lvgl;../Middlewares/Third_Party/Lvgl/demos;../Middlewares/Third_Party/Lvgl/posting;../Middlewares/Third_Party/Lvgl/src;..\Middlewares\Third_Party\LetterShell;..\Service\LetterShell</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;./bsp_posting;./bsp_wrapper;./bsp_driver;../Middlewares/Third_Party/Lvgl;../Middlewares/Third_Party/Lvgl/demos;../Middlewares/Third_Party/Lvgl/posting;../Middlewares/Third_Party/Lvgl/src;..\Middlewares\Third_Party\LetterShell;..\Service\LetterShell;..\Middlewares\Third_Party\OSAL</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -859,6 +859,16 @@
               <FileName>service_lettershell.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Service\LetterShell\service_lettershell.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Middlewares/Osal</GroupName>
+          <Files>
+            <File>
+              <FileName>osal_freertos.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\Third_Party\OSAL\osal_freertos.c</FilePath>
             </File>
           </Files>
         </Group>
