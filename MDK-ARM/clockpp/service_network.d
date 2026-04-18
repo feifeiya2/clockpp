@@ -1,0 +1,9 @@
+clockpp\service_network.o: ..\Middlewares\Third_Party\Network\service_network.c
+clockpp\service_network.o: ..\Middlewares\Third_Party\Network\service_network.h
+clockpp\service_network.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+clockpp\service_network.o: ..\Middlewares\Third_Party\OSAL\osal.h
+clockpp\service_network.o: ..\Middlewares\Third_Party\OSAL\osal_types.h
+clockpp\service_network.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
+clockpp\service_network.o: ./bsp_wrapper/network_uart_wrapper.h
+clockpp\service_network.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
+clockpp\service_network.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h

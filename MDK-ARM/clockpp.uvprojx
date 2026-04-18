@@ -336,7 +336,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F407xx  LV_CONF_INCLUDE_SIMPLE  LV_LVGL_H_INCLUDE_SIMPLE,STM32F407xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;./bsp_posting;./bsp_wrapper;./bsp_driver;../Middlewares/Third_Party/Lvgl;../Middlewares/Third_Party/Lvgl/demos;../Middlewares/Third_Party/Lvgl/posting;../Middlewares/Third_Party/Lvgl/src;..\Middlewares\Third_Party\LetterShell;..\Service\LetterShell;..\Middlewares\Third_Party\OSAL</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;./bsp_posting;./bsp_wrapper;./bsp_driver;../Middlewares/Third_Party/Lvgl;../Middlewares/Third_Party/Lvgl/demos;../Middlewares/Third_Party/Lvgl/posting;../Middlewares/Third_Party/Lvgl/src;..\Middlewares\Third_Party\LetterShell;..\Service\LetterShell;..\Middlewares\Third_Party\OSAL;..\Middlewares\Third_Party\Network</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -849,6 +849,21 @@
               <FileName>system_stm32f4xx.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Core/Src/system_stm32f4xx.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Service/Network</GroupName>
+          <Files>
+            <File>
+              <FileName>service_network.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\Third_Party\Network\service_network.c</FilePath>
+            </File>
+            <File>
+              <FileName>service_network_hub.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\Third_Party\Network\service_network_hub.c</FilePath>
             </File>
           </Files>
         </Group>

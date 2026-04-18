@@ -31,5 +31,6 @@ typedef void* osal_strm_hdl_t;  // StreamBuffer ¾ä±ú
 #define OSAL_WAIT_FOREVER       0xFFFFFFFF
 #define OSAL_NO_WAIT            0
 #define OSAL_TICK_PERIOD_MS     portTICK_PERIOD_MS
+#define OSAL_PRIORITYNORMAL     24
 
 #endif /* __OSAL_TYPES_H__ */

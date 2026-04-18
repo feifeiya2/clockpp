@@ -30,6 +30,8 @@
 "clockpp\stm32f4xx_hal_tim_ex.o"
 "clockpp\stm32f4xx_hal_uart.o"
 "clockpp\system_stm32f4xx.o"
+"clockpp\service_network.o"
+"clockpp\service_network_hub.o"
 "clockpp\service_lettershell.o"
 "clockpp\osal_freertos.o"
 "clockpp\croutine.o"

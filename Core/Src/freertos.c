@@ -31,8 +31,7 @@
 #include "lv_port_indev.h"
 #include "service_lettershell.h"
 
-#include "network_uart_wrapper.h"
-
+#include "service_network.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -127,13 +126,9 @@ void lvgl_test_task(void *argument)
 }
 
 void test_task(void *argument) {
-  uint8_t buffer[256];
-  Wrapper_Network_Uart_Init (); // 初始化网络UART接口
   while(1) {
-    if(Wrapper_Network_Uart_Get_Complete_Line(buffer)){
-      printf("Received line: %s\r\n", buffer); // 打印接收到的完整行
-    }
-    vTaskDelay(100);
+    Service_Net_Update_Weather();
+    vTaskDelay(1000);
   }
 }
 /* USER CODE END FunctionPrototypes */
@@ -230,6 +225,7 @@ void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
 
+  Service_Net_Init(); // 初始化网络服务
 
   xTaskCreate(test_task, "test_task", 2048, NULL, 1, NULL);
   //xTaskCreate(lvgl_test_task, "lvgl_test_task", 2048, NULL, 1, NULL);
