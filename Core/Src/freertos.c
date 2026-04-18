@@ -128,7 +128,8 @@ void lvgl_test_task(void *argument)
 void test_task(void *argument) {
   while(1) {
     Service_Net_Update_Weather();
-    vTaskDelay(1000);
+    Service_Net_Update_Time();
+    vTaskDelay(2000);
   }
 }
 /* USER CODE END FunctionPrototypes */

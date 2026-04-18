@@ -7,6 +7,7 @@
 extern osal_task_hdl_t g_Task_Network_Parser_Handle;
 
 void Service_Net_Update_Weather(void);
+void Service_Net_Update_Time(void);
 void Task_Network_Parser(void *argument);
 void Service_Net_Init(void);
 

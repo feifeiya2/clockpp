@@ -7,6 +7,10 @@ void Service_Net_Update_Weather(void){
     Wrapper_Network_Uart_Send_AT_Command((const uint8_t *)"AT+HTTPCGET=\"https://api.seniverse.com/v3/weather/now.json?key=SInj2qoOL5qQE6wJq&location=chengdu&language=en&unit=c\"\r\n");
 }
 
+void Service_Net_Update_Time(void){
+    Wrapper_Network_Uart_Send_AT_Command((const uint8_t *)"AT+HTTPCGET=\"http://quan.suning.com/getSysTime.do\"\r\n");
+}
+
 // 网络解析任务
 void Task_Network_Parser(void *argument) {
     uint8_t rx_line[512]; // 用于存放抠出来的一整行
@@ -18,27 +22,29 @@ void Task_Network_Parser(void *argument) {
             if (strstr((char*)rx_line, "+HTTPCGET:") != NULL) {
                 char *json_start = strchr((char*)rx_line, '{');
                 if (json_start != NULL) {
+                    //天气数据的 JSON 
                     if (strstr(json_start, "\"results\"") != NULL) {
-                        // 确认完毕！这就是天气数据！
-                        // 立刻把它丢给 DataHub 去做真正的 cJSON 提取！
                         printf("Received Weather Data: %s\n", json_start);
-                        
-                    } else {
-                        // 不是我们关心的 JSON，先打印出来看看
+                    }
+                    //时间数据的 JSON 
+                    else if (strstr(json_start, "\"sysTime2\"") != NULL) {
+                        printf("Received Time Data: %s\n", json_start);
+                    }
+                    // 不是我们关心的 JSON
+                    else {
                         printf("Received HTTP Response: %s\n", json_start);
                     }
                 } else {
                     printf("Malformed HTTP Response: %s\n", rx_line);
                 }
             }
-
             else {
                 printf("AT Reply: %s\n", rx_line);
             }
         }
         else {
             // 没收到完整的话，睡 10ms 把 CPU 让给别人
-            vTaskDelay(10);
+            osal_task_delay(10);
         }
     }
 }
