@@ -45,3 +45,8 @@ void ESP32_Driver_Transmit(const uint8_t *data, uint16_t len) {
         g_hw_ops->send_bytes((uint8_t *)data, len);
     }
 }
+// 供 Wrapper 层调用（查询是否有完整数据包可读）
+uint16_t ESP32_Driver_Get_Complete_datalen(void){
+    return RingBuffer_Find_Char(&esp32_rb, '\n'); // 以换行符为数据包结束标志
+}
+

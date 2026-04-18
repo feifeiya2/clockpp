@@ -47,4 +47,13 @@ uint16_t RingBuffer_Write(RingBuffer *rb, const uint8_t *data, uint16_t len);
  */
 uint16_t RingBuffer_Read(RingBuffer *rb, uint8_t *dest, uint16_t len);
 
+/**
+ * @brief  【雷达功能】扫描缓冲区，寻找指定的结束字符
+ * @param  rb: 环形缓冲区指针
+ * @param  target_char: 要寻找的目标字符
+ * @retval >0: 找到了！返回包含目标字符在内的完整长度 (可以直接用于 Read)
+ *         0: 没找到，或者缓冲区为空
+ */
+uint16_t RingBuffer_Find_Char(RingBuffer *rb, uint8_t target_char);
+
 #endif /* __RINGBUFFER_H__ */

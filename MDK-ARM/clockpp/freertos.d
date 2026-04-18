@@ -255,3 +255,4 @@ clockpp\freertos.o: ../Middlewares/Third_Party/Lvgl/src/lv_api_map_v9_2.h
 clockpp\freertos.o: ../Middlewares/Third_Party/Lvgl/src/lv_api_map_v9_3.h
 clockpp\freertos.o: ../Middlewares/Third_Party/Lvgl/src/lv_api_map_v9_4.h
 clockpp\freertos.o: ..\Service\LetterShell\service_lettershell.h
+clockpp\freertos.o: ./bsp_wrapper/network_uart_wrapper.h

@@ -31,6 +31,8 @@
 #include "lv_port_indev.h"
 #include "service_lettershell.h"
 
+#include "network_uart_wrapper.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -122,6 +124,17 @@ void lvgl_test_task(void *argument)
         
         vTaskDelay(pdMS_TO_TICKS(sleep_ms));
     }
+}
+
+void test_task(void *argument) {
+  uint8_t buffer[256];
+  Wrapper_Network_Uart_Init (); // 初始化网络UART接口
+  while(1) {
+    if(Wrapper_Network_Uart_Get_Complete_Line(buffer)){
+      printf("Received line: %s\r\n", buffer); // 打印接收到的完整行
+    }
+    vTaskDelay(100);
+  }
 }
 /* USER CODE END FunctionPrototypes */
 
@@ -218,9 +231,9 @@ void MX_FREERTOS_Init(void) {
   /* add threads, ... */
 
 
-  
+  xTaskCreate(test_task, "test_task", 2048, NULL, 1, NULL);
   //xTaskCreate(lvgl_test_task, "lvgl_test_task", 2048, NULL, 1, NULL);
-  xTaskCreate(task_shell, "task_shell", 120, NULL, osPriorityNormal, NULL);
+  //xTaskCreate(task_shell, "task_shell", 120, NULL, osPriorityNormal, NULL);
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_EVENTS */
@@ -240,7 +253,6 @@ void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
   /* Infinite loop */
-
 	for(;;){
 		HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
 		vTaskDelay(500);
