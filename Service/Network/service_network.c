@@ -1,4 +1,5 @@
 #include "service_network.h"
+#include "service_network_hub.h"
 #include "network_uart_wrapper.h"
 #include "stdio.h"
 #include "string.h"
@@ -12,7 +13,7 @@ void Service_Net_Update_Time(void){
 }
 
 // 网络解析任务
-void Task_Network_Parser(void *argument) {
+static void Task_Network_Parser(void *argument) {
     uint8_t rx_line[512]; // 用于存放抠出来的一整行
     
     while(1) {
@@ -24,11 +25,11 @@ void Task_Network_Parser(void *argument) {
                 if (json_start != NULL) {
                     //天气数据的 JSON 
                     if (strstr(json_start, "\"results\"") != NULL) {
-                        printf("Received Weather Data: %s\n", json_start);
+                        DataHub_Parse_Weather(json_start);
                     }
                     //时间数据的 JSON 
                     else if (strstr(json_start, "\"sysTime2\"") != NULL) {
-                        printf("Received Time Data: %s\n", json_start);
+                        
                     }
                     // 不是我们关心的 JSON
                     else {
@@ -43,8 +44,8 @@ void Task_Network_Parser(void *argument) {
             }
         }
         else {
-            // 没收到完整的话，睡 10ms 把 CPU 让给别人
-            osal_task_delay(10);
+            // 没收到完整的话，睡 100ms 把 CPU 让给别人
+            osal_task_delay(100);
         }
     }
 }
@@ -53,5 +54,6 @@ osal_task_hdl_t g_Task_Network_Parser_Handle;
 
 void Service_Net_Init(void){
     Wrapper_Network_Uart_Init();
+    service_network_hub_init();
     osal_task_create(&g_Task_Network_Parser_Handle, "Network_Parser", Task_Network_Parser, NULL, 1024*4, OSAL_PRIORITYNORMAL);
 }

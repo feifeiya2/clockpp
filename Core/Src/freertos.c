@@ -31,7 +31,9 @@
 #include "lv_port_indev.h"
 #include "service_lettershell.h"
 
+#include "service_network_hub.h"
 #include "service_network.h"
+#include "osal.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -126,10 +128,11 @@ void lvgl_test_task(void *argument)
 }
 
 void test_task(void *argument) {
+  Service_Net_Init(); // 初始化网络服务
+  WeatherData_t weather_data;
   while(1) {
-    Service_Net_Update_Weather();
-    Service_Net_Update_Time();
-    vTaskDelay(2000);
+    osal_queue_receive(g_cooked_data_queue_handle, &weather_data, OSAL_WAIT_FOREVER); // 接收网络数据包
+    printf("Weather: %s, Temp: %s\r\n", weather_data.weather, weather_data.temperature); // 打印天气数据
   }
 }
 /* USER CODE END FunctionPrototypes */
@@ -225,8 +228,6 @@ void MX_FREERTOS_Init(void) {
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
-
-  Service_Net_Init(); // 初始化网络服务
 
   xTaskCreate(test_task, "test_task", 2048, NULL, 1, NULL);
   //xTaskCreate(lvgl_test_task, "lvgl_test_task", 2048, NULL, 1, NULL);

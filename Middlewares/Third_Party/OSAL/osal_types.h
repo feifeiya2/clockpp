@@ -4,6 +4,10 @@
 #include <stdint.h>
 #include <stddef.h>
 
+#define STRM_WEATHER_DATA_LEN   512
+#define STRM_GPS_DATA_LEN       128
+
+
 /* ×´Ì¬·µ»ØÂë */
 typedef enum {
     OSAL_OK       = 0,

@@ -33,6 +33,8 @@
 "clockpp\service_network.o"
 "clockpp\service_network_hub.o"
 "clockpp\service_lettershell.o"
+"clockpp\cjson.o"
+"clockpp\cjson_port.o"
 "clockpp\osal_freertos.o"
 "clockpp\croutine.o"
 "clockpp\event_groups.o"
