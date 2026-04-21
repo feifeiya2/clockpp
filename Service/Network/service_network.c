@@ -29,7 +29,7 @@ static void Task_Network_Parser(void *argument) {
                     }
                     //时间数据的 JSON 
                     else if (strstr(json_start, "\"sysTime2\"") != NULL) {
-                        
+                        DataHub_Parse_Time(json_start);
                     }
                     // 不是我们关心的 JSON
                     else {

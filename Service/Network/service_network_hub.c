@@ -53,3 +53,26 @@ void DataHub_Parse_Weather(const char *json_string) {
     cJSON_Delete(root); 
 }
 
+/**
+ * @brief 解析苏宁时间 JSON 字符串并压入时间队列
+ * @note  期待的 JSON 格式片段: {"sysTime1":"20260418151019"}
+ */
+void DataHub_Parse_Time(const char *json_string) {
+    // 1. 生成 cJSON 对象树
+    cJSON *root = cJSON_Parse(json_string);
+    if (root == NULL) {
+        printf("Time cJSON Parse Failed\r\n");
+        return;
+    }
+
+    // 2. 查找时间字段
+    cJSON *time_item = cJSON_GetObjectItem(root, "sysTime1");
+    
+    // 3. 确保找到了，且它是一个字符串
+    if (time_item != NULL && cJSON_IsString(time_item)) {
+        printf("Current Time: %s\r\n", time_item->valuestring); // 打印时间字符串
+    }
+
+    // 5. 【极其致命】：释放内存树！
+    cJSON_Delete(root); 
+}
