@@ -5,6 +5,6 @@ clockpp\shell_port.o: ..\Middlewares\Third_Party\LetterShell\shell_cfg.h
 clockpp\shell_port.o: ./bsp_wrapper/shell_uart_wrapper.h
 clockpp\shell_port.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\shell_port.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
-clockpp\shell_port.o: ..\Middlewares\Third_Party\OSAL\osal.h
-clockpp\shell_port.o: ..\Middlewares\Third_Party\OSAL\osal_types.h
+clockpp\shell_port.o: ../Middlewares/Third_Party/OSAL/osal.h
+clockpp\shell_port.o: ../Middlewares/Third_Party/OSAL/osal_types.h
 clockpp\shell_port.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h

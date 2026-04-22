@@ -3,8 +3,8 @@ clockpp\display_posting.o: bsp_posting\display_posting.h
 clockpp\display_posting.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\display_posting.o: ./bsp_driver/st7789.h
 clockpp\display_posting.o: ./bsp_wrapper/display_wrapper.h
-clockpp\display_posting.o: ..\Middlewares\Third_Party\OSAL\osal.h
-clockpp\display_posting.o: ..\Middlewares\Third_Party\OSAL\osal_types.h
+clockpp\display_posting.o: ../Middlewares/Third_Party/OSAL/osal.h
+clockpp\display_posting.o: ../Middlewares/Third_Party/OSAL/osal_types.h
 clockpp\display_posting.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
 clockpp\display_posting.o: ../Middlewares/Third_Party/Lvgl/lv_port_disp.h
 clockpp\display_posting.o: ../Middlewares/Third_Party/Lvgl/lvgl.h
@@ -241,6 +241,8 @@ clockpp\display_posting.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c
 clockpp\display_posting.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
 clockpp\display_posting.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 clockpp\display_posting.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+clockpp\display_posting.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h
+clockpp\display_posting.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h
 clockpp\display_posting.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
 clockpp\display_posting.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 clockpp\display_posting.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h

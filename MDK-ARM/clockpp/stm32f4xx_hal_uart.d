@@ -29,6 +29,8 @@ clockpp\stm32f4xx_hal_uart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_
 clockpp\stm32f4xx_hal_uart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
 clockpp\stm32f4xx_hal_uart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 clockpp\stm32f4xx_hal_uart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+clockpp\stm32f4xx_hal_uart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h
+clockpp\stm32f4xx_hal_uart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h
 clockpp\stm32f4xx_hal_uart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
 clockpp\stm32f4xx_hal_uart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 clockpp\stm32f4xx_hal_uart.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h

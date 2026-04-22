@@ -29,11 +29,8 @@
 #include "display_wrapper.h"
 #include "touch_wrapper.h"
 #include "lv_port_indev.h"
-#include "service_lettershell.h"
 
-#include "service_network_hub.h"
-#include "service_network.h"
-#include "osal.h"
+#include "rtc_wrapper.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -128,11 +125,17 @@ void lvgl_test_task(void *argument)
 }
 
 void test_task(void *argument) {
-  Service_Net_Init(); // 初始化网络服务
-  WeatherData_t weather_data;
+  Wrapper_RTC_Init();
   while(1) {
-    osal_queue_receive(g_cooked_data_queue_handle, &weather_data, OSAL_WAIT_FOREVER); // 接收网络数据包
-    printf("Weather: %s, Temp: %s\r\n", weather_data.weather, weather_data.temperature); // 打印天气数据
+    RTC_Time_t current_time;
+    if(Wrapper_RTC_Get_Time(&current_time)) {
+        printf("Current Time: %04d-%02d-%02d %02d:%02d:%02d\r\n", 
+            current_time.year, current_time.month, current_time.day,
+            current_time.hour, current_time.minute, current_time.second);
+    } else {
+        printf("Failed to get time from RTC\r\n");
+    }
+    vTaskDelay(pdMS_TO_TICKS(500)); // 每秒打印一次
   }
 }
 /* USER CODE END FunctionPrototypes */

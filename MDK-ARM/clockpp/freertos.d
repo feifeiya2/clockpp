@@ -39,6 +39,8 @@ clockpp\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h
 clockpp\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h
 clockpp\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 clockpp\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+clockpp\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc.h
+clockpp\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h
 clockpp\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
 clockpp\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h
 clockpp\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
@@ -254,8 +256,4 @@ clockpp\freertos.o: ../Middlewares/Third_Party/Lvgl/src/lv_api_map_v9_1.h
 clockpp\freertos.o: ../Middlewares/Third_Party/Lvgl/src/lv_api_map_v9_2.h
 clockpp\freertos.o: ../Middlewares/Third_Party/Lvgl/src/lv_api_map_v9_3.h
 clockpp\freertos.o: ../Middlewares/Third_Party/Lvgl/src/lv_api_map_v9_4.h
-clockpp\freertos.o: ..\Service\LetterShell\service_lettershell.h
-clockpp\freertos.o: ..\Service\Network\service_network_hub.h
-clockpp\freertos.o: ..\Middlewares\Third_Party\OSAL\osal.h
-clockpp\freertos.o: ..\Middlewares\Third_Party\OSAL\osal_types.h
-clockpp\freertos.o: ..\Service\Network\service_network.h
+clockpp\freertos.o: ./bsp_wrapper/rtc_wrapper.h

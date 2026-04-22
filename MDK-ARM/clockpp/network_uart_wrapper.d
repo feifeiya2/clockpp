@@ -4,6 +4,6 @@ clockpp\network_uart_wrapper.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
 clockpp\network_uart_wrapper.o: ./bsp_posting/esp32_uart_posting.h
 clockpp\network_uart_wrapper.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
 clockpp\network_uart_wrapper.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
-clockpp\network_uart_wrapper.o: ..\Middlewares\Third_Party\OSAL\osal.h
-clockpp\network_uart_wrapper.o: ..\Middlewares\Third_Party\OSAL\osal_types.h
+clockpp\network_uart_wrapper.o: ../Middlewares/Third_Party/OSAL/osal.h
+clockpp\network_uart_wrapper.o: ../Middlewares/Third_Party/OSAL/osal_types.h
 clockpp\network_uart_wrapper.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
