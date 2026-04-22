@@ -30,15 +30,25 @@ static void Port_Network_Uart_Send_AT_Command(const uint8_t *cmd, uint16_t len){
     ESP32_Driver_Transmit(cmd, len);
 }
 
-static uint16_t Port_Wrapper_Network_Uart_Get_Response_Data(uint8_t *buffer, uint16_t max_len){
-    return ESP32_Driver_Pull_RxData(buffer, max_len);
+static uint16_t Port_Network_Get_Complete_Line(uint8_t *out_line) {
+    
+    // 1. 【开启雷达扫描】：问 Driver 层，水库里现在有没有完整的一行？有多长？
+    uint16_t line_len = ESP32_Driver_Get_Complete_datalen();
+    // 2. 判断扫描结果
+    if (line_len > 0) {
+        ESP32_Driver_Pull_RxData(out_line, line_len);
+        // 封口变成标准字符串
+        out_line[line_len] = '\0'; 
+        return line_len; // 完美返回    
+    }
+    return 0; 
 }
 /* wrapper层 依赖实现 end */
 
 static Network_Uart_Wrapper_t network_uart_wrapper = {
     .Init = Port_Network_Init,
     .Send_AT_Command = Port_Network_Uart_Send_AT_Command,
-    .Get_Response_Data = Port_Wrapper_Network_Uart_Get_Response_Data
+    .Get_Complete_Line = Port_Network_Get_Complete_Line
 };
 static ESP32_HW_Ops_t esp_hw_ops = { .send_bytes = Port_ESP32_Send };
 

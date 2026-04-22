@@ -1,0 +1,10 @@
+clockpp\service_network_hub.o: ..\Service\Network\service_network_hub.c
+clockpp\service_network_hub.o: ..\Service\Network\service_network_hub.h
+clockpp\service_network_hub.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+clockpp\service_network_hub.o: ..\Middlewares\Third_Party\OSAL\osal.h
+clockpp\service_network_hub.o: ..\Middlewares\Third_Party\OSAL\osal_types.h
+clockpp\service_network_hub.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
+clockpp\service_network_hub.o: ..\Middlewares\Third_Party\CJSON\cJSON_port.h
+clockpp\service_network_hub.o: ..\Middlewares\Third_Party\CJSON\cJSON.h
+clockpp\service_network_hub.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
+clockpp\service_network_hub.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h

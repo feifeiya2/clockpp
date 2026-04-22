@@ -31,6 +31,9 @@
 #include "lv_port_indev.h"
 #include "service_lettershell.h"
 
+#include "service_network_hub.h"
+#include "service_network.h"
+#include "osal.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -122,6 +125,15 @@ void lvgl_test_task(void *argument)
         
         vTaskDelay(pdMS_TO_TICKS(sleep_ms));
     }
+}
+
+void test_task(void *argument) {
+  Service_Net_Init(); // 初始化网络服务
+  WeatherData_t weather_data;
+  while(1) {
+    osal_queue_receive(g_cooked_data_queue_handle, &weather_data, OSAL_WAIT_FOREVER); // 接收网络数据包
+    printf("Weather: %s, Temp: %s\r\n", weather_data.weather, weather_data.temperature); // 打印天气数据
+  }
 }
 /* USER CODE END FunctionPrototypes */
 
@@ -217,10 +229,9 @@ void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
 
-
-  
+  xTaskCreate(test_task, "test_task", 2048, NULL, 1, NULL);
   //xTaskCreate(lvgl_test_task, "lvgl_test_task", 2048, NULL, 1, NULL);
-  xTaskCreate(task_shell, "task_shell", 120, NULL, osPriorityNormal, NULL);
+  //xTaskCreate(task_shell, "task_shell", 120, NULL, osPriorityNormal, NULL);
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_EVENTS */
@@ -240,7 +251,6 @@ void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
   /* Infinite loop */
-
 	for(;;){
 		HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
 		vTaskDelay(500);

@@ -76,3 +76,25 @@ uint16_t RingBuffer_Read(RingBuffer *rb, uint8_t *dest, uint16_t len) {
     rb->tail = (rb->tail + len) % rb->size;
     return len;
 }
+
+uint16_t RingBuffer_Find_Char(RingBuffer *rb, uint8_t target_char) {
+    uint16_t count = RingBuffer_GetCount(rb);
+    
+    // 如果水库是空的，直接收工
+    if (count == 0) {
+        return 0; 
+    }
+
+    // 从现在的读指针(tail)开始，顺藤摸瓜往后找
+    for (uint16_t i = 0; i < count; i++) {
+        // 【核心】：利用取余(%)完美解决在内存物理边界上的回绕问题
+        uint16_t scan_index = (rb->tail + i) % rb->size; 
+        
+        if (rb->buffer[scan_index] == target_char) {
+            return i + 1; 
+        }
+    }
+    
+    // 整个水库都扫遍了，没找到目标字符（说明半包，还在等）
+    return 0; 
+}

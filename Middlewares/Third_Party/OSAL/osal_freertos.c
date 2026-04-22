@@ -23,6 +23,14 @@ void osal_task_delete(osal_task_hdl_t xTask) {
     vTaskDelete((TaskHandle_t)xTask);
 }
 
+uint32_t osal_ms_to_tick(uint32_t timeout_ms){
+    return timeout_ms / OSAL_TICK_PERIOD_MS;
+}
+
+uint32_t osal_get_tick_count(void) {
+    return xTaskGetTickCount();
+}
+
 /* ª•≥‚À¯ µœ÷ */
 osal_status_t osal_mutex_create(osal_mutex_hdl_t *pxMutex) {
     *pxMutex = (osal_mutex_hdl_t)xSemaphoreCreateMutex();

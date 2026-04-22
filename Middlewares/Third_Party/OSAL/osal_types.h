@@ -4,6 +4,10 @@
 #include <stdint.h>
 #include <stddef.h>
 
+#define STRM_WEATHER_DATA_LEN   512
+#define STRM_GPS_DATA_LEN       128
+
+
 /* 状态返回码 */
 typedef enum {
     OSAL_OK       = 0,
@@ -28,7 +32,9 @@ typedef void* osal_queue_hdl_t; // 队列句柄
 typedef void* osal_strm_hdl_t;  // StreamBuffer 句柄
 
 /* 常量定义 */
-#define OSAL_WAIT_FOREVER  0xFFFFFFFF
-#define OSAL_NO_WAIT       0
+#define OSAL_WAIT_FOREVER       0xFFFFFFFF
+#define OSAL_NO_WAIT            0
+#define OSAL_TICK_PERIOD_MS     portTICK_PERIOD_MS
+#define OSAL_PRIORITYNORMAL     24
 
 #endif /* __OSAL_TYPES_H__ */

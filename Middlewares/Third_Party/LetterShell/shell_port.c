@@ -1,24 +1,25 @@
 #include "shell_port.h"
 #include "shell_uart_wrapper.h"
 #include <stdio.h>
+#include "osal.h"
 
 Shell shell;
 static char shellBuffer[512];
-static SemaphoreHandle_t shellMutex;
+static osal_mutex_hdl_t shellMutex;
 
 
 static int ShellLock(Shell* shell){
-    xSemaphoreTake(shellMutex, portMAX_DELAY);
+    osal_mutex_lock(shellMutex, OSAL_WAIT_FOREVER);
     return 0;
 }
 
 static int ShellUnlock(Shell* shell){
-    xSemaphoreGive(shellMutex);
+    osal_mutex_unlock(shellMutex);
     return 0;
 }
 
 void ShellInit(void){
-    shellMutex = xSemaphoreCreateMutex();
+    osal_mutex_create(shellMutex);
     if(shellMutex == NULL) {
         printf("Error: Failed to create shell mutex.\n");
         return;
