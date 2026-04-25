@@ -2,14 +2,13 @@
 #include "cJSON_port.h"
 #include <stdio.h>
 #include <string.h>
-
-osal_queue_hdl_t g_cooked_data_queue_handle; // 完全成熟的数据队列句柄
+#include "app_event_bus.h"
+#include "rtc_wrapper.h"
 
 static WeatherData_t weather_data;
 
 void service_network_hub_init(void) {
     Middleware_cJSON_Init(); // 初始化 cJSON 内存钩子
-    osal_queue_create(&g_cooked_data_queue_handle, 5, sizeof(WeatherData_t)); // 创建一个队列用于存储成熟的天气数据
 }
 
 /**
@@ -41,9 +40,7 @@ void DataHub_Parse_Weather(const char *json_string) {
                 if (cJSON_IsString(text_item) && cJSON_IsString(temp_item)) {
                     strcpy(weather_data.weather, text_item->valuestring);
                     strcpy(weather_data.temperature, temp_item->valuestring);
-                    if(osal_queue_send(g_cooked_data_queue_handle, &weather_data, 10) == OSAL_TIMEOUT){  // 存入队列
-                        printf("Weather Data send to queue timeout\r\n");
-                    } 
+                    
                 }
             }
         }
@@ -52,6 +49,8 @@ void DataHub_Parse_Weather(const char *json_string) {
     // 5. 【极其致命】：必须释放内存树，否则立刻导致系统内存泄漏死机！
     cJSON_Delete(root); 
 }
+
+
 
 /**
  * @brief 解析苏宁时间 JSON 字符串并压入时间队列
@@ -67,10 +66,20 @@ void DataHub_Parse_Time(const char *json_string) {
 
     // 2. 查找时间字段
     cJSON *time_item = cJSON_GetObjectItem(root, "sysTime1");
-    
+
+    RTC_Time_t syn_rtc_time;
+
     // 3. 确保找到了，且它是一个字符串
     if (time_item != NULL && cJSON_IsString(time_item)) {
-        printf("Current Time: %s\r\n", time_item->valuestring); // 打印时间字符串
+        syn_rtc_time.day = (uint8_t)(time_item->valuestring[6] - '0')*10 + (uint8_t)(time_item->valuestring[7] - '0');
+        syn_rtc_time.month = (uint8_t)(time_item->valuestring[4] - '0')*10 + (uint8_t)(time_item->valuestring[5] - '0');
+        syn_rtc_time.year = (uint16_t)(time_item->valuestring[0] - '0') * 1000 + (uint16_t)(time_item->valuestring[1] - '0') * 100 + (uint16_t)(time_item->valuestring[2] - '0') * 10 + (uint16_t)(time_item->valuestring[3] - '0');
+        syn_rtc_time.hour = (uint8_t)(time_item->valuestring[8] - '0')*10 + (uint8_t)(time_item->valuestring[9] - '0');
+        syn_rtc_time.minute = (uint8_t)(time_item->valuestring[10] - '0')*10 + (uint8_t)(time_item->valuestring[11] - '0');
+        syn_rtc_time.second = (uint8_t)(time_item->valuestring[12] - '0')*10 + (uint8_t)(time_item->valuestring[13] - '0');
+        if(Wrapper_RTC_Set_Time(&syn_rtc_time) == false){
+            printf("RTC Set Time Failed\r\n");
+        }
     }
 
     // 5. 【极其致命】：释放内存树！
