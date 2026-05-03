@@ -15,3 +15,4 @@ clockpp\osal_freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list
 clockpp\osal_freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h
 clockpp\osal_freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h
 clockpp\osal_freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/stream_buffer.h
+clockpp\osal_freertos.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h

@@ -40,7 +40,14 @@ void DataHub_Parse_Weather(const char *json_string) {
                 if (cJSON_IsString(text_item) && cJSON_IsString(temp_item)) {
                     strcpy(weather_data.weather, text_item->valuestring);
                     strcpy(weather_data.temperature, temp_item->valuestring);
-                    
+                    uint32_t temp = (uint32_t)atof(temp_item->valuestring);
+                    App_Msg_ID_e temp_item_id = MSG_WEATHER_UPDATE;
+                    //printf("Weather: %s, Temperature: %s\r\n", weather_data.weather, weather_data.temperature);
+                    //printf("temp = %d\r\n", temp);
+                    uint32_t temp_data = 1;
+                    if(EventBus_Publish(temp_item_id, &weather_data, temp_data) != true){
+                        printf("EventBus Publish Failed\r\n");
+                    }
                 }
             }
         }

@@ -8,3 +8,6 @@ clockpp\service_network_hub.o: ../Middlewares/Third_Party/CJSON/cJSON_port.h
 clockpp\service_network_hub.o: ../Middlewares/Third_Party/CJSON/cJSON.h
 clockpp\service_network_hub.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
 clockpp\service_network_hub.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
+clockpp\service_network_hub.o: ..\App\Message_Pump\app_event_bus.h
+clockpp\service_network_hub.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdbool.h
+clockpp\service_network_hub.o: ./bsp_wrapper/rtc_wrapper.h

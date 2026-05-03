@@ -336,7 +336,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F407xx  LV_CONF_INCLUDE_SIMPLE  LV_LVGL_H_INCLUDE_SIMPLE,STM32F407xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;./bsp_posting;./bsp_wrapper;./bsp_driver;../Middlewares/Third_Party/Lvgl;../Middlewares/Third_Party/Lvgl/demos;../Middlewares/Third_Party/Lvgl/posting;../Middlewares/Third_Party/Lvgl/src;../Middlewares/Third_Party/LetterShell;../Service/LetterShell;../Middlewares/Third_Party/OSAL;../Middlewares/Third_Party/CJSON;../Service/Network;..\App\UI;..\App\Message_Pump</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;./bsp_posting;./bsp_wrapper;./bsp_driver;../Middlewares/Third_Party/Lvgl;../Middlewares/Third_Party/Lvgl/demos;../Middlewares/Third_Party/Lvgl/posting;../Middlewares/Third_Party/Lvgl/src;../Middlewares/Third_Party/LetterShell;../Service/LetterShell;../Middlewares/Third_Party/OSAL;../Middlewares/Third_Party/CJSON;../Service/Network;..\App\UI;..\App\Message_Pump;..\App\System</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -377,6 +377,16 @@
         </TargetArmAds>
       </TargetOption>
       <Groups>
+        <Group>
+          <GroupName>App/System</GroupName>
+          <Files>
+            <File>
+              <FileName>app_startingup.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\App\System\app_startingup.c</FilePath>
+            </File>
+          </Files>
+        </Group>
         <Group>
           <GroupName>App/UI</GroupName>
           <Files>

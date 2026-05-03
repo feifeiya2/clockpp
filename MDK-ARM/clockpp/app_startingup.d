@@ -1,0 +1,10 @@
+clockpp\app_startingup.o: ..\App\System\app_startingup.c
+clockpp\app_startingup.o: ..\App\System\app_startingup.h
+clockpp\app_startingup.o: ../Middlewares/Third_Party/OSAL/osal.h
+clockpp\app_startingup.o: ../Middlewares/Third_Party/OSAL/osal_types.h
+clockpp\app_startingup.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+clockpp\app_startingup.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
+clockpp\app_startingup.o: ..\App\UI\app_ui_controller.h
+clockpp\app_startingup.o: ..\App\Message_Pump\app_event_bus.h
+clockpp\app_startingup.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdbool.h
+clockpp\app_startingup.o: ../Service/Network/service_network.h

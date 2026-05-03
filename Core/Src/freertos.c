@@ -30,7 +30,8 @@
 #include "touch_wrapper.h"
 #include "lv_port_indev.h"
 
-#include "rtc_wrapper.h"
+#include "app_startingup.h"
+// #include "app_event_bus.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -124,20 +125,20 @@ void lvgl_test_task(void *argument)
     }
 }
 
-void test_task(void *argument) {
-  Wrapper_RTC_Init();
-  while(1) {
-    RTC_Time_t current_time;
-    if(Wrapper_RTC_Get_Time(&current_time)) {
-        printf("Current Time: %04d-%02d-%02d %02d:%02d:%02d\r\n", 
-            current_time.year, current_time.month, current_time.day,
-            current_time.hour, current_time.minute, current_time.second);
-    } else {
-        printf("Failed to get time from RTC\r\n");
-    }
-    vTaskDelay(pdMS_TO_TICKS(500)); // 每秒打印一次
-  }
-}
+// void test_task(void *argument) {
+//   Wrapper_RTC_Init();
+//   while(1) {
+//     RTC_Time_t current_time;
+//     if(Wrapper_RTC_Get_Time(&current_time)) {
+//         printf("Current Time: %04d-%02d-%02d %02d:%02d:%02d\r\n", 
+//             current_time.year, current_time.month, current_time.day,
+//             current_time.hour, current_time.minute, current_time.second);
+//     } else {
+//         printf("Failed to get time from RTC\r\n");
+//     }
+//     vTaskDelay(pdMS_TO_TICKS(500)); // 每秒打印一次
+//   }
+// }
 /* USER CODE END FunctionPrototypes */
 
 void StartDefaultTask(void *argument);
@@ -224,7 +225,7 @@ void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN RTOS_QUEUES */
   /* add queues, ... */
   /* USER CODE END RTOS_QUEUES */
-
+  app_startingup();
   /* Create the thread(s) */
   /* creation of defaultTask */
   defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
@@ -232,7 +233,7 @@ void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
 
-  xTaskCreate(test_task, "test_task", 2048, NULL, 1, NULL);
+  //xTaskCreate(test_task, "test_task", 2048, NULL, 1, NULL);
   //xTaskCreate(lvgl_test_task, "lvgl_test_task", 2048, NULL, 1, NULL);
   //xTaskCreate(task_shell, "task_shell", 120, NULL, osPriorityNormal, NULL);
   /* USER CODE END RTOS_THREADS */
@@ -254,11 +255,13 @@ void StartDefaultTask(void *argument)
 {
   /* USER CODE BEGIN StartDefaultTask */
   /* Infinite loop */
+  // uint32_t t = 1;
 	for(;;){
-		HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
-		vTaskDelay(500);
-		HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_SET);
-		vTaskDelay(500);
+    // osal_queue_send(g_app_msg_queue, &t, 0);
+		// HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
+		// vTaskDelay(500);
+		// HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_SET);
+		// vTaskDelay(500);
 	}	
   /* USER CODE END StartDefaultTask */
 }

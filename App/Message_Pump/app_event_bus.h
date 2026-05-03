@@ -2,6 +2,7 @@
 #define __APP_EVENT_BUS_H__
 
 #include "osal.h"
+#include <stdbool.h>
 
 typedef enum {
     MSG_WEATHER_UPDATE,
@@ -17,7 +18,11 @@ typedef struct {
     } payload;
 } App_Event_t;
 
-// 声明全局邮箱和全局LVGL锁
-extern osal_queue_hdl_t g_app_msg_queue;
+// 3. 对外暴露的方法
+void EventBus_Init(void);
+bool EventBus_Publish(App_Msg_ID_e id, void *ptr, uint32_t val); // 供 Service 层调用
+bool EventBus_Subscribe(App_Event_t *out_event);  // 供 App 层调用
+
+extern osal_queue_hdl_t g_app_msg_queue;   //消息队列
 
 #endif   // __APP_EVENT_BUS_H__
