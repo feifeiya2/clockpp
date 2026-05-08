@@ -336,7 +336,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F407xx  LV_CONF_INCLUDE_SIMPLE  LV_LVGL_H_INCLUDE_SIMPLE,STM32F407xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;./bsp_posting;./bsp_wrapper;./bsp_driver;../Middlewares/Third_Party/Lvgl;../Middlewares/Third_Party/Lvgl/demos;../Middlewares/Third_Party/Lvgl/posting;../Middlewares/Third_Party/Lvgl/src;../Middlewares/Third_Party/LetterShell;../Service/LetterShell;../Middlewares/Third_Party/OSAL;../Middlewares/Third_Party/CJSON;../Service/Network</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;./bsp_posting;./bsp_wrapper;./bsp_driver;../Middlewares/Third_Party/Lvgl;../Middlewares/Third_Party/Lvgl/demos;../Middlewares/Third_Party/Lvgl/posting;../Middlewares/Third_Party/Lvgl/src;../Middlewares/Third_Party/LetterShell;../Service/LetterShell;../Middlewares/Third_Party/OSAL;../Middlewares/Third_Party/CJSON;../Service/Network;../Middlewares/Third_Party/EasyLogger/inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -1043,6 +1043,36 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>Middlewares/EasyLogger</GroupName>
+          <Files>
+            <File>
+              <FileName>elog_port.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\Third_Party\EasyLogger\port\elog_port.c</FilePath>
+            </File>
+            <File>
+              <FileName>elog.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\Third_Party\EasyLogger\src\elog.c</FilePath>
+            </File>
+            <File>
+              <FileName>elog_async.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\Third_Party\EasyLogger\src\elog_async.c</FilePath>
+            </File>
+            <File>
+              <FileName>elog_buf.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\Third_Party\EasyLogger\src\elog_buf.c</FilePath>
+            </File>
+            <File>
+              <FileName>elog_utils.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middlewares\Third_Party\EasyLogger\src\elog_utils.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>Middlewares/CJSON</GroupName>
           <Files>
             <File>
@@ -1221,14 +1251,14 @@
               <FilePath>.\bsp_wrapper\network_uart_wrapper.c</FilePath>
             </File>
             <File>
-              <FileName>shell_uart_wrapper.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\bsp_wrapper\shell_uart_wrapper.c</FilePath>
-            </File>
-            <File>
               <FileName>rtc_wrapper.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\bsp_wrapper\rtc_wrapper.c</FilePath>
+            </File>
+            <File>
+              <FileName>uart1_wrapper.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\bsp_wrapper\uart1_wrapper.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1251,14 +1281,14 @@
               <FilePath>.\bsp_posting\esp32_uart_posting.c</FilePath>
             </File>
             <File>
-              <FileName>shell_uart_posting.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\bsp_posting\shell_uart_posting.c</FilePath>
-            </File>
-            <File>
               <FileName>rtc_posting.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\bsp_posting\rtc_posting.c</FilePath>
+            </File>
+            <File>
+              <FileName>uart1_posting.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\bsp_posting\uart1_posting.c</FilePath>
             </File>
           </Files>
         </Group>

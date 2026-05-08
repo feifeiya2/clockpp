@@ -31,6 +31,25 @@ uint32_t osal_get_tick_count(void) {
     return xTaskGetTickCount();
 }
 
+/* --- 信号量实现 --- */
+osal_status_t osal_sem_create(osal_sem_hdl_t *pxSem, uint32_t init_count) {
+    *pxSem = (osal_sem_hdl_t)xSemaphoreCreateBinary();
+    if (*pxSem == NULL) return OSAL_NOMEM;
+    if (init_count > 0) xSemaphoreGive((SemaphoreHandle_t)*pxSem);
+    return OSAL_OK;
+}
+
+osal_status_t osal_sem_take(osal_sem_hdl_t xSem, uint32_t timeout_ms) {
+    TickType_t ticks = (timeout_ms == OSAL_WAIT_FOREVER) ? portMAX_DELAY : pdMS_TO_TICKS(timeout_ms);
+    if (xSemaphoreTake((SemaphoreHandle_t)xSem, ticks) == pdTRUE) return OSAL_OK;
+    return OSAL_TIMEOUT;
+}
+
+osal_status_t osal_sem_give(osal_sem_hdl_t xSem) {
+    if (xSemaphoreGive((SemaphoreHandle_t)xSem) == pdTRUE) return OSAL_OK;
+    return OSAL_ERROR;
+}
+
 /* 互斥锁实现 */
 osal_status_t osal_mutex_create(osal_mutex_hdl_t *pxMutex) {
     *pxMutex = (osal_mutex_hdl_t)xSemaphoreCreateMutex();

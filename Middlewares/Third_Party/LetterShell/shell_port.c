@@ -1,5 +1,5 @@
 #include "shell_port.h"
-#include "shell_uart_wrapper.h"
+#include "uart1_wrapper.h"
 #include <stdio.h>
 #include "osal.h"
 
@@ -19,12 +19,12 @@ static int ShellUnlock(Shell* shell){
 }
 
 void ShellInit(void){
-    osal_mutex_create(shellMutex);
+    osal_mutex_create(&shellMutex);
     if(shellMutex == NULL) {
         printf("Error: Failed to create shell mutex.\n");
         return;
     }
-    shell.write = Wrapper_Shell_Uart_Send;
+    shell.write = Wrapper_Uart1_Send;
     shell.lock = ShellLock;
     shell.unlock = ShellUnlock;
     shellInit(&shell, shellBuffer, 512);

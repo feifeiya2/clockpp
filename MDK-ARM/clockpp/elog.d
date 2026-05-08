@@ -1,0 +1,9 @@
+clockpp\elog.o: ..\Middlewares\Third_Party\EasyLogger\src\elog.c
+clockpp\elog.o: ../Middlewares/Third_Party/EasyLogger/inc/elog.h
+clockpp\elog.o: ../Middlewares/Third_Party/EasyLogger/inc/elog_cfg.h
+clockpp\elog.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+clockpp\elog.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
+clockpp\elog.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdbool.h
+clockpp\elog.o: D:\keil5\ARM\ARMCC\Bin\..\include\string.h
+clockpp\elog.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdarg.h
+clockpp\elog.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdio.h

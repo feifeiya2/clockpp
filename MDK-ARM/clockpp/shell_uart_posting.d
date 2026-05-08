@@ -1,7 +1,7 @@
 clockpp\shell_uart_posting.o: bsp_posting\shell_uart_posting.c
 clockpp\shell_uart_posting.o: bsp_posting\shell_uart_posting.h
 clockpp\shell_uart_posting.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
-clockpp\shell_uart_posting.o: ./bsp_wrapper/shell_uart_wrapper.h
+clockpp\shell_uart_posting.o: ./bsp_wrapper/uart1_wrapper.h
 clockpp\shell_uart_posting.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
 clockpp\shell_uart_posting.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
 clockpp\shell_uart_posting.o: ../Core/Inc/FreeRTOSConfig.h

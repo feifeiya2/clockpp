@@ -29,8 +29,10 @@
 #include "display_wrapper.h"
 #include "touch_wrapper.h"
 #include "lv_port_indev.h"
+#include "service_lettershell.h"
 
 #include "rtc_wrapper.h"
+#include "elog.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -124,18 +126,12 @@ void lvgl_test_task(void *argument)
     }
 }
 
+
 void test_task(void *argument) {
-  Wrapper_RTC_Init();
+
+  
   while(1) {
-    RTC_Time_t current_time;
-    if(Wrapper_RTC_Get_Time(&current_time)) {
-        printf("Current Time: %04d-%02d-%02d %02d:%02d:%02d\r\n", 
-            current_time.year, current_time.month, current_time.day,
-            current_time.hour, current_time.minute, current_time.second);
-    } else {
-        printf("Failed to get time from RTC\r\n");
-    }
-    vTaskDelay(pdMS_TO_TICKS(500)); // 每秒打印一次
+
   }
 }
 /* USER CODE END FunctionPrototypes */
@@ -232,9 +228,9 @@ void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
 
-  xTaskCreate(test_task, "test_task", 2048, NULL, 1, NULL);
+ // xTaskCreate(test_task, "test_task", 2048, NULL, 1, NULL);
   //xTaskCreate(lvgl_test_task, "lvgl_test_task", 2048, NULL, 1, NULL);
-  //xTaskCreate(task_shell, "task_shell", 120, NULL, osPriorityNormal, NULL);
+  //xTaskCreate(task_shell, "task_shell", 2048, NULL, osPriorityNormal, NULL);
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_EVENTS */
@@ -242,7 +238,7 @@ void MX_FREERTOS_Init(void) {
   /* USER CODE END RTOS_EVENTS */
 
 }
-
+extern void EasyLogger_init(void);
 /* USER CODE BEGIN Header_StartDefaultTask */
 /**
   * @brief  Function implementing the defaultTask thread.
@@ -252,9 +248,18 @@ void MX_FREERTOS_Init(void) {
 /* USER CODE END Header_StartDefaultTask */
 void StartDefaultTask(void *argument)
 {
+  EasyLogger_init();
+
   /* USER CODE BEGIN StartDefaultTask */
   /* Infinite loop */
 	for(;;){
+
+    log_a("Hello EasyLogger Assert!\r\n");
+    log_e("Hello EasyLogger Error!\r\n");
+    log_w("Hello EasyLogger Warn!\r\n");
+    log_i("Hello EasyLogger Info!\r\n");
+    log_d("Hello EasyLogger Debug!\r\n");
+    log_v("Hello EasyLogger Verbose!\r\n");
 		HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
 		vTaskDelay(500);
 		HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_SET);
