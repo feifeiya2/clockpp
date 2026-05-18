@@ -4,6 +4,8 @@
 #include "stdio.h"
 #include "string.h"
 
+uint8_t rx_line[512]; // 用于存放抠出来的一整行
+
 void Service_Net_Update_Weather(void){
     Wrapper_Network_Uart_Send_AT_Command((const uint8_t *)"AT+HTTPCGET=\"https://api.seniverse.com/v3/weather/now.json?key=SInj2qoOL5qQE6wJq&location=chengdu&language=en&unit=c\"\r\n");
 }
@@ -14,8 +16,6 @@ void Service_Net_Update_Time(void){
 
 // 网络解析任务
 static void Task_Network_Parser(void *argument) {
-    uint8_t rx_line[512]; // 用于存放抠出来的一整行
-    
     while(1) {
         uint16_t len = Wrapper_Network_Uart_Get_Complete_Line(rx_line);
         
@@ -52,8 +52,8 @@ static void Task_Network_Parser(void *argument) {
 
 osal_task_hdl_t g_Task_Network_Parser_Handle;
 
-void Service_Net_Init(void){
+void Service_Net_Init(uint32_t stack_size, uint8_t priority){
     Wrapper_Network_Uart_Init();
     service_network_hub_init();
-    osal_task_create(&g_Task_Network_Parser_Handle, "Network_Parser", Task_Network_Parser, NULL, 1024*4, OSAL_PRIORITYNORMAL);
+    osal_task_create(&g_Task_Network_Parser_Handle, "Network_Parser", Task_Network_Parser, NULL, stack_size*4, priority);
 }

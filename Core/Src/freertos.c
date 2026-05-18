@@ -220,7 +220,7 @@ void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN RTOS_QUEUES */
   /* add queues, ... */
   /* USER CODE END RTOS_QUEUES */
-
+  app_startingup();
   /* Create the thread(s) */
   /* creation of defaultTask */
   defaultTaskHandle = osThreadNew(StartDefaultTask, NULL, &defaultTask_attributes);
@@ -252,6 +252,7 @@ void StartDefaultTask(void *argument)
 
   /* USER CODE BEGIN StartDefaultTask */
   /* Infinite loop */
+  // uint32_t t = 1;
 	for(;;){
 
     log_a("Hello EasyLogger Assert!\r\n");

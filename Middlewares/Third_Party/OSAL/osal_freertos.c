@@ -5,6 +5,8 @@
 #include "queue.h"
 #include "stream_buffer.h"
 
+#include <stdio.h>
+
 /* 任务实现 */
 osal_status_t osal_task_create(osal_task_hdl_t *pxTask, const char *name, 
                                void (*entry)(void*), void *arg, 
@@ -87,6 +89,7 @@ osal_status_t osal_queue_create(osal_queue_hdl_t *pxQueue, uint32_t queue_len, u
 
 osal_status_t osal_queue_send(osal_queue_hdl_t xQueue, const void *item, uint32_t timeout_ms) {
     TickType_t ticks = (timeout_ms == OSAL_WAIT_FOREVER) ? portMAX_DELAY : pdMS_TO_TICKS(timeout_ms);
+    printf("here osal_queue_send\r\n");
     if (xQueueSend((QueueHandle_t)xQueue, item, ticks) == pdPASS) {
         return OSAL_OK;
     }
